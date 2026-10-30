@@ -1,24 +1,24 @@
 'use client';
 
 import React, { useState } from 'react';
-import { Code2, Copy, Check, ExternalLink, Sparkles, Monitor } from 'lucide-react';
+import { Code2, Copy, Check } from 'lucide-react';
 
 export default function EmbedWidgetGenerator() {
   const [themeMode, setThemeMode] = useState<'light' | 'auto'>('auto');
   const [copied, setCopied] = useState<boolean>(false);
 
-  const embedSnippet = `<!-- Widget Kalkulator Nilai UT Gratis by NilaiUT.com -->
+  const embedSnippet = `<!-- Widget Kalkulator Nilai UT by NilaiUT.com -->
 <div style="width: 100%; max-width: 720px; margin: 0 auto; font-family: system-ui, sans-serif;">
   <iframe 
     src="https://nilaiut.com/?embed=true&theme=${themeMode}" 
     width="100%" 
-    height="680" 
-    style="border: 1px solid #e2e8f0; border-radius: 16px; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05);" 
+    height="640" 
+    style="border: 1px solid #e2e8f0; border-radius: 12px;" 
     title="Kalkulator Nilai UT Online"
     loading="lazy"
   ></iframe>
-  <p style="font-size: 12px; color: #64748b; text-align: center; margin-top: 8px;">
-    Ditenagai oleh <a href="https://nilaiut.com" target="_blank" rel="noopener" style="color: #2563eb; text-decoration: underline; font-weight: 600;">Kalkulator Nilai UT Online</a>
+  <p style="font-size: 11px; color: #64748b; text-align: center; margin-top: 6px;">
+    Ditenagai oleh <a href="https://nilaiut.com" target="_blank" rel="noopener" style="color: #02569B; text-decoration: underline; font-weight: 600;">Kalkulator Nilai UT Online</a>
   </p>
 </div>`;
 
@@ -34,95 +34,65 @@ export default function EmbedWidgetGenerator() {
   };
 
   return (
-    <div id="embed-widget" className="bg-slate-900 text-white rounded-2xl p-6 sm:p-8 border border-slate-800 shadow-xl space-y-6">
-      <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 border-b border-slate-800 pb-5">
+    <div id="embed-widget" className="bg-slate-900 text-white rounded-xl p-6 border border-slate-800 space-y-4">
+      <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 border-b border-slate-800 pb-4">
         <div>
-          <div className="flex items-center gap-2 text-blue-400 text-xs font-bold uppercase tracking-wider mb-1">
-            <Code2 className="w-4 h-4" />
-            <span>Fitur Khusus Webmaster & Blogger Kampus</span>
+          <div className="flex items-center gap-2 text-slate-400 text-xs font-semibold mb-1">
+            <Code2 className="w-4 h-4 text-blue-400" />
+            <span>Integrasi Iframe</span>
           </div>
-          <h3 className="text-xl sm:text-2xl font-bold tracking-tight text-white">
-            Pasang Kalkulator Nilai UT di Website / Blog Anda
+          <h3 className="text-lg font-bold text-white">
+            Pasang Kalkulator Nilai UT di Website atau Blog Anda
           </h3>
-          <p className="text-xs sm:text-sm text-slate-400 mt-1">
-            Bantu sesama mahasiswa UT menghitung nilai langsung dari blog WordPress, Blogspot, atau portal himpunan mahasiswa Anda. Gratis 100%!
+          <p className="text-xs text-slate-400 mt-0.5">
+            Salin kode HTML di bawah ini untuk menyematkan kalkulator interaktif NilaiUT pada artikel WordPress atau Blogspot Anda.
           </p>
         </div>
 
         <button
           type="button"
           onClick={handleCopy}
-          className="px-4 py-2.5 rounded-xl bg-blue-600 hover:bg-blue-500 text-white text-xs sm:text-sm font-semibold flex items-center justify-center gap-2 shadow-lg shadow-blue-600/20 transition-all self-start md:self-auto shrink-0"
+          className="px-3.5 py-2 rounded-lg bg-blue-600 hover:bg-blue-500 text-white text-xs font-semibold flex items-center justify-center gap-1.5 transition-colors self-start md:self-auto shrink-0"
         >
           {copied ? (
             <>
-              <Check className="w-4 h-4 text-emerald-300" />
-              <span>Kode Embed Tersalin!</span>
+              <Check className="w-3.5 h-3.5 text-white" />
+              <span>Kode Tersalin</span>
             </>
           ) : (
             <>
-              <Copy className="w-4 h-4" />
-              <span>Salin Kode HTML Embed</span>
+              <Copy className="w-3.5 h-3.5" />
+              <span>Salin Kode HTML</span>
             </>
           )}
         </button>
       </div>
 
-      <div className="grid grid-cols-1 lg:grid-cols-12 gap-6">
-        {/* Code Snippet Box */}
-        <div className="lg:col-span-7 space-y-3">
-          <div className="flex items-center justify-between text-xs text-slate-400">
-            <span>Kode HTML (Salin dan tempel di editor HTML/Text blog Anda):</span>
-            <div className="flex items-center gap-2">
-              <span className="text-[11px]">Mode:</span>
-              <button
-                type="button"
-                onClick={() => setThemeMode('auto')}
-                className={`px-2 py-0.5 rounded text-[11px] ${themeMode === 'auto' ? 'bg-blue-600 text-white' : 'bg-slate-800 text-slate-400'}`}
-              >
-                Auto
-              </button>
-              <button
-                type="button"
-                onClick={() => setThemeMode('light')}
-                className={`px-2 py-0.5 rounded text-[11px] ${themeMode === 'light' ? 'bg-blue-600 text-white' : 'bg-slate-800 text-slate-400'}`}
-              >
-                Light
-              </button>
-            </div>
+      <div className="space-y-2">
+        <div className="flex items-center justify-between text-xs text-slate-400">
+          <span>Kode Sematan (HTML):</span>
+          <div className="flex items-center gap-1.5 text-[11px]">
+            <span>Tema:</span>
+            <button
+              type="button"
+              onClick={() => setThemeMode('auto')}
+              className={`px-2 py-0.5 rounded ${themeMode === 'auto' ? 'bg-slate-700 text-white font-semibold' : 'text-slate-400 hover:text-white'}`}
+            >
+              Auto
+            </button>
+            <button
+              type="button"
+              onClick={() => setThemeMode('light')}
+              className={`px-2 py-0.5 rounded ${themeMode === 'light' ? 'bg-slate-700 text-white font-semibold' : 'text-slate-400 hover:text-white'}`}
+            >
+              Terang
+            </button>
           </div>
-
-          <div className="relative">
-            <pre className="p-4 rounded-xl bg-slate-950 border border-slate-800 text-slate-300 font-mono text-xs overflow-x-auto leading-relaxed max-h-48">
-              <code>{embedSnippet}</code>
-            </pre>
-          </div>
-
-          <p className="text-[11px] text-slate-500 leading-normal">
-            * Iframe ini bersifat fully responsive dan aman disematkan pada WordPress (Gutenberg Custom HTML / Classic), Blogger / Blogspot, Notion, atau CMS kampus manapun.
-          </p>
         </div>
 
-        {/* Benefits Card */}
-        <div className="lg:col-span-5 p-4 rounded-xl bg-slate-800/60 border border-slate-700/60 space-y-3 text-xs">
-          <span className="font-bold text-slate-200 uppercase tracking-wider block text-[11px]">
-            Keunggulan Memasang Widget Ini:
-          </span>
-          <ul className="space-y-2 text-slate-300">
-            <li className="flex items-start gap-2">
-              <Sparkles className="w-4 h-4 text-amber-400 shrink-0 mt-0.5" />
-              <span><strong>Meningkatkan Waktu Kunjungan (Dwell Time):</strong> Pembaca betah berlama-lama mencoba simulasi nilai di web Anda.</span>
-            </li>
-            <li className="flex items-start gap-2">
-              <Monitor className="w-4 h-4 text-emerald-400 shrink-0 mt-0.5" />
-              <span><strong>Otomatis Diperbarui:</strong> Rumus dan regulasi UT akan diperbarui secara otomatis tanpa Anda perlu mengubah kode.</span>
-            </li>
-            <li className="flex items-start gap-2">
-              <ExternalLink className="w-4 h-4 text-blue-400 shrink-0 mt-0.5" />
-              <span><strong>Bebas Iklan Pengganggu:</strong> Widget iframe bersih dan nyaman bagi pengunjung.</span>
-            </li>
-          </ul>
-        </div>
+        <pre className="p-3.5 rounded-lg bg-slate-950 border border-slate-800 text-slate-300 font-mono text-xs overflow-x-auto leading-relaxed max-h-40">
+          <code>{embedSnippet}</code>
+        </pre>
       </div>
     </div>
   );

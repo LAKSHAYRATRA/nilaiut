@@ -4,7 +4,7 @@ import Link from 'next/link';
 import IpkCalculator from '@/components/IpkCalculator';
 import FaqAccordion, { FaqItem } from '@/components/FaqAccordion';
 import JsonLd from '@/components/JsonLd';
-import { ArrowLeft, Award, Sparkles, GraduationCap, CheckCircle2 } from 'lucide-react';
+import { ArrowLeft } from 'lucide-react';
 
 export const metadata: Metadata = {
   title: 'Kalkulator IPK UT & Predikat Kelulusan Online (Skala 4.00) - NilaiUT',
@@ -20,12 +20,6 @@ export const metadata: Metadata = {
     'predikat kelulusan ut',
     'syarat cumlaude ut'
   ],
-  openGraph: {
-    title: 'Kalkulator IPK UT & Predikat Kelulusan Online - NilaiUT',
-    description: 'Hitung IPK semester dan kumulatif mahasiswa UT Anda secara instan dan akurat.',
-    url: 'https://nilaiut.com/kalkulator-ipk-ut/',
-    type: 'website',
-  },
 };
 
 const IPK_PAGE_FAQS: FaqItem[] = [
@@ -35,11 +29,11 @@ const IPK_PAGE_FAQS: FaqItem[] = [
   },
   {
     question: "Berapa standar IPK minimal untuk kelulusan program Sarjana di UT?",
-    answer: "Sesuai ketentuan baku akademik UT, standar IPK minimal untuk kelulusan jenjang Sarjana (S1) dan Diploma adalah <strong>2.00</strong> dengan batas persentase nilai D yang tidak melampaui ketentuan kurikulum prodi."
+    answer: "Sesuai ketentuan baku akademik UT, standar IPK minimal untuk kelulusan jenjang Sarjana (S1) dan Diploma adalah <strong>2.00</strong> dengan batas persentase nilai D yang tidak melampaui ketentuan kurikulum program studi."
   },
   {
-    question: "Apakah nilai E menggugurkan predikat Cumlaude di UT?",
-    answer: "Ya. Meskipun secara matematis IPK Anda di atas 3.51, syarat mutlak predikat Dengan Pujian (Cumlaude) di Universitas Terbuka mensyaratkan mahasiswa <strong>tidak pernah memiliki nilai E</strong> sepanjang masa studi."
+    question: "Apakah nilai E membatalkan predikat Cumlaude di UT?",
+    answer: "Ya. Meskipun secara matematis IPK Anda mencapai 3.51 atau lebih, syarat predikat Dengan Pujian (Cumlaude) di Universitas Terbuka mewajibkan mahasiswa <strong>tidak pernah memiliki nilai E</strong> sepanjang masa studi."
   }
 ];
 
@@ -73,7 +67,7 @@ export default function KalkulatorIpkPage() {
   };
 
   return (
-    <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-10 sm:py-16 space-y-12">
+    <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12 space-y-10">
       <JsonLd data={breadcrumbSchema} />
       <JsonLd data={softwareSchema} />
       <JsonLd data={faqSchema} />
@@ -81,23 +75,22 @@ export default function KalkulatorIpkPage() {
       <div>
         <Link
           href="/"
-          className="inline-flex items-center gap-2 text-sm font-semibold text-blue-600 dark:text-blue-400 hover:underline"
+          className="inline-flex items-center gap-1.5 text-xs font-semibold text-slate-600 dark:text-slate-400 hover:text-blue-700 dark:hover:text-blue-400"
         >
-          <ArrowLeft className="w-4 h-4" />
-          <span>Kembali ke Beranda NilaiUT</span>
+          <ArrowLeft className="w-3.5 h-3.5" />
+          <span>Kembali ke Beranda</span>
         </Link>
       </div>
 
-      <header className="text-center max-w-3xl mx-auto space-y-3">
-        <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full text-xs font-semibold bg-emerald-100 dark:bg-emerald-900/40 text-emerald-800 dark:text-emerald-300">
-          <Award className="w-3.5 h-3.5" />
-          <span>Rekap Nilai &amp; Syarat Yudisium</span>
-        </div>
-        <h1 className="text-3xl sm:text-4xl lg:text-5xl font-black tracking-tight text-slate-900 dark:text-white">
+      <header className="space-y-2 border-b border-slate-200 dark:border-slate-800 pb-6">
+        <span className="text-xs font-semibold text-blue-800 dark:text-blue-400">
+          Rekap Indeks Prestasi UT
+        </span>
+        <h1 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-slate-900 dark:text-white tracking-tight">
           Kalkulator IPK &amp; Predikat Kelulusan UT
         </h1>
-        <p className="text-sm sm:text-base text-slate-600 dark:text-slate-300 leading-relaxed">
-          Hitung Indeks Prestasi Semester (IPS) dan Indeks Prestasi Kumulatif (IPK) skala 4.00 serta pantau peluang Anda meraih predikat Cumlaude saat wisuda.
+        <p className="text-sm sm:text-base text-slate-600 dark:text-slate-300 leading-relaxed max-w-3xl">
+          Hitung Indeks Prestasi Semester (IPS) dan Indeks Prestasi Kumulatif (IPK) skala 4.00 serta pantau kelayakan predikat kelulusan Cumlaude Anda.
         </p>
       </header>
 
@@ -105,16 +98,13 @@ export default function KalkulatorIpkPage() {
         <IpkCalculator />
       </section>
 
-      <section className="prose dark:prose-invert max-w-none text-slate-700 dark:text-slate-300 text-sm sm:text-base leading-relaxed space-y-6 pt-6 border-t border-slate-200 dark:border-slate-800">
-        <h2 className="text-xl sm:text-2xl font-bold text-slate-900 dark:text-white">
-          Panduan Perhitungan IPK Mahasiswa Universitas Terbuka
+      <section className="prose dark:prose-invert max-w-none text-slate-700 dark:text-slate-300 text-sm sm:text-base leading-relaxed space-y-4 pt-6 border-t border-slate-200 dark:border-slate-800">
+        <h2 className="text-lg sm:text-xl font-bold text-slate-900 dark:text-white">
+          Pedoman Yudisium &amp; Predikat Kelulusan Sarjana UT
         </h2>
         <p>
-          Buku Pedoman Mahasiswa UT menetapkan bahwa indeks prestasi dihitung berdasarkan akumulasi seluruh mata kuliah yang telah ditempuh. Penggunaan kalkulator IPK interaktif ini mempermudah Anda dalam merencanakan target nilai setiap semester tanpa harus menghitung manual yang rawan salah rumus.
+          Buku Pedoman Mahasiswa UT menetapkan empat kategori predikat kelulusan:
         </p>
-        <h3 className="text-lg sm:text-xl font-bold text-slate-900 dark:text-white pt-2">
-          Empat Predikat Kelulusan Resmi UT:
-        </h3>
         <ul className="list-disc pl-5 space-y-1">
           <li><strong>Dengan Pujian (Cumlaude):</strong> IPK 3.51 - 4.00 (tanpa nilai E dan masa studi sesuai aturan).</li>
           <li><strong>Sangat Memuaskan:</strong> IPK 3.01 - 3.50.</li>
@@ -123,8 +113,8 @@ export default function KalkulatorIpkPage() {
         </ul>
       </section>
 
-      <section className="pt-6">
-        <FaqAccordion items={IPK_PAGE_FAQS} title="FAQ Seputar Kalkulator IPK UT" />
+      <section className="pt-4">
+        <FaqAccordion items={IPK_PAGE_FAQS} title="FAQ Seputar Kalkulator IPK UT" subtitle="" />
       </section>
     </div>
   );

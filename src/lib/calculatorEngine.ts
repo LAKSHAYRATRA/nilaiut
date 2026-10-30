@@ -12,35 +12,35 @@ export interface AssessmentConfig {
 export const ASSESSMENT_SCHEMES: Record<AssessmentType, AssessmentConfig> = {
   tuton: {
     id: 'tuton',
-    name: 'Tuton (Tutorial Online)',
+    name: 'Tutorial Online (Tuton)',
     uasWeight: 0.70,
     activityWeight: 0.30,
-    description: 'Skema paling umum untuk mahasiswa UT non-Pendas dan Pendas yang mengikuti tutorial daring.',
-    ruleExplanation: 'Nilai Akhir = (70% × UAS) + (30% × Tuton). Berlaku jika UAS ≥ 30 dan keaktifan Tuton memenuhi syarat.'
+    description: 'Skema reguler daring melalui portal elearning.ut.ac.id.',
+    ruleExplanation: 'Bobot: 70% Ujian Akhir Semester (UAS) + 30% Aktivitas Tuton. Syarat aktif: nilai UAS murni minimal 30.'
   },
   tuweb: {
     id: 'tuweb',
-    name: 'Tuweb / TTM (Tatap Muka / Webinar)',
+    name: 'Tuweb / TTM (Webinar & Tatap Muka)',
     uasWeight: 0.50,
     activityWeight: 0.50,
-    description: 'Untuk mata kuliah dengan tutorial webinar tatap muka terjadwal (8 pertemuan).',
-    ruleExplanation: 'Nilai Akhir = (50% × UAS) + (50% × Tuweb). Bobot aktivitas belajar sangat tinggi (50%).'
+    description: 'Untuk mata kuliah dengan 8 sesi tutorial tatap muka atau webinar Zoom.',
+    ruleExplanation: 'Bobot seimbang: 50% UAS + 50% Nilai Tutorial. Syarat aktif: nilai UAS murni minimal 30.'
   },
   tmk: {
     id: 'tmk',
-    name: 'TMK (Tugas Mata Kuliah)',
+    name: 'Tugas Mata Kuliah (TMK)',
     uasWeight: 0.80,
     activityWeight: 0.20,
-    description: 'Skema alternatif bagi mahasiswa yang tidak mengaktivasi atau tidak mengikuti Tuton (3 kali tugas).',
-    ruleExplanation: 'Nilai Akhir = (80% × UAS) + (20% × TMK). Porsi UAS dominan 80%.'
+    description: 'Skema tugas mandiri 3 sesi via tmk.ut.ac.id bagi yang tidak ikut Tuton.',
+    ruleExplanation: 'Bobot dominan ujian: 80% UAS + 20% Tugas TMK. Syarat aktif: nilai UAS murni minimal 30.'
   },
   praktik: {
     id: 'praktik',
-    name: 'Praktik / Praktikum Mandiri',
+    name: 'Praktik / Praktikum',
     uasWeight: 0.50,
     activityWeight: 0.50,
-    description: 'Mata kuliah berpraktik dengan laporan atau bimbingan instruktur khusus.',
-    ruleExplanation: 'Nilai Akhir = disesuaikan dengan bobot panduan praktik program studi (default 50% UAS : 50% Praktik).'
+    description: 'Mata kuliah berpraktik dengan laporan bimbingan instruktur.',
+    ruleExplanation: 'Bobot dapat disesuaikan dengan pedoman program studi (default 50% UAS : 50% Praktik).'
   }
 };
 
@@ -48,18 +48,18 @@ export interface GradeThreshold {
   letter: string;
   minScore: number;
   bobot: number;
-  status: 'LULUS' | 'LULUS BERSYARAT' | 'TIDAK LULUS';
+  status: 'Lulus' | 'Lulus Bersyarat' | 'Tidak Lulus';
   keterangan: string;
 }
 
 export const GRADE_THRESHOLDS: GradeThreshold[] = [
-  { letter: 'A', minScore: 80, bobot: 4.00, status: 'LULUS', keterangan: 'Sangat Baik' },
-  { letter: 'A-', minScore: 75, bobot: 3.50, status: 'LULUS', keterangan: 'Antara Baik Sekali & Sangat Baik' },
-  { letter: 'B', minScore: 70, bobot: 3.00, status: 'LULUS', keterangan: 'Baik Sekali' },
-  { letter: 'B-', minScore: 65, bobot: 2.50, status: 'LULUS', keterangan: 'Antara Cukup Baik & Baik Sekali' },
-  { letter: 'C', minScore: 60, bobot: 2.00, status: 'LULUS', keterangan: 'Cukup' },
-  { letter: 'D', minScore: 55, bobot: 1.00, status: 'LULUS BERSYARAT', keterangan: 'Kurang (Tidak boleh untuk TAP/Karil/Mata Kuliah Inti)' },
-  { letter: 'E', minScore: 0, bobot: 0.00, status: 'TIDAK LULUS', keterangan: 'Gagal (Wajib Registrasi Ulang / Ujian Ulang)' }
+  { letter: 'A', minScore: 80, bobot: 4.00, status: 'Lulus', keterangan: 'Sangat Baik' },
+  { letter: 'A-', minScore: 75, bobot: 3.50, status: 'Lulus', keterangan: 'Antara Baik Sekali & Sangat Baik' },
+  { letter: 'B', minScore: 70, bobot: 3.00, status: 'Lulus', keterangan: 'Baik Sekali' },
+  { letter: 'B-', minScore: 65, bobot: 2.50, status: 'Lulus', keterangan: 'Antara Cukup Baik & Baik Sekali' },
+  { letter: 'C', minScore: 60, bobot: 2.00, status: 'Lulus', keterangan: 'Cukup' },
+  { letter: 'D', minScore: 55, bobot: 1.00, status: 'Lulus Bersyarat', keterangan: 'Kurang (Tidak diperbolehkan pada MK Inti/TAP/Karil)' },
+  { letter: 'E', minScore: 0, bobot: 0.00, status: 'Tidak Lulus', keterangan: 'Gagal (Wajib registrasi ulang mata kuliah)' }
 ];
 
 export interface FinalGradeResult {
@@ -108,14 +108,13 @@ export function calculateFinalGrade(
   const rawCalculatedScore = (uasScore * uasWeight) + (activityScore * activityWeight);
 
   if (isUasBelowThreshold) {
-    // Sesuai aturan resmi UT: jika UAS < 30, nilai bimbingan/tuton/TMK gugur dan tidak berkontribusi
     finalScore = Number(uasScore.toFixed(2));
     letterGrade = 'E';
     bobot = 0.0;
     isPassed = false;
     uasContribution = uasScore;
     activityContribution = 0;
-    warningMessage = 'PERINGATAN ATURAN MINIMAL UAS 30: Nilai ujian Anda di bawah 30. Sesuai regulasi Universitas Terbuka, nilai Tuton/TMK/Tuweb tidak dapat digabungkan dan nilai akhir Anda otomatis dinyatakan E (Gagal).';
+    warningMessage = 'Nilai UAS murni Anda kurang dari 30 poin. Berdasarkan Peraturan Rektor UT, nilai bimbingan/tutorial dinyatakan gugur dan nilai akhir otomatis menjadi huruf mutu E (Gagal).';
   } else {
     finalScore = Number(rawCalculatedScore.toFixed(2));
     uasContribution = Number((uasScore * uasWeight).toFixed(2));
@@ -124,10 +123,10 @@ export function calculateFinalGrade(
     const matchedGrade = GRADE_THRESHOLDS.find(g => finalScore >= g.minScore) || GRADE_THRESHOLDS[GRADE_THRESHOLDS.length - 1];
     letterGrade = matchedGrade.letter;
     bobot = matchedGrade.bobot;
-    isPassed = matchedGrade.status === 'LULUS' || matchedGrade.status === 'LULUS BERSYARAT';
+    isPassed = matchedGrade.status === 'Lulus' || matchedGrade.status === 'Lulus Bersyarat';
 
     if (letterGrade === 'D') {
-      warningMessage = 'Catatan: Nilai D adalah lulus bersyarat. Untuk mata kuliah tertentu (TAP, Karil, Praktik), nilai minimal wajib C.';
+      warningMessage = 'Catatan: Nilai D merupakan kelulusan bersyarat. Pada mata kuliah tertentu (TAP, Karya Ilmiah, Praktikum), batas nilai minimal yang diperbolehkan adalah C.';
     }
   }
 
@@ -177,14 +176,10 @@ export function solveRequiredUas(
   const gradeInfo = GRADE_THRESHOLDS.find(g => g.letter === targetGradeLetter);
   const targetMinScore = gradeInfo ? gradeInfo.minScore : 70;
 
-  // Rumus: Target = (UAS * uasWeight) + (Activity * activityWeight)
-  // UAS * uasWeight = Target - (Activity * activityWeight)
-  // UAS = (Target - (Activity * activityWeight)) / uasWeight
   const activityContribution = activityScore * activityWeight;
   const rawNeededUas = (targetMinScore - activityContribution) / uasWeight;
   let requiredUas = Math.ceil(rawNeededUas);
 
-  // UAS tidak boleh kurang dari 30 karena jika UAS < 30, Tuton hangus dan nilai jadi E
   if (requiredUas < 30) {
     requiredUas = 30;
   }
@@ -193,11 +188,11 @@ export function solveRequiredUas(
 
   let message = '';
   if (!isPossible) {
-    message = `Secara matematis nilai ${targetGradeLetter} (min. ${targetMinScore}) tidak dapat dicapai karena butuh nilai UAS ${requiredUas} (> 100). Pertimbangkan menaikkan keaktifan Tuton/TMK di masa mendatang atau menargetkan nilai huruf yang realistis.`;
+    message = `Secara matematis nilai huruf ${targetGradeLetter} (skor minimal ${targetMinScore}) tidak dapat dicapai karena membutuhkan nilai ujian di atas 100 (tepatnya ${requiredUas}).`;
   } else if (requiredUas === 30) {
-    message = `Dengan nilai aktivitas ${activityScore}, Anda hanya butuh nilai UAS minimal batas aman 30 poin untuk mengamankan nilai huruf ${targetGradeLetter}!`;
+    message = `Dengan skor aktivitas ${activityScore}, Anda hanya butuh mencapai batas aman minimal 30 poin pada hari ujian untuk mengamankan nilai huruf ${targetGradeLetter}.`;
   } else {
-    message = `Untuk mengamankan nilai huruf ${targetGradeLetter} (skor minimal ${targetMinScore}), Anda wajib meraih nilai UAS minimal ${requiredUas} dari 100.`;
+    message = `Untuk mengamankan nilai huruf ${targetGradeLetter} (skor minimal ${targetMinScore}), Anda wajib memperoleh nilai ujian minimal ${requiredUas} dari 100 poin.`;
   }
 
   return {
@@ -248,7 +243,7 @@ export function calculateIpk(courses: CourseGradeItem[]): IpkCalculationResult {
       countC: 0,
       countB: 0,
       countA: 0,
-      statusKeterangan: 'Belum ada mata kuliah yang diinput.'
+      statusKeterangan: 'Belum ada data mata kuliah yang dimasukkan.'
     };
   }
 
@@ -290,26 +285,26 @@ export function calculateIpk(courses: CourseGradeItem[]): IpkCalculationResult {
   let statusKeterangan = '';
 
   if (ipk >= 3.51 && ipk <= 4.00) {
-    predikat = hasGradeE ? 'Sangat Memuaskan (Gugur Cumlaude karena ada nilai E)' : 'Dengan Pujian (Cumlaude)';
+    predikat = hasGradeE ? 'Sangat Memuaskan (Gugur Cumlaude karena terdapat nilai E)' : 'Dengan Pujian (Cumlaude)';
     statusKeterangan = hasGradeE 
-      ? 'IPK Anda memenuhi standar skor Cumlaude (≥ 3.51), namun aturan kelulusan UT mensyaratkan tidak boleh memiliki nilai E.'
-      : 'Selamat! Anda berpotensi lulus Dengan Pujian (Cumlaude). Pastikan masa studi tidak melampaui batas maksimal program studi.';
+      ? 'IPK memenuhi standar skor Cumlaude (≥ 3.51), namun ketentuan yudisium UT mensyaratkan tidak boleh memiliki nilai E.'
+      : 'Memenuhi kriteria kelulusan Dengan Pujian (Cumlaude). Pastikan masa studi sesuai ketentuan fakultas.';
   } else if (ipk >= 3.01 && ipk <= 3.50) {
     predikat = 'Sangat Memuaskan';
-    statusKeterangan = 'Pencapaian akademik sangat solid melampaui ambang rata-rata kelulusan sarjana.';
+    statusKeterangan = 'Pencapaian akademik di atas rata-rata kelulusan program sarjana.';
   } else if (ipk >= 2.76 && ipk <= 3.00) {
     predikat = 'Memuaskan';
-    statusKeterangan = 'Memenuhi predikat memuaskan sesuai Buku Pedoman Mahasiswa UT.';
+    statusKeterangan = 'Memenuhi standar predikat memuaskan sesuai pedoman akademik.';
   } else if (ipk >= 2.00 && ipk <= 2.75) {
     predikat = 'Cukup';
-    statusKeterangan = 'Memenuhi syarat kelulusan minimal (IPK ≥ 2.00 untuk S1/Diploma).';
+    statusKeterangan = 'Memenuhi ambang batas minimal kelulusan sarjana (IPK ≥ 2.00).';
   } else {
     predikat = 'Di Bawah Standar Kelulusan';
-    statusKeterangan = 'Peringatan: IPK Anda di bawah 2.00. Anda wajib memperbaiki nilai mata kuliah D atau E untuk dapat yudisium.';
+    statusKeterangan = 'IPK di bawah 2.00. Diperlukan perbaikan nilai mata kuliah D atau E untuk dapat yudisium.';
   }
 
   if (hasGradeE) {
-    statusKeterangan += ` Perhatian: Terdapat ${countE} mata kuliah bernilai E yang wajib diulang (registrasi ujian ulang) agar bisa lulus.`;
+    statusKeterangan += ` Terdapat ${countE} mata kuliah bernilai E yang wajib diulang.`;
   }
 
   return {
@@ -328,43 +323,43 @@ export function calculateIpk(courses: CourseGradeItem[]): IpkCalculationResult {
 }
 
 /**
- * Format Text untuk WhatsApp & Telegram Shareable Summary
+ * Format Text untuk WhatsApp & Salin Ringkasan (Bebas dari emoji berlebihan yang norak)
  */
 export function generateShareText(result: FinalGradeResult, courseName?: string): string {
   const schemeName = ASSESSMENT_SCHEMES[result.assessmentType].name;
-  const statusEmoji = result.isPassed ? '✅' : '❌';
+  const statusStr = result.isPassed ? 'LULUS' : 'TIDAK LULUS';
   const uasAlert = result.isUasBelowThreshold 
-    ? '\n⚠️ *PERINGATAN:* Nilai UAS < 30, nilai Tuton gugur & otomatis huruf E!' 
+    ? '\n[PERINGATAN] Nilai UAS murni < 30. Sesuai regulasi UT, nilai tutorial gugur & otomatis huruf E.' 
     : '';
 
-  return `📊 *HASIL PERHITUNGAN NILAI UT - NilaiUT.com*
-${courseName ? `📚 Mata Kuliah: *${courseName}*\n` : ''}🏛️ Skema: ${schemeName}
+  return `SIMULASI NILAI AKHIR UT - NilaiUT.com
+${courseName ? `Mata Kuliah: ${courseName}\n` : ''}Skema: ${schemeName}
 ----------------------------------------
-📝 Nilai Ujian (UAS): *${result.uasScore}* (${(result.uasWeight * 100)}%)
-💻 Nilai Aktivitas/Tuton: *${result.activityScore}* (${(result.activityWeight * 100)}%)
-🎯 *Nilai Akhir:* *${result.finalScore}*
-🏆 *Huruf Mutu:* *${result.letterGrade}* (Bobot: ${result.bobot.toFixed(2)})
-${statusEmoji} Status: *${result.isPassed ? 'LULUS' : 'TIDAK LULUS'}*${uasAlert}
+Nilai Ujian (UAS): ${result.uasScore} (Bobot ${(result.uasWeight * 100)}%)
+Nilai Aktivitas Tutorial: ${result.activityScore} (Bobot ${(result.activityWeight * 100)}%)
+Nilai Akhir: ${result.finalScore}
+Huruf Mutu: ${result.letterGrade} (Bobot: ${result.bobot.toFixed(2)})
+Status: ${statusStr}${uasAlert}
 ----------------------------------------
-💡 _Dihitung mandiri menggunakan Kalkulator Nilai UT 100% Gratis & Akurat:_
-🔗 https://nilaiut.com`;
+Kalkulator Nilai & IPK UT Online:
+https://nilaiut.com`;
 }
 
 export function generateIpkShareText(ipkResult: IpkCalculationResult): string {
-  return `🎓 *HASIL REKAP IPK MAHASISWA UT - NilaiUT.com*
+  return `REKAPITULASI IPK MAHASISWA UT - NilaiUT.com
 ----------------------------------------
-⭐ *Indeks Prestasi Kumulatif (IPK):* *${ipkResult.ipk.toFixed(2)}*
-📜 Predikat: *${ipkResult.predikat}*
-📚 Total SKS: ${ipkResult.totalSks} SKS
-💎 Total Nilai Mutu: ${ipkResult.totalMutu}
+Indeks Prestasi Kumulatif (IPK): ${ipkResult.ipk.toFixed(2)}
+Predikat: ${ipkResult.predikat}
+Total SKS: ${ipkResult.totalSks} SKS
+Total Nilai Mutu: ${ipkResult.totalMutu}
 ----------------------------------------
-📊 *Komposisi Nilai:*
-- Huruf A: ${ipkResult.countA} MK
-- Huruf B: ${ipkResult.countB} MK
-- Huruf C: ${ipkResult.countC} MK
-- Huruf D: ${ipkResult.countD} MK
-- Huruf E: ${ipkResult.countE} MK ${ipkResult.hasGradeE ? '⚠️ (Wajib Ulang)' : ''}
+Komposisi Nilai:
+- Nilai A: ${ipkResult.countA} MK
+- Nilai B: ${ipkResult.countB} MK
+- Nilai C: ${ipkResult.countC} MK
+- Nilai D: ${ipkResult.countD} MK
+- Nilai E: ${ipkResult.countE} MK ${ipkResult.hasGradeE ? '(Wajib Ulang)' : ''}
 ----------------------------------------
-💡 _Hitung & pantau target IPK kelulusanmu di:_
-🔗 https://nilaiut.com`;
+Hitung dan pantau kelulusan di:
+https://nilaiut.com`;
 }

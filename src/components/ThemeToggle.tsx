@@ -34,7 +34,7 @@ export default function ThemeToggle() {
 
   if (!mounted) {
     return (
-      <div className="w-9 h-9 rounded-lg border border-slate-200 dark:border-slate-800" />
+      <div className="w-8 h-8 rounded border border-slate-200 dark:border-slate-800" />
     );
   }
 
@@ -44,9 +44,9 @@ export default function ThemeToggle() {
       type="button"
       aria-label={isDark ? 'Ganti ke Mode Terang' : 'Ganti ke Mode Gelap'}
       title={isDark ? 'Mode Terang' : 'Mode Gelap'}
-      className="p-2 rounded-lg text-slate-600 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors border border-slate-200 dark:border-slate-700/60 focus:outline-none focus:ring-2 focus:ring-blue-500"
+      className="p-1.5 rounded text-slate-600 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors border border-slate-200 dark:border-slate-700/60"
     >
-      {isDark ? <Sun className="w-5 h-5 text-amber-400" /> : <Moon className="w-5 h-5 text-slate-700" />}
+      {isDark ? <Sun className="w-4 h-4 text-amber-400" /> : <Moon className="w-4 h-4 text-slate-600" />}
     </button>
   );
 }

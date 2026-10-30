@@ -4,7 +4,7 @@ import Link from 'next/link';
 import GradeCalculator from '@/components/GradeCalculator';
 import FaqAccordion, { FaqItem } from '@/components/FaqAccordion';
 import JsonLd from '@/components/JsonLd';
-import { ArrowLeft, Sparkles, BookOpen, CheckCircle, ShieldAlert, Award } from 'lucide-react';
+import { ArrowLeft } from 'lucide-react';
 
 export const metadata: Metadata = {
   title: 'Kalkulator Nilai Tuton UT Online (Bobot 70% UAS : 30% Tuton) - NilaiUT',
@@ -17,15 +17,8 @@ export const metadata: Metadata = {
     'hitung nilai tuton ut',
     'rumus nilai tuton ut',
     'bobot tuton ut 70 30',
-    'cara hitung nilai tutorial online ut',
-    'simulasi nilai tuton ut'
+    'cara hitung nilai tutorial online ut'
   ],
-  openGraph: {
-    title: 'Kalkulator Nilai Tuton UT Online (70:30) - NilaiUT',
-    description: 'Hitung nilai akhir Tuton UT Anda secara otomatis dan akurat sesuai Peraturan Rektor No. 16/2017.',
-    url: 'https://nilaiut.com/kalkulator-nilai-tuton-ut/',
-    type: 'website',
-  },
 };
 
 const TUTON_FAQS: FaqItem[] = [
@@ -35,11 +28,11 @@ const TUTON_FAQS: FaqItem[] = [
   },
   {
     question: "Bagaimana cara menghitung nilai murni Tuton dari sesi 1 sampai 8?",
-    answer: "Nilai Tuton dihitung dari tiga unsur utama: (1) Kehadiran/Aktivitas di 8 sesi inisiasi berbobot 20%, (2) Keaktifan berdiskusi di 8 forum diskusi berbobot 30%, dan (3) Rata-rata nilai 3 tugas wajib (Tugas 1, 2, dan 3 pada sesi 3, 5, dan 7) berbobot 50%."
+    answer: "Nilai Tuton dihitung dari tiga unsur utama: (1) Presensi/kehadiran di 8 sesi inisiasi berbobot 20%, (2) Partisipasi di 8 forum diskusi berbobot 30%, dan (3) Rata-rata nilai 3 tugas wajib (Tugas 1, 2, dan 3 pada sesi 3, 5, dan 7) berbobot 50%."
   },
   {
-    question: "Mengapa nilai Tuton saya tidak menambah nilai akhir saat UAS di bawah 30?",
-    answer: "UT memberlakukan 'Syarat Batas Minimal UAS 30 Poin'. Apabila skor lembar jawaban UAS Anda kurang dari 30 (0 - 29.99), kontribusi nilai Tuton otomatis dinyatakan gugur/hangus, dan nilai akhir Anda langsung menjadi E (Gagal)."
+    question: "Mengapa nilai Tuton tidak menambah nilai akhir saat UAS di bawah 30?",
+    answer: "UT memberlakukan 'Syarat Batas Minimal UAS 30 Poin'. Apabila skor lembar jawaban UAS Anda kurang dari 30 (0 - 29.99), kontribusi nilai Tuton otomatis dinyatakan gugur, dan nilai akhir Anda langsung menjadi E (Gagal)."
   }
 ];
 
@@ -73,7 +66,7 @@ export default function KalkulatorTutonPage() {
   };
 
   return (
-    <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-10 sm:py-16 space-y-12">
+    <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12 space-y-10">
       <JsonLd data={breadcrumbSchema} />
       <JsonLd data={softwareSchema} />
       <JsonLd data={faqSchema} />
@@ -81,60 +74,46 @@ export default function KalkulatorTutonPage() {
       <div>
         <Link
           href="/"
-          className="inline-flex items-center gap-2 text-sm font-semibold text-blue-600 dark:text-blue-400 hover:underline"
+          className="inline-flex items-center gap-1.5 text-xs font-semibold text-slate-600 dark:text-slate-400 hover:text-blue-700 dark:hover:text-blue-400"
         >
-          <ArrowLeft className="w-4 h-4" />
-          <span>Kembali ke Beranda NilaiUT</span>
+          <ArrowLeft className="w-3.5 h-3.5" />
+          <span>Kembali ke Beranda</span>
         </Link>
       </div>
 
-      <header className="text-center max-w-3xl mx-auto space-y-3">
-        <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full text-xs font-semibold bg-blue-100 dark:bg-blue-900/40 text-blue-800 dark:text-blue-300">
-          <Sparkles className="w-3.5 h-3.5" />
-          <span>Skema Resmi 70% UAS : 30% Tuton</span>
-        </div>
-        <h1 className="text-3xl sm:text-4xl lg:text-5xl font-black tracking-tight text-slate-900 dark:text-white">
-          Kalkulator Nilai Tuton UT
+      <header className="space-y-2 border-b border-slate-200 dark:border-slate-800 pb-6">
+        <span className="text-xs font-semibold text-blue-800 dark:text-blue-400">
+          Modus Tutorial Daring UT
+        </span>
+        <h1 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-slate-900 dark:text-white tracking-tight">
+          Kalkulator Nilai Tuton UT (Bobot 70:30)
         </h1>
-        <p className="text-sm sm:text-base text-slate-600 dark:text-slate-300 leading-relaxed">
-          Gunakan kalkulator interaktif di bawah ini untuk menghitung nilai akhir mata kuliah Tutorial Online (Tuton) Anda sesuai regulasi resmi Universitas Terbuka.
+        <p className="text-sm sm:text-base text-slate-600 dark:text-slate-300 leading-relaxed max-w-3xl">
+          Hitung estimasi nilai akhir mata kuliah Tutorial Online (Tuton) Anda sesuai formula resmi Peraturan Rektor No. 16/2017: 70% UAS + 30% Tuton.
         </p>
       </header>
 
-      {/* Calculator Component */}
       <section>
         <GradeCalculator />
       </section>
 
-      {/* Explanatory Content */}
-      <section className="prose dark:prose-invert max-w-none text-slate-700 dark:text-slate-300 text-sm sm:text-base leading-relaxed space-y-6 pt-6 border-t border-slate-200 dark:border-slate-800">
-        <h2 className="text-xl sm:text-2xl font-bold text-slate-900 dark:text-white">
-          Cara Kerja Skema Bobot Tutorial Online (Tuton) di Universitas Terbuka
+      <section className="prose dark:prose-invert max-w-none text-slate-700 dark:text-slate-300 text-sm sm:text-base leading-relaxed space-y-4 pt-6 border-t border-slate-200 dark:border-slate-800">
+        <h2 className="text-lg sm:text-xl font-bold text-slate-900 dark:text-white">
+          Komponen Penilaian Tutorial Online di elearning.ut.ac.id
         </h2>
         <p>
-          Tutorial Online (Tuton) adalah modus bantuan belajar jarak jauh yang paling banyak diikuti oleh mahasiswa UT. Pada skema ini, mahasiswa dituntut mandiri dalam mengakses modul inisiasi, memberikan tanggapan pada forum diskusi setiap minggu, serta menyelesaikan 3 tugas tutorial secara tertulis.
+          Tutorial Online (Tuton) berlangsung selama 8 sesi inisiasi. Mahasiswa memperoleh nilai akumulasi berdasarkan kehadiran, partisipasi diskusi mingguan, dan 3 tugas wajib di sesi 3, 5, dan 7.
         </p>
-        <p>
-          Rumus resmi penggabungan nilai Tuton dengan nilai Ujian Akhir Semester adalah:
-        </p>
-        <div className="p-4 rounded-xl bg-blue-50 dark:bg-blue-950/40 border border-blue-200 dark:border-blue-800 font-mono text-sm sm:text-base text-blue-900 dark:text-blue-300 font-bold not-prose">
+        <div className="p-3.5 rounded-lg bg-slate-100 dark:bg-slate-800 font-mono text-xs sm:text-sm text-slate-900 dark:text-slate-100 font-semibold not-prose">
           Nilai Akhir = (0.70 × Nilai UAS) + (0.30 × Nilai Tuton)
         </div>
         <p>
-          Dengan porsi bobot 30%, keaktifan Anda di Tuton dapat mendongkrak nilai akhir hingga 30 poin penuh. Misalnya, jika nilai Tuton Anda 90, maka Anda telah mengamankan 27 poin (0.30 × 90). Untuk mendapatkan nilai A (skor minimal 80), Anda hanya butuh menambah 53 poin dari UAS (yaitu nilai UAS sekitar 76).
-        </p>
-
-        <h3 className="text-lg sm:text-xl font-bold text-slate-900 dark:text-white pt-2">
-          Peringatan Krusial: Syarat Batas Minimal UAS 30
-        </h3>
-        <p>
-          Perlu diingat bahwa nilai Tuton setinggi apa pun hanya akan diperhitungkan jika <strong>nilai murni UAS Anda minimal 30 poin</strong>. Jika nilai UAS Anda berada pada rentang 0 hingga 29, maka nilai Tuton otomatis gugur dan nilai akhir Anda langsung tercatat sebagai huruf E.
+          Nilai Tuton hanya akan berkontribusi apabila mahasiswa berhasil mencapai batas aman nilai UAS murni minimal 30 poin.
         </p>
       </section>
 
-      {/* FAQs */}
-      <section className="pt-6">
-        <FaqAccordion items={TUTON_FAQS} title="FAQ Seputar Kalkulator Tuton UT" />
+      <section className="pt-4">
+        <FaqAccordion items={TUTON_FAQS} title="FAQ Seputar Kalkulator Tuton UT" subtitle="" />
       </section>
     </div>
   );

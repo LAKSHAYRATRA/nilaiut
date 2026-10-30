@@ -14,7 +14,11 @@ interface FaqAccordionProps {
   subtitle?: string;
 }
 
-export default function FaqAccordion({ items, title = "Pertanyaan Umum (FAQ) Mahasiswa UT", subtitle = "Jawaban resmi seputar penilaian, sistem tutorial, dan aturan kelulusan di Universitas Terbuka" }: FaqAccordionProps) {
+export default function FaqAccordion({
+  items,
+  title = "Pertanyaan yang Sering Diajukan (FAQ)",
+  subtitle = "Jawaban seputar regulasi penilaian, sistem tutorial, dan aturan kelulusan di Universitas Terbuka"
+}: FaqAccordionProps) {
   const [openIndex, setOpenIndex] = useState<number | null>(0);
 
   const toggle = (index: number) => {
@@ -22,46 +26,43 @@ export default function FaqAccordion({ items, title = "Pertanyaan Umum (FAQ) Mah
   };
 
   return (
-    <div className="space-y-6">
+    <div className="space-y-4">
       {(title || subtitle) && (
-        <div className="text-center max-w-3xl mx-auto space-y-2">
+        <div className="space-y-1 border-b border-slate-200 dark:border-slate-800 pb-3">
           {title && (
-            <h2 className="text-2xl sm:text-3xl font-bold tracking-tight text-slate-900 dark:text-white">
+            <h2 className="text-xl sm:text-2xl font-bold text-slate-900 dark:text-white">
               {title}
             </h2>
           )}
           {subtitle && (
-            <p className="text-sm text-slate-600 dark:text-slate-400">
+            <p className="text-xs sm:text-sm text-slate-600 dark:text-slate-400">
               {subtitle}
             </p>
           )}
         </div>
       )}
 
-      <div className="max-w-3xl mx-auto space-y-3">
+      <div className="divide-y divide-slate-200 dark:divide-slate-800 border-t border-b border-slate-200 dark:border-slate-800">
         {items.map((item, index) => {
           const isOpen = openIndex === index;
           return (
-            <div
-              key={index}
-              className="rounded-xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 overflow-hidden transition-all"
-            >
+            <div key={index} className="py-3.5">
               <button
                 type="button"
                 onClick={() => toggle(index)}
-                className="w-full text-left px-5 py-4 flex items-center justify-between gap-4 font-semibold text-slate-900 dark:text-white hover:bg-slate-50 dark:hover:bg-slate-800/50 transition-colors"
+                className="w-full text-left flex items-start justify-between gap-4 font-semibold text-slate-900 dark:text-white"
                 aria-expanded={isOpen}
               >
                 <span className="text-sm sm:text-base leading-snug">{item.question}</span>
                 <ChevronDown
-                  className={`w-5 h-5 text-slate-500 shrink-0 transition-transform duration-200 ${
-                    isOpen ? 'rotate-180 text-blue-600 dark:text-blue-400' : ''
+                  className={`w-4 h-4 text-slate-400 shrink-0 mt-1 transition-transform duration-200 ${
+                    isOpen ? 'rotate-180 text-blue-700 dark:text-blue-400' : ''
                   }`}
                 />
               </button>
 
               {isOpen && (
-                <div className="px-5 pb-5 pt-1 text-xs sm:text-sm text-slate-600 dark:text-slate-300 leading-relaxed border-t border-slate-100 dark:border-slate-800/80 prose dark:prose-invert max-w-none">
+                <div className="pt-2 text-xs sm:text-sm text-slate-600 dark:text-slate-300 leading-relaxed prose dark:prose-invert max-w-none">
                   <div dangerouslySetInnerHTML={{ __html: item.answer }} />
                 </div>
               )}
