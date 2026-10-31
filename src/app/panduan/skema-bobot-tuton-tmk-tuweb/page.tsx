@@ -63,7 +63,7 @@ export default function SkemaBobotPage() {
       <div>
         <Link
           href="/"
-          className="inline-flex items-center gap-1.5 text-xs font-bold text-[#002D72] hover:underline"
+          className="inline-flex items-center gap-1.5 text-xs font-semibold text-[#0F172A] hover:underline"
         >
           <ArrowLeft className="w-3.5 h-3.5" />
           <span>Kembali ke Beranda</span>
@@ -71,49 +71,49 @@ export default function SkemaBobotPage() {
       </div>
 
       <header className="space-y-2 border-b border-slate-200 pb-6">
-        <span className="text-xs font-bold uppercase tracking-wider text-[#002D72]">
+        <span className="text-xs font-semibold uppercase tracking-wider text-[#64748B]">
           Analisis Skema Tutorial Resmi UT
         </span>
-        <h1 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-[#0F172A] tracking-tight">
+        <h1 className="text-2xl sm:text-3xl font-heading font-extrabold text-[#0F172A] tracking-tight">
           Skema Bobot Tuton 70:30, TMK 80:20 &amp; Tuweb 50:50
         </h1>
-        <p className="text-sm sm:text-base text-[#475569] leading-relaxed">
+        <p className="text-sm sm:text-base text-[#334155] leading-relaxed">
           Perbandingan proporsi bobot, beban belajar mingguan, dan strategi memilih modus tutorial yang paling menguntungkan nilai IPK Anda.
         </p>
       </header>
 
-      <article className="bg-white rounded-2xl border border-slate-200 p-6 sm:p-10 shadow-sm space-y-5 text-[#475569] text-sm sm:text-base leading-relaxed">
+      <article className="bg-white rounded-2xl border border-slate-200 p-6 sm:p-10 shadow-sm space-y-5 text-[#334155] text-sm sm:text-base leading-relaxed">
         <p>
           Dalam sistem Pendidikan Tinggi Terbuka dan Jarak Jauh (PTJJ), mahasiswa UT dapat memilih atau dialokasikan ke jalur bantuan belajar yang sesuai dengan ritme pekerjaan dan akses internet masing-masing.
         </p>
 
-        <h2 className="text-lg sm:text-xl font-bold text-slate-900 dark:text-white pt-2">
+        <h2 className="text-lg sm:text-xl font-heading font-bold text-[#0F172A] pt-2">
           1. Tutorial Online (Tuton) - Formula: 70% UAS + 30% Tuton
         </h2>
         <p>
           Tutorial Online berlangsung selama 8 minggu via elearning.ut.ac.id. Komposisi penilaian: kehadiran (20%), diskusi mingguan (30%), dan 3 tugas tutorial (50%).
         </p>
 
-        <h2 className="text-lg sm:text-xl font-bold text-slate-900 dark:text-white pt-2">
+        <h2 className="text-lg sm:text-xl font-heading font-bold text-[#0F172A] pt-2">
           2. Tuweb / TTM - Formula: 50% UAS + 50% Tuweb
         </h2>
         <p>
           Modus sinkron tatap muka atau webinar sebanyak 8 sesi pertemuan berdurasi 120 menit. Memberikan bantalan nilai 50% yang sangat meringankan beban ujian.
         </p>
 
-        <h2 className="text-lg sm:text-xl font-bold text-slate-900 dark:text-white pt-2">
+        <h2 className="text-lg sm:text-xl font-heading font-bold text-[#0F172A] pt-2">
           3. Tugas Mata Kuliah (TMK) - Formula: 80% UAS + 20% TMK
         </h2>
         <p>
           Diberikan kepada mahasiswa yang tidak mengaktivasi Tuton. Terdiri dari 3 tugas mandiri via tmk.ut.ac.id dengan porsi ujian mencapai 80%.
         </p>
 
-        <h2 className="text-lg sm:text-xl font-bold text-slate-900 dark:text-white pt-4">
+        <h2 className="text-lg sm:text-xl font-heading font-bold text-[#0F172A] pt-4">
           Tabel Matriks Perbandingan Ketiga Skema
         </h2>
-        <div className="not-prose my-4 overflow-x-auto rounded-lg border border-slate-200 dark:border-slate-800">
+        <div className="not-prose my-4 overflow-x-auto rounded-xl border border-slate-200">
           <table className="w-full text-left text-xs sm:text-sm border-collapse">
-            <thead className="bg-slate-50 dark:bg-slate-800/80 text-slate-800 dark:text-slate-200 font-semibold border-b border-slate-200 dark:border-slate-800">
+            <thead className="bg-slate-50 text-[#0F172A] font-semibold border-b border-slate-200">
               <tr>
                 <th className="p-3">Aspek Evaluasi</th>
                 <th className="p-3">Tuton (Online)</th>
@@ -121,27 +121,27 @@ export default function SkemaBobotPage() {
                 <th className="p-3">TMK (Mandiri)</th>
               </tr>
             </thead>
-            <tbody className="divide-y divide-slate-100 dark:divide-slate-800 text-slate-700 dark:text-slate-300">
+            <tbody className="divide-y divide-slate-100 text-[#334155]">
               <tr>
-                <td className="p-3 font-semibold">Bobot UAS</td>
-                <td className="p-3 font-mono">70%</td>
-                <td className="p-3 font-mono">50%</td>
-                <td className="p-3 font-mono">80%</td>
+                <td className="p-3 font-semibold text-[#0F172A]">Bobot UAS</td>
+                <td className="p-3 font-mono font-bold">70%</td>
+                <td className="p-3 font-mono font-bold">50%</td>
+                <td className="p-3 font-mono font-bold">80%</td>
               </tr>
               <tr>
-                <td className="p-3 font-semibold">Bobot Aktivitas</td>
+                <td className="p-3 font-semibold text-[#0F172A]">Bobot Aktivitas</td>
                 <td className="p-3 font-mono">30%</td>
                 <td className="p-3 font-mono">50%</td>
                 <td className="p-3 font-mono">20%</td>
               </tr>
               <tr>
-                <td className="p-3 font-semibold">Modus Belajar</td>
+                <td className="p-3 font-semibold text-[#0F172A]">Modus Belajar</td>
                 <td className="p-3">Asinkron (Forum Daring)</td>
                 <td className="p-3">Sinkron (Live Video 8 Pertemuan)</td>
                 <td className="p-3">Asinkron (3 Berkas Tugas)</td>
               </tr>
               <tr>
-                <td className="p-3 font-semibold">Risiko Kegagalan</td>
+                <td className="p-3 font-semibold text-[#0F172A]">Risiko Kegagalan</td>
                 <td className="p-3">Sedang</td>
                 <td className="p-3">Paling Rendah</td>
                 <td className="p-3">Paling Tinggi (UAS 80%)</td>
@@ -151,7 +151,7 @@ export default function SkemaBobotPage() {
         </div>
       </article>
 
-      <section className="pt-6 border-t border-slate-200 dark:border-slate-800">
+      <section className="pt-6 border-t border-slate-200">
         <FaqAccordion items={SCHEME_FAQS} title="FAQ Skema Bobot Pembelajaran UT" subtitle="" />
       </section>
     </div>

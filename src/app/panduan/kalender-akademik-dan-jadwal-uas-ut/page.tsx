@@ -63,7 +63,7 @@ export default function KalenderAkademikPage() {
       <div>
         <Link
           href="/"
-          className="inline-flex items-center gap-1.5 text-xs font-bold text-[#002D72] hover:underline"
+          className="inline-flex items-center gap-1.5 text-xs font-semibold text-[#0F172A] hover:underline"
         >
           <ArrowLeft className="w-3.5 h-3.5" />
           <span>Kembali ke Beranda</span>
@@ -71,60 +71,60 @@ export default function KalenderAkademikPage() {
       </div>
 
       <header className="space-y-2 border-b border-slate-200 pb-6">
-        <span className="text-xs font-bold uppercase tracking-wider text-[#002D72]">
+        <span className="text-xs font-semibold uppercase tracking-wider text-[#64748B]">
           Linimasa Perkuliahan Resmi UT
         </span>
-        <h1 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-[#0F172A] tracking-tight">
+        <h1 className="text-2xl sm:text-3xl font-heading font-extrabold text-[#0F172A] tracking-tight">
           Kalender Akademik Universitas Terbuka: Siklus Semester &amp; Jadwal KTPU
         </h1>
-        <p className="text-sm sm:text-base text-[#475569] leading-relaxed">
+        <p className="text-sm sm:text-base text-[#334155] leading-relaxed">
           Alur semester mahasiswa UT dari masa registrasi mata kuliah, aktivasi Tuton, cetak kartu ujian, hingga hari pengumuman Daftar Nilai Perkuliahan (DNP) di MyUT.
         </p>
       </header>
 
-      <article className="bg-white rounded-2xl border border-slate-200 p-6 sm:p-10 shadow-sm space-y-5 text-[#475569] text-sm sm:text-base leading-relaxed">
+      <article className="bg-white rounded-2xl border border-slate-200 p-6 sm:p-10 shadow-sm space-y-5 text-[#334155] text-sm sm:text-base leading-relaxed">
         <p>
           Bagi mahasiswa pendidikan jarak jauh, disiplin memantau linimasa kalender akademik merupakan kunci kelancaran studi. Kelalaian tanggal aktivasi Tuton dapat mengalihkan mata kuliah Anda ke skema tugas mandiri (TMK).
         </p>
 
-        <h2 className="text-lg sm:text-xl font-bold text-slate-900 dark:text-white pt-2">
+        <h2 className="text-lg sm:text-xl font-heading font-bold text-[#0F172A] pt-2">
           Lima Tahapan Utama Siklus Satu Semester
         </h2>
 
         <div className="space-y-3 not-prose my-4">
-          <div className="p-4 rounded-xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 space-y-1 shadow-sm">
-            <span className="text-xs font-semibold text-blue-600 dark:text-blue-400 block">Tahap 1: Registrasi &amp; LIP</span>
-            <h3 className="font-bold text-sm text-slate-900 dark:text-white">Pendaftaran Mata Kuliah &amp; Pembayaran Billing SPP</h3>
-            <p className="text-xs text-slate-600 dark:text-slate-400">Pendaftaran mata kuliah melalui myut.ut.ac.id dan pelunasan di bank mitra.</p>
+          <div className="p-4 rounded-xl border border-slate-200 bg-[#F8FAFC] space-y-1 shadow-sm">
+            <span className="text-xs font-semibold text-[#64748B] block">Tahap 1: Registrasi &amp; LIP</span>
+            <h3 className="font-heading font-bold text-sm text-[#0F172A]">Pendaftaran Mata Kuliah &amp; Pembayaran Billing SPP</h3>
+            <p className="text-xs text-[#334155]">Pendaftaran mata kuliah melalui myut.ut.ac.id dan pelunasan di bank mitra.</p>
           </div>
 
-          <div className="p-4 rounded-lg border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 space-y-1">
-            <span className="text-xs font-semibold text-blue-700 dark:text-blue-400 block">Tahap 2: Aktivasi Daring</span>
-            <h3 className="font-bold text-sm text-slate-900 dark:text-white">Aktivasi Akun e-Learning &amp; Form Kesediaan Tuton</h3>
-            <p className="text-xs text-slate-600 dark:text-slate-400">Persetujuan formulir kesediaan tutorial daring sebelum batas penutupan.</p>
+          <div className="p-4 rounded-xl border border-slate-200 bg-[#F8FAFC] space-y-1">
+            <span className="text-xs font-semibold text-[#64748B] block">Tahap 2: Aktivasi Daring</span>
+            <h3 className="font-heading font-bold text-sm text-[#0F172A]">Aktivasi Akun e-Learning &amp; Form Kesediaan Tuton</h3>
+            <p className="text-xs text-[#334155]">Persetujuan formulir kesediaan tutorial daring sebelum batas penutupan.</p>
           </div>
 
-          <div className="p-4 rounded-lg border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 space-y-1">
-            <span className="text-xs font-semibold text-blue-700 dark:text-blue-400 block">Tahap 3: Pembelajaran</span>
-            <h3 className="font-bold text-sm text-slate-900 dark:text-white">Pelaksanaan 8 Sesi Bimbingan Belajar</h3>
-            <p className="text-xs text-slate-600 dark:text-slate-400">Partisipasi diskusi mingguan dan pengerjaan 3 tugas tutorial wajib (sesi 3, 5, 7).</p>
+          <div className="p-4 rounded-xl border border-slate-200 bg-[#F8FAFC] space-y-1">
+            <span className="text-xs font-semibold text-[#64748B] block">Tahap 3: Pembelajaran</span>
+            <h3 className="font-heading font-bold text-sm text-[#0F172A]">Pelaksanaan 8 Sesi Bimbingan Belajar</h3>
+            <p className="text-xs text-[#334155]">Partisipasi diskusi mingguan dan pengerjaan 3 tugas tutorial wajib (sesi 3, 5, 7).</p>
           </div>
 
-          <div className="p-4 rounded-lg border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 space-y-1">
-            <span className="text-xs font-semibold text-blue-700 dark:text-blue-400 block">Tahap 4: Ujian</span>
-            <h3 className="font-bold text-sm text-slate-900 dark:text-white">Cetak KTPU &amp; Ujian Akhir Semester (UAS)</h3>
-            <p className="text-xs text-slate-600 dark:text-slate-400">Pencetakan kartu ujian di MyUT dan pelaksanaan ujian sesuai modus (UTM, UO, atau THE).</p>
+          <div className="p-4 rounded-xl border border-slate-200 bg-[#F8FAFC] space-y-1">
+            <span className="text-xs font-semibold text-[#64748B] block">Tahap 4: Ujian</span>
+            <h3 className="font-heading font-bold text-sm text-[#0F172A]">Cetak KTPU &amp; Ujian Akhir Semester (UAS)</h3>
+            <p className="text-xs text-[#334155]">Pencetakan kartu ujian di MyUT dan pelaksanaan ujian sesuai modus (UTM, UO, atau THE).</p>
           </div>
 
-          <div className="p-4 rounded-lg border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 space-y-1">
-            <span className="text-xs font-semibold text-blue-700 dark:text-blue-400 block">Tahap 5: Evaluasi</span>
-            <h3 className="font-bold text-sm text-slate-900 dark:text-white">Rilis Daftar Nilai Perkuliahan (DNP) &amp; Masa Sanggah</h3>
-            <p className="text-xs text-slate-600 dark:text-slate-400">Pengumuman nilai akhir serentak di portal resmi MyUT.</p>
+          <div className="p-4 rounded-xl border border-slate-200 bg-[#F8FAFC] space-y-1">
+            <span className="text-xs font-semibold text-[#64748B] block">Tahap 5: Evaluasi</span>
+            <h3 className="font-heading font-bold text-sm text-[#0F172A]">Rilis Daftar Nilai Perkuliahan (DNP) &amp; Masa Sanggah</h3>
+            <p className="text-xs text-[#334155]">Pengumuman nilai akhir serentak di portal resmi MyUT.</p>
           </div>
         </div>
       </article>
 
-      <section className="pt-6 border-t border-slate-200 dark:border-slate-800">
+      <section className="pt-6 border-t border-slate-200">
         <FaqAccordion items={CALENDAR_FAQS} title="FAQ Kalender Akademik & Ujian UT" subtitle="" />
       </section>
     </div>

@@ -37,14 +37,14 @@ export default function EmbedWidgetGenerator() {
     <div id="embed-widget" className="bg-white text-[#0F172A] rounded-2xl p-6 border border-slate-200 shadow-sm space-y-4">
       <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 border-b border-slate-100 pb-4">
         <div>
-          <div className="flex items-center gap-2 text-[#002D72] text-xs font-bold uppercase tracking-wider mb-1">
-            <Code2 className="w-4 h-4 text-[#002D72]" />
-            <span>Integrasi Iframe Edukasi</span>
+          <div className="flex items-center gap-2 text-[#0F172A] text-xs font-semibold uppercase tracking-wider mb-1">
+            <Code2 className="w-4 h-4 text-[#0F172A]" />
+            <span>Integrasi Iframe</span>
           </div>
-          <h3 className="text-lg font-bold text-[#0F172A]">
+          <h3 className="font-heading text-lg font-bold text-[#0F172A]">
             Pasang Kalkulator Nilai UT di Website atau Blog Anda
           </h3>
-          <p className="text-xs text-[#475569] mt-0.5">
+          <p className="text-xs text-[#64748B] mt-0.5">
             Salin kode HTML di bawah ini untuk menyematkan kalkulator interaktif NilaiUT pada artikel blog, portal komunitas, atau LMS Anda.
           </p>
         </div>
@@ -52,11 +52,11 @@ export default function EmbedWidgetGenerator() {
         <button
           type="button"
           onClick={handleCopy}
-          className="px-4 py-2.5 rounded-xl bg-[#FFC72C] hover:bg-[#e6b325] text-[#002D72] text-xs font-bold flex items-center justify-center gap-1.5 transition-colors self-start md:self-auto shrink-0 shadow-sm"
+          className="px-4 py-2.5 rounded-xl bg-[#0F172A] hover:bg-slate-800 text-white text-xs font-semibold flex items-center justify-center gap-1.5 transition-colors self-start md:self-auto shrink-0 shadow-sm"
         >
           {copied ? (
             <>
-              <Check className="w-3.5 h-3.5 text-[#002D72]" />
+              <Check className="w-3.5 h-3.5 text-white" />
               <span>Kode Tersalin</span>
             </>
           ) : (
@@ -69,28 +69,28 @@ export default function EmbedWidgetGenerator() {
       </div>
 
       <div className="space-y-2">
-        <div className="flex items-center justify-between text-xs text-[#475569]">
+        <div className="flex items-center justify-between text-xs text-[#64748B]">
           <span className="font-medium">Kode Sematan (HTML):</span>
           <div className="flex items-center gap-1.5 text-[11px]">
-            <span className="text-slate-500 font-medium">Tema:</span>
+            <span className="text-[#64748B] font-medium">Tema:</span>
             <button
               type="button"
               onClick={() => setThemeMode('auto')}
-              className={`px-2.5 py-0.5 rounded-lg transition-colors ${themeMode === 'auto' ? 'bg-[#002D72] text-white font-bold' : 'text-slate-600 hover:text-slate-900'}`}
+              className={`px-2.5 py-0.5 rounded-lg transition-colors ${themeMode === 'auto' ? 'bg-[#0F172A] text-white font-semibold' : 'text-[#64748B] hover:text-[#0F172A]'}`}
             >
               Standar
             </button>
             <button
               type="button"
               onClick={() => setThemeMode('light')}
-              className={`px-2.5 py-0.5 rounded-lg transition-colors ${themeMode === 'light' ? 'bg-[#002D72] text-white font-bold' : 'text-slate-600 hover:text-slate-900'}`}
+              className={`px-2.5 py-0.5 rounded-lg transition-colors ${themeMode === 'light' ? 'bg-[#0F172A] text-white font-semibold' : 'text-[#64748B] hover:text-[#0F172A]'}`}
             >
               Terang
             </button>
           </div>
         </div>
 
-        <pre className="p-3.5 rounded-xl bg-slate-900 border border-slate-800 text-slate-200 font-mono text-xs overflow-x-auto leading-relaxed max-h-40">
+        <pre className="p-3.5 rounded-xl bg-slate-50 border border-slate-200 text-[#0F172A] font-mono text-xs overflow-x-auto leading-relaxed max-h-40">
           <code>{embedSnippet}</code>
         </pre>
       </div>

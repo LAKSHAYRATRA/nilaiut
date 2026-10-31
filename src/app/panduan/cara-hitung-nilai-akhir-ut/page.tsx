@@ -63,7 +63,7 @@ export default function CaraHitungNilaiPage() {
       <div>
         <Link
           href="/"
-          className="inline-flex items-center gap-1.5 text-xs font-bold text-[#002D72] hover:underline"
+          className="inline-flex items-center gap-1.5 text-xs font-semibold text-[#0F172A] hover:underline"
         >
           <ArrowLeft className="w-3.5 h-3.5" />
           <span>Kembali ke Beranda</span>
@@ -71,18 +71,18 @@ export default function CaraHitungNilaiPage() {
       </div>
 
       <header className="space-y-2 border-b border-slate-200 pb-6">
-        <span className="text-xs font-bold uppercase tracking-wider text-[#002D72]">
+        <span className="text-xs font-semibold uppercase tracking-wider text-[#64748B]">
           Pedoman Evaluasi Belajar Resmi UT
         </span>
-        <h1 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-[#0F172A] tracking-tight">
+        <h1 className="text-2xl sm:text-3xl font-heading font-extrabold text-[#0F172A] tracking-tight">
           Cara Menghitung Nilai Akhir Mata Kuliah Universitas Terbuka
         </h1>
-        <p className="text-sm sm:text-base text-[#475569] leading-relaxed">
+        <p className="text-sm sm:text-base text-[#334155] leading-relaxed">
           Dasar hukum Peraturan Rektor No. 16/2017, rincian bobot komponen tutorial, cara membaca Daftar Nilai Perkuliahan (DNP), dan simulasi kasus riil.
         </p>
       </header>
 
-      <article className="bg-white rounded-2xl border border-slate-200 p-6 sm:p-10 shadow-sm space-y-5 text-[#475569] text-sm sm:text-base leading-relaxed">
+      <article className="bg-white rounded-2xl border border-slate-200 p-6 sm:p-10 shadow-sm space-y-5 text-[#334155] text-sm sm:text-base leading-relaxed">
         <p>
           Bagi mahasiswa Universitas Terbuka (UT)—baik yang menempuh program Diploma, Sarjana, maupun Pascasarjana—sistem penilaian hasil studi memiliki karakteristik tersendiri karena menerapkan sistem Pendidikan Tinggi Terbuka dan Jarak Jauh (PTJJ).
         </p>
@@ -90,77 +90,77 @@ export default function CaraHitungNilaiPage() {
           Proses pembelajaran mandiri dipadukan dengan layanan bantuan belajar terbimbing. Oleh sebab itu, nilai akhir mata kuliah bukan hanya bersumber dari ujian akhir, melainkan integrasi antara <strong>Aktivitas Tutorial</strong> dan <strong>Ujian Akhir Semester (UAS)</strong>.
         </p>
 
-        <h2 className="text-lg sm:text-xl font-bold text-slate-900 dark:text-white pt-2">
+        <h2 className="text-lg sm:text-xl font-heading font-bold text-[#0F172A] pt-2">
           Dasar Hukum: Peraturan Rektor UT No. 16 Tahun 2017
         </h2>
         <p>
           Sistem penilaian hasil belajar mahasiswa UT diatur dalam <strong>Peraturan Rektor Universitas Terbuka Nomor 16 Tahun 2017</strong> tentang Sistem Penilaian dan Evaluasi Akademik. Ketentuan pokoknya menyatakan:
         </p>
-        <blockquote className="p-4 my-4 rounded-xl border-l-4 border-blue-600 bg-blue-50/50 dark:bg-blue-950/30 text-slate-800 dark:text-slate-200 italic">
+        <blockquote className="p-4 my-4 rounded-xl border-l-4 border-slate-400 bg-slate-50 text-[#334155] italic">
           &ldquo;Nilai akhir mata kuliah merupakan gabungan dari nilai tutorial atau tugas mata kuliah dengan nilai ujian akhir semester, dengan ketentuan nilai ujian akhir semester mahasiswa mencapai skor minimal 30 persen dari skor maksimal.&rdquo;
         </blockquote>
 
-        <h2 className="text-lg sm:text-xl font-bold text-slate-900 dark:text-white pt-2">
+        <h2 className="text-lg sm:text-xl font-heading font-bold text-[#0F172A] pt-2">
           Empat Modus Tutorial dan Rumus Perhitungannya
         </h2>
 
         <div className="space-y-3 not-prose my-4">
-          <div className="p-4 rounded-lg border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 space-y-1.5">
-            <h3 className="font-bold text-slate-900 dark:text-white text-sm">
+          <div className="p-4 rounded-xl border border-slate-200 bg-[#F8FAFC] space-y-1.5">
+            <h3 className="font-heading font-bold text-[#0F172A] text-sm">
               1. Tutorial Online (Tuton) - Bobot 70% UAS : 30% Tuton
             </h3>
-            <p className="text-xs text-slate-600 dark:text-slate-400">
+            <p className="text-xs text-[#64748B]">
               Diselenggarakan via elearning.ut.ac.id selama 8 sesi. Terdiri dari kehadiran (20%), diskusi (30%), dan 3 tugas (50%).
             </p>
-            <div className="p-2.5 rounded bg-slate-100 dark:bg-slate-800 font-mono text-xs text-slate-800 dark:text-slate-200 font-semibold">
+            <div className="p-2.5 rounded-lg bg-white border border-slate-200 font-mono text-xs text-[#0F172A] font-semibold">
               Nilai Akhir = (0.70 × UAS) + (0.30 × Nilai Tuton)
             </div>
           </div>
 
-          <div className="p-4 rounded-lg border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 space-y-1.5">
-            <h3 className="font-bold text-slate-900 dark:text-white text-sm">
+          <div className="p-4 rounded-xl border border-slate-200 bg-[#F8FAFC] space-y-1.5">
+            <h3 className="font-heading font-bold text-[#0F172A] text-sm">
               2. Tuweb / TTM - Bobot 50% UAS : 50% Tuweb
             </h3>
-            <p className="text-xs text-slate-600 dark:text-slate-400">
+            <p className="text-xs text-[#64748B]">
               Pertemuan tatap muka atau webinar Zoom sebanyak 8 kali pertemuan. Memberikan kontribusi seimbang 50% terhadap ujian.
             </p>
-            <div className="p-2.5 rounded bg-slate-100 dark:bg-slate-800 font-mono text-xs text-slate-800 dark:text-slate-200 font-semibold">
+            <div className="p-2.5 rounded-lg bg-white border border-slate-200 font-mono text-xs text-[#0F172A] font-semibold">
               Nilai Akhir = (0.50 × UAS) + (0.50 × Nilai Tuweb)
             </div>
           </div>
 
-          <div className="p-4 rounded-lg border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 space-y-1.5">
-            <h3 className="font-bold text-slate-900 dark:text-white text-sm">
+          <div className="p-4 rounded-xl border border-slate-200 bg-[#F8FAFC] space-y-1.5">
+            <h3 className="font-heading font-bold text-[#0F172A] text-sm">
               3. Tugas Mata Kuliah (TMK) - Bobot 80% UAS : 20% TMK
             </h3>
-            <p className="text-xs text-slate-600 dark:text-slate-400">
+            <p className="text-xs text-[#64748B]">
               Pengerjaan 3 tugas mandiri di tmk.ut.ac.id bagi mahasiswa yang tidak ikut Tuton. Porsi ujian sangat dominan 80%.
             </p>
-            <div className="p-2.5 rounded bg-slate-100 dark:bg-slate-800 font-mono text-xs text-slate-800 dark:text-slate-200 font-semibold">
+            <div className="p-2.5 rounded-lg bg-white border border-slate-200 font-mono text-xs text-[#0F172A] font-semibold">
               Nilai Akhir = (0.80 × UAS) + (0.20 × Nilai TMK)
             </div>
           </div>
         </div>
 
-        <h2 className="text-lg sm:text-xl font-bold text-slate-900 dark:text-white pt-2">
+        <h2 className="text-lg sm:text-xl font-heading font-bold text-[#0F172A] pt-2">
           Contoh Kasus Riil Perhitungan Nilai
         </h2>
         <p>
           Misalkan seorang mahasiswa bernama Rian menempuh mata kuliah <em>Manajemen</em> dengan skema Tuton:
         </p>
-        <ul className="list-disc pl-5 space-y-1 text-sm">
+        <ul className="list-disc pl-5 space-y-1 text-sm text-[#334155]">
           <li>Nilai Akumulasi Tuton = <strong>88</strong></li>
           <li>Nilai Ujian Akhir Semester (UAS) = <strong>74</strong></li>
         </ul>
-        <ol className="list-decimal pl-5 space-y-1 text-sm">
-          <li><strong>Pemeriksaan Batas 30:</strong> Nilai UAS (74) $\ge$ 30, sehingga nilai Tuton sah dihitung.</li>
+        <ol className="list-decimal pl-5 space-y-1 text-sm text-[#334155]">
+          <li><strong>Pemeriksaan Batas 30:</strong> Nilai UAS (74) &ge; 30, sehingga nilai Tuton sah dihitung.</li>
           <li><strong>Kontribusi UAS:</strong> 70% × 74 = 51,80 poin.</li>
           <li><strong>Kontribusi Tuton:</strong> 30% × 88 = 26,40 poin.</li>
           <li><strong>Nilai Akhir:</strong> 51,80 + 26,40 = <strong>78,20</strong>.</li>
           <li><strong>Konversi Huruf:</strong> Skor 78,20 setara dengan huruf mutu <strong>A- (Bobot 3.50)</strong>. Status: Lulus.</li>
         </ol>
 
-        <div className="p-4 my-4 rounded-lg bg-amber-50 dark:bg-amber-950/40 border border-amber-200 dark:border-amber-800 text-xs sm:text-sm text-amber-900 dark:text-amber-200 space-y-1 not-prose">
+        <div className="p-4 my-4 rounded-xl bg-amber-50 border border-amber-200 text-xs sm:text-sm text-amber-900 space-y-1 not-prose">
           <div className="flex items-center gap-2 font-semibold">
             <AlertTriangle className="w-4 h-4 text-amber-700 shrink-0" />
             <span>Kasus Nilai UAS di Bawah 30</span>
@@ -171,7 +171,7 @@ export default function CaraHitungNilaiPage() {
         </div>
       </article>
 
-      <section className="pt-6 border-t border-slate-200 dark:border-slate-800">
+      <section className="pt-6 border-t border-slate-200">
         <FaqAccordion items={GUIDE_FAQS} title="FAQ Seputar Penilaian Nilai Akhir UT" subtitle="" />
       </section>
     </div>

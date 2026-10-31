@@ -75,7 +75,7 @@ export default function KalkulatorIpkPage() {
       <div>
         <Link
           href="/"
-          className="inline-flex items-center gap-1.5 text-xs font-bold text-[#002D72] hover:underline"
+          className="inline-flex items-center gap-1.5 text-xs font-semibold text-[#0F172A] hover:underline"
         >
           <ArrowLeft className="w-3.5 h-3.5" />
           <span>Kembali ke Beranda</span>
@@ -83,13 +83,13 @@ export default function KalkulatorIpkPage() {
       </div>
 
       <header className="space-y-2 border-b border-slate-200 pb-6">
-        <span className="text-xs font-bold uppercase tracking-wider text-[#002D72]">
+        <span className="text-xs font-semibold uppercase tracking-wider text-[#64748B]">
           Rekap Indeks Prestasi UT
         </span>
-        <h1 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-[#0F172A] tracking-tight">
+        <h1 className="text-2xl sm:text-3xl font-heading font-extrabold text-[#0F172A] tracking-tight">
           Kalkulator IPK &amp; Predikat Kelulusan UT
         </h1>
-        <p className="text-sm sm:text-base text-[#475569] leading-relaxed max-w-3xl">
+        <p className="text-sm sm:text-base text-[#334155] leading-relaxed max-w-3xl">
           Hitung Indeks Prestasi Semester (IPS) dan Indeks Prestasi Kumulatif (IPK) skala 4.00 serta pantau kelayakan predikat kelulusan Cumlaude Anda.
         </p>
       </header>
@@ -98,14 +98,14 @@ export default function KalkulatorIpkPage() {
         <IpkCalculator />
       </section>
 
-      <section className="bg-white rounded-2xl border border-slate-200 p-6 sm:p-8 space-y-4 shadow-sm text-sm sm:text-base text-[#475569] leading-relaxed">
-        <h2 className="text-lg sm:text-xl font-bold text-[#0F172A]">
+      <section className="bg-white rounded-2xl border border-slate-200 p-6 sm:p-8 space-y-4 shadow-sm text-sm sm:text-base text-[#334155] leading-relaxed">
+        <h2 className="text-lg sm:text-xl font-heading font-bold text-[#0F172A]">
           Pedoman Yudisium &amp; Predikat Kelulusan Sarjana UT
         </h2>
         <p>
           Buku Pedoman Mahasiswa UT menetapkan empat kategori predikat kelulusan:
         </p>
-        <ul className="list-disc pl-5 space-y-1">
+        <ul className="list-disc pl-5 space-y-1 text-[#334155]">
           <li><strong>Dengan Pujian (Cumlaude):</strong> IPK 3.51 - 4.00 (tanpa nilai E dan masa studi sesuai aturan).</li>
           <li><strong>Sangat Memuaskan:</strong> IPK 3.01 - 3.50.</li>
           <li><strong>Memuaskan:</strong> IPK 2.76 - 3.00.</li>

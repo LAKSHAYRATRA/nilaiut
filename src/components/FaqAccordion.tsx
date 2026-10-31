@@ -30,12 +30,12 @@ export default function FaqAccordion({
       {(title || subtitle) && (
         <div className="space-y-1 border-b border-slate-100 pb-4">
           {title && (
-            <h2 className="text-xl sm:text-2xl font-bold text-[#0F172A]">
+            <h2 className="text-xl sm:text-2xl font-heading font-bold text-[#0F172A]">
               {title}
             </h2>
           )}
           {subtitle && (
-            <p className="text-xs sm:text-sm text-[#475569]">
+            <p className="text-xs sm:text-sm text-[#64748B]">
               {subtitle}
             </p>
           )}
@@ -50,19 +50,19 @@ export default function FaqAccordion({
               <button
                 type="button"
                 onClick={() => toggle(index)}
-                className="w-full text-left flex items-start justify-between gap-4 font-bold text-[#0F172A] hover:text-[#002D72] transition-colors"
+                className="w-full text-left flex items-start justify-between gap-4 font-bold text-[#0F172A] hover:underline transition-colors"
                 aria-expanded={isOpen}
               >
                 <span className="text-sm sm:text-base leading-snug">{item.question}</span>
                 <ChevronDown
                   className={`w-4 h-4 text-slate-400 shrink-0 mt-1 transition-transform duration-200 ${
-                    isOpen ? 'rotate-180 text-[#002D72]' : ''
+                    isOpen ? 'rotate-180 text-[#0F172A]' : ''
                   }`}
                 />
               </button>
 
               {isOpen && (
-                <div className="pt-2 text-xs sm:text-sm text-[#475569] leading-relaxed font-sans max-w-none">
+                <div className="pt-2 text-xs sm:text-sm text-[#334155] leading-relaxed font-sans max-w-none">
                   <div dangerouslySetInnerHTML={{ __html: item.answer }} />
                 </div>
               )}

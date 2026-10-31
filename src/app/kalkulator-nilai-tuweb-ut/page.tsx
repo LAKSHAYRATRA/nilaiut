@@ -73,7 +73,7 @@ export default function KalkulatorTuwebPage() {
       <div>
         <Link
           href="/"
-          className="inline-flex items-center gap-1.5 text-xs font-bold text-[#002D72] hover:underline"
+          className="inline-flex items-center gap-1.5 text-xs font-semibold text-[#0F172A] hover:underline"
         >
           <ArrowLeft className="w-3.5 h-3.5" />
           <span>Kembali ke Beranda</span>
@@ -81,13 +81,13 @@ export default function KalkulatorTuwebPage() {
       </div>
 
       <header className="space-y-2 border-b border-slate-200 pb-6">
-        <span className="text-xs font-bold uppercase tracking-wider text-[#002D72]">
+        <span className="text-xs font-semibold uppercase tracking-wider text-[#64748B]">
           Modus Tutorial Sinkron UT
         </span>
-        <h1 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-[#0F172A] tracking-tight">
+        <h1 className="text-2xl sm:text-3xl font-heading font-extrabold text-[#0F172A] tracking-tight">
           Kalkulator Nilai Tuweb &amp; TTM UT (Bobot 50:50)
         </h1>
-        <p className="text-sm sm:text-base text-[#475569] leading-relaxed max-w-3xl">
+        <p className="text-sm sm:text-base text-[#334155] leading-relaxed max-w-3xl">
           Hitung nilai akhir mata kuliah Tutorial Webinar (Tuweb) dan Tatap Muka (TTM) Universitas Terbuka dengan formula seimbang 50% UAS dan 50% Tuweb.
         </p>
       </header>
@@ -96,14 +96,14 @@ export default function KalkulatorTuwebPage() {
         <GradeCalculator />
       </section>
 
-      <section className="bg-white rounded-2xl border border-slate-200 p-6 sm:p-8 space-y-4 shadow-sm text-sm sm:text-base text-[#475569] leading-relaxed">
-        <h2 className="text-lg sm:text-xl font-bold text-[#0F172A]">
+      <section className="bg-white rounded-2xl border border-slate-200 p-6 sm:p-8 space-y-4 shadow-sm text-sm sm:text-base text-[#334155] leading-relaxed">
+        <h2 className="text-lg sm:text-xl font-heading font-bold text-[#0F172A]">
           Karakteristik Skema Tuweb (50% UAS : 50% Tuweb)
         </h2>
         <p>
           Skema Tuweb memberikan proporsi nilai seimbang 50% dengan ujian akhir. Mahasiswa yang aktif menghadiri 8 pertemuan webinar dan mengumpulkan tugas tutorial memiliki peluang terbesar untuk mengamankan huruf mutu A atau B.
         </p>
-        <div className="p-3.5 rounded-xl bg-blue-50 border border-blue-200 font-mono text-xs sm:text-sm text-[#002D72] font-bold">
+        <div className="p-3.5 rounded-xl bg-slate-100 border border-slate-200 font-mono text-xs sm:text-sm text-[#0F172A] font-bold">
           Nilai Akhir = (0.50 × Nilai UAS) + (0.50 × Nilai Tuweb)
         </div>
       </section>

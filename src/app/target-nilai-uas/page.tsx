@@ -74,7 +74,7 @@ export default function TargetSolverPage() {
       <div>
         <Link
           href="/"
-          className="inline-flex items-center gap-1.5 text-xs font-bold text-[#002D72] hover:underline"
+          className="inline-flex items-center gap-1.5 text-xs font-semibold text-[#0F172A] hover:underline"
         >
           <ArrowLeft className="w-3.5 h-3.5" />
           <span>Kembali ke Beranda</span>
@@ -82,13 +82,13 @@ export default function TargetSolverPage() {
       </div>
 
       <header className="space-y-2 border-b border-slate-200 pb-6">
-        <span className="text-xs font-bold uppercase tracking-wider text-[#002D72]">
+        <span className="text-xs font-semibold uppercase tracking-wider text-[#64748B]">
           Perencanaan Nilai Ujian UT
         </span>
-        <h1 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-[#0F172A] tracking-tight">
+        <h1 className="text-2xl sm:text-3xl font-heading font-extrabold text-[#0F172A] tracking-tight">
           Target Solver Nilai UAS UT
         </h1>
-        <p className="text-sm sm:text-base text-[#475569] leading-relaxed max-w-3xl">
+        <p className="text-sm sm:text-base text-[#334155] leading-relaxed max-w-3xl">
           Ketahui batas skor minimal ujian yang wajib Anda raih di hari UAS untuk mengamankan huruf mutu A, A-, atau B berdasarkan nilai Tuton Anda saat ini.
         </p>
       </header>
@@ -97,8 +97,8 @@ export default function TargetSolverPage() {
         <GradeCalculator />
       </section>
 
-      <section className="bg-white rounded-2xl border border-slate-200 p-6 sm:p-8 space-y-4 shadow-sm text-sm sm:text-base text-[#475569] leading-relaxed">
-        <h2 className="text-lg sm:text-xl font-bold text-[#0F172A]">
+      <section className="bg-white rounded-2xl border border-slate-200 p-6 sm:p-8 space-y-4 shadow-sm text-sm sm:text-base text-[#334155] leading-relaxed">
+        <h2 className="text-lg sm:text-xl font-heading font-bold text-[#0F172A]">
           Mengapa Menghitung Target Nilai Ujian Sangat Krusial?
         </h2>
         <p>

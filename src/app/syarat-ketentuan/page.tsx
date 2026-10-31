@@ -17,7 +17,7 @@ export default function SyaratKetentuanPage() {
       <div>
         <Link
           href="/"
-          className="inline-flex items-center gap-1.5 text-xs font-bold text-[#002D72] hover:underline"
+          className="inline-flex items-center gap-1.5 text-xs font-semibold text-[#0F172A] hover:underline"
         >
           <ArrowLeft className="w-3.5 h-3.5" />
           <span>Kembali ke Beranda</span>
@@ -25,27 +25,27 @@ export default function SyaratKetentuanPage() {
       </div>
 
       <header className="space-y-4 border-b border-slate-200 pb-8">
-        <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-bold bg-blue-100 text-[#002D72] border border-blue-200">
-          <FileCheck className="w-3.5 h-3.5 text-[#002D72]" />
+        <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-semibold bg-slate-100 text-[#0F172A] border border-slate-200">
+          <FileCheck className="w-3.5 h-3.5 text-[#0F172A]" />
           <span>Aturan Penggunaan Layanan</span>
         </div>
         <h1 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight text-[#0F172A] leading-tight">
           Syarat &amp; Ketentuan Penggunaan
         </h1>
-        <p className="text-base sm:text-lg text-[#475569] leading-relaxed">
+        <p className="text-base sm:text-lg text-[#334155] leading-relaxed">
           Harap baca syarat dan ketentuan ini secara saksama sebelum menggunakan kalkulator dan seluruh layanan terkait NilaiUT.
         </p>
       </header>
 
-      <div className="bg-white rounded-2xl border border-slate-200 p-6 sm:p-10 shadow-sm space-y-6 text-[#475569] text-sm sm:text-base leading-relaxed">
-        <h2 className="text-xl sm:text-2xl font-bold text-slate-900 dark:text-white">
+      <div className="bg-white rounded-2xl border border-slate-200 p-6 sm:p-10 shadow-sm space-y-6 text-[#334155] text-sm sm:text-base leading-relaxed">
+        <h2 className="text-xl sm:text-2xl font-bold text-[#0F172A]">
           1. Penerimaan Ketentuan
         </h2>
         <p>
           Dengan mengakses atau menggunakan situs NilaiUT, Anda setuju untuk terikat secara hukum oleh Syarat dan Ketentuan ini, seluruh peraturan perundang-undangan yang berlaku di Republik Indonesia, dan bertanggung jawab atas kepatuhan terhadap hukum lokal yang berlaku.
         </p>
 
-        <h2 className="text-xl sm:text-2xl font-bold text-slate-900 dark:text-white pt-4">
+        <h2 className="text-xl sm:text-2xl font-bold text-[#0F172A] pt-4">
           2. Sifat Layanan Simulasi &amp; Non-Afiliasi
         </h2>
         <p>
@@ -56,7 +56,7 @@ export default function SyaratKetentuanPage() {
           <li>Platform ini <strong>bukan sumber data legal</strong> hasil studi mahasiswa. Nilai yang sah dan memiliki kekuatan hukum akademik mutlak bersumber dari Daftar Nilai Perkuliahan (DNP) dan Transkrip Akademik resmi yang diterbitkan oleh Universitas Terbuka via portal <code>myut.ut.ac.id</code>.</li>
         </ul>
 
-        <h2 className="text-xl sm:text-2xl font-bold text-slate-900 dark:text-white pt-4">
+        <h2 className="text-xl sm:text-2xl font-bold text-[#0F172A] pt-4">
           3. Penggunaan Widget Iframe (Backlink Magnet)
         </h2>
         <p>
@@ -67,14 +67,14 @@ export default function SyaratKetentuanPage() {
           <li>Widget tidak boleh dipasang pada situs web yang memuat konten ilegal, pornografi, perjudian online, atau konten yang melanggar hukum di Indonesia.</li>
         </ul>
 
-        <h2 className="text-xl sm:text-2xl font-bold text-slate-900 dark:text-white pt-4">
+        <h2 className="text-xl sm:text-2xl font-bold text-[#0F172A] pt-4">
           4. Batasan Tanggung Jawab (Limitation of Liability)
         </h2>
         <p>
           Dalam keadaan apa pun, pengembang dan tim pengelola NilaiUT tidak bertanggung jawab atas kerugian langsung, tidak langsung, insidental, atau konsekuensial (termasuk namun tidak terbatas pada kekeliruan pendaftaran mata kuliah, kegagalan kelulusan, atau perbedaan penetapan yudisium resmi oleh kampus) yang timbul dari penggunaan atau ketidakmampuan menggunakan alat ini.
         </p>
 
-        <h2 className="text-xl sm:text-2xl font-bold text-slate-900 dark:text-white pt-4">
+        <h2 className="text-xl sm:text-2xl font-bold text-[#0F172A] pt-4">
           5. Perubahan Syarat &amp; Ketentuan
         </h2>
         <p>

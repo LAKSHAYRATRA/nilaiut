@@ -22,7 +22,7 @@ export default function KontakPage() {
       <div>
         <Link
           href="/"
-          className="inline-flex items-center gap-1.5 text-xs font-bold text-[#002D72] hover:underline"
+          className="inline-flex items-center gap-1.5 text-xs font-semibold text-[#0F172A] hover:underline"
         >
           <ArrowLeft className="w-3.5 h-3.5" />
           <span>Kembali ke Beranda</span>
@@ -30,13 +30,13 @@ export default function KontakPage() {
       </div>
 
       <header className="space-y-2 border-b border-slate-200 pb-6">
-        <span className="text-xs font-bold uppercase tracking-wider text-[#002D72]">
+        <span className="text-xs font-bold uppercase tracking-wider text-[#64748B]">
           Layanan Komunikasi
         </span>
         <h1 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-[#0F172A] tracking-tight">
           Kontak &amp; Masukan
         </h1>
-        <p className="text-sm sm:text-base text-[#475569] leading-relaxed">
+        <p className="text-sm sm:text-base text-[#334155] leading-relaxed">
           Sampaikan pertanyaan, masukan rumus, atau koreksi perhitungan kepada tim pengembang NilaiUT.
         </p>
       </header>
@@ -48,31 +48,31 @@ export default function KontakPage() {
             <h3 className="font-bold text-sm text-[#0F172A]">
               Saluran Surel Resmi
             </h3>
-            <p className="text-xs text-[#475569] leading-relaxed">
+            <p className="text-xs text-[#64748B] leading-relaxed">
               Kami membaca dan merespons setiap masukan mahasiswa secara berkala pada hari kerja.
             </p>
 
             <div className="pt-1 text-xs space-y-2">
               <div>
-                <span className="text-slate-400 block text-[11px]">Pertanyaan Umum &amp; Masukan:</span>
-                <a href="mailto:halo@nilaiut.com" className="font-bold text-[#002D72] hover:underline">
+                <span className="text-slate-500 block text-[11px]">Pertanyaan Umum &amp; Masukan:</span>
+                <a href="mailto:halo@nilaiut.com" className="font-semibold text-[#0F172A] hover:underline">
                   halo@nilaiut.com
                 </a>
               </div>
               <div>
-                <span className="text-slate-400 block text-[11px]">Kemitraan &amp; Widget:</span>
-                <a href="mailto:partner@nilaiut.com" className="font-bold text-[#002D72] hover:underline">
+                <span className="text-slate-500 block text-[11px]">Kemitraan &amp; Widget:</span>
+                <a href="mailto:partner@nilaiut.com" className="font-semibold text-[#0F172A] hover:underline">
                   partner@nilaiut.com
                 </a>
               </div>
             </div>
           </div>
 
-          <div className="p-4 rounded-xl bg-blue-50/70 border border-blue-200 text-xs text-[#475569] space-y-1">
-            <span className="font-bold text-[#002D72] block">
+          <div className="p-4 rounded-xl bg-slate-50 border border-slate-200 text-xs text-[#334155] space-y-1">
+            <span className="font-bold text-[#0F172A] block">
               Bantuan Administrasi Resmi Kampus:
             </span>
-            <p>
+            <p className="text-[#64748B] leading-relaxed">
               Untuk kendala akun MyUT, registrasi mata kuliah, atau pembayaran LIP, silakan hubungi kontak resmi kampus via <strong>Hallo-UT (hallo-ut.ut.ac.id)</strong> atau telepon <strong>1500024</strong>.
             </p>
           </div>
@@ -87,7 +87,7 @@ export default function KontakPage() {
                 <h3 className="text-base font-bold text-[#0F172A]">
                   Pesan Anda Berhasil Terkirim
                 </h3>
-                <p className="text-xs text-[#475569] max-w-sm mx-auto">
+                <p className="text-xs text-[#64748B] max-w-sm mx-auto">
                   Terima kasih atas partisipasi Anda dalam membantu menjaga akurasi perhitungan NilaiUT.
                 </p>
                 <button
@@ -98,7 +98,7 @@ export default function KontakPage() {
                     setEmail('');
                     setMessage('');
                   }}
-                  className="px-4 py-2 rounded-xl text-xs font-bold text-[#002D72] bg-[#FFC72C] hover:bg-[#e6b325]"
+                  className="px-4 py-2 rounded-xl text-xs font-semibold text-white bg-[#0F172A] hover:bg-slate-800 transition-colors"
                 >
                   Kirim Pesan Lainnya
                 </button>
@@ -116,7 +116,7 @@ export default function KontakPage() {
                     value={name}
                     onChange={(e) => setName(e.target.value)}
                     placeholder="Nama Anda"
-                    className="w-full px-3 py-2 rounded-lg border border-slate-300 bg-white text-[#0F172A] focus:outline-none focus:ring-2 focus:ring-[#002D72]/20 focus:border-[#002D72]"
+                    className="w-full px-3 py-2 rounded-lg border border-slate-300 bg-white text-[#0F172A] focus:outline-none focus:ring-2 focus:ring-slate-900/10 focus:border-[#0F172A]"
                   />
                 </div>
 
@@ -131,7 +131,7 @@ export default function KontakPage() {
                     value={email}
                     onChange={(e) => setEmail(e.target.value)}
                     placeholder="nama@email.com"
-                    className="w-full px-3 py-2 rounded-lg border border-slate-300 bg-white text-[#0F172A] focus:outline-none focus:ring-2 focus:ring-[#002D72]/20 focus:border-[#002D72]"
+                    className="w-full px-3 py-2 rounded-lg border border-slate-300 bg-white text-[#0F172A] focus:outline-none focus:ring-2 focus:ring-slate-900/10 focus:border-[#0F172A]"
                   />
                 </div>
 
@@ -143,7 +143,7 @@ export default function KontakPage() {
                     id="contact-subject"
                     value={subject}
                     onChange={(e) => setSubject(e.target.value)}
-                    className="w-full px-3 py-2 rounded-lg border border-slate-300 bg-white text-[#0F172A] focus:outline-none focus:ring-2 focus:ring-[#002D72]/20 focus:border-[#002D72] font-semibold"
+                    className="w-full px-3 py-2 rounded-lg border border-slate-300 bg-white text-[#0F172A] focus:outline-none focus:ring-2 focus:ring-slate-900/10 focus:border-[#0F172A] font-medium"
                   >
                     <option value="Saran Fitur Baru">Saran Fitur Baru</option>
                     <option value="Koreksi Rumus / Perhitungan">Koreksi Rumus / Bug Perhitungan</option>
@@ -163,13 +163,13 @@ export default function KontakPage() {
                     value={message}
                     onChange={(e) => setMessage(e.target.value)}
                     placeholder="Tuliskan masukan atau rincian pertanyaan Anda..."
-                    className="w-full px-3 py-2 rounded-lg border border-slate-300 bg-white text-[#0F172A] focus:outline-none focus:ring-2 focus:ring-[#002D72]/20 focus:border-[#002D72]"
+                    className="w-full px-3 py-2 rounded-lg border border-slate-300 bg-white text-[#0F172A] focus:outline-none focus:ring-2 focus:ring-slate-900/10 focus:border-[#0F172A]"
                   />
                 </div>
 
                 <button
                   type="submit"
-                  className="w-full py-2.5 rounded-xl bg-[#FFC72C] hover:bg-[#e6b325] text-[#002D72] font-bold text-xs flex items-center justify-center gap-1.5 transition-colors shadow-sm"
+                  className="w-full py-2.5 rounded-xl bg-[#0F172A] hover:bg-slate-800 text-white font-semibold text-xs flex items-center justify-center gap-1.5 transition-colors shadow-sm"
                 >
                   <Send className="w-3.5 h-3.5" />
                   <span>Kirim Pesan</span>

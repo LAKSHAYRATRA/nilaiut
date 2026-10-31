@@ -17,7 +17,7 @@ export default function DisclaimerPage() {
       <div>
         <Link
           href="/"
-          className="inline-flex items-center gap-1.5 text-xs font-bold text-[#002D72] hover:underline"
+          className="inline-flex items-center gap-1.5 text-xs font-semibold text-[#0F172A] hover:underline"
         >
           <ArrowLeft className="w-3.5 h-3.5" />
           <span>Kembali ke Beranda</span>
@@ -25,21 +25,21 @@ export default function DisclaimerPage() {
       </div>
 
       <header className="space-y-4 border-b border-slate-200 pb-8">
-        <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-bold bg-amber-100 text-amber-800 border border-amber-200">
-          <ShieldAlert className="w-3.5 h-3.5 text-amber-700" />
+        <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-semibold bg-slate-100 text-[#0F172A] border border-slate-200">
+          <ShieldAlert className="w-3.5 h-3.5 text-[#0F172A]" />
           <span>Penafian Legal &amp; Akademik</span>
         </div>
         <h1 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight text-[#0F172A] leading-tight">
           Penafian Resmi (Disclaimer)
         </h1>
-        <p className="text-base sm:text-lg text-[#475569] leading-relaxed">
+        <p className="text-base sm:text-lg text-[#334155] leading-relaxed">
           Pernyataan penting mengenai batasan hukum, sifat hasil simulasi, dan independensi dari Universitas Terbuka (UT).
         </p>
       </header>
 
-      <div className="bg-white rounded-2xl border border-slate-200 p-6 sm:p-10 shadow-sm space-y-6 text-[#475569] text-sm sm:text-base leading-relaxed">
+      <div className="bg-white rounded-2xl border border-slate-200 p-6 sm:p-10 shadow-sm space-y-6 text-[#334155] text-sm sm:text-base leading-relaxed">
         <div className="p-5 rounded-2xl bg-amber-50 border border-amber-200 space-y-2">
-          <div className="flex items-center gap-2 text-amber-800 font-bold text-sm">
+          <div className="flex items-center gap-2 text-amber-900 font-bold text-sm">
             <AlertTriangle className="w-5 h-5 shrink-0 text-amber-600" />
             <span>Pernyataan Utama Sifat Simulasi</span>
           </div>
@@ -48,7 +48,7 @@ export default function DisclaimerPage() {
           </p>
         </div>
 
-        <h2 className="text-xl sm:text-2xl font-bold text-slate-900 dark:text-white pt-4">
+        <h2 className="text-xl sm:text-2xl font-bold text-[#0F172A] pt-4">
           1. Tidak Terafiliasi dengan Universitas Terbuka
         </h2>
         <p>
@@ -58,7 +58,7 @@ export default function DisclaimerPage() {
           Penyebutan nama "Universitas Terbuka", singkatan "UT", dan kode mata kuliah semata-mata bersifat deskriptif edukatif (nominative fair use) untuk memudahkan identifikasi konteks penilaian oleh pengguna.
         </p>
 
-        <h2 className="text-xl sm:text-2xl font-bold text-slate-900 dark:text-white pt-4">
+        <h2 className="text-xl sm:text-2xl font-bold text-[#0F172A] pt-4">
           2. Batasan Variabel Penilaian Kampus
         </h2>
         <p>
@@ -70,7 +70,7 @@ export default function DisclaimerPage() {
           <li>Verifikasi pelanggaran etika akademik seperti plagiarisme pada lembar jawaban ujian take-home (THE) atau tugas Tuton yang dapat mengakibatkan pembatalan nilai secara sepihak oleh pihak universitas.</li>
         </ul>
 
-        <h2 className="text-xl sm:text-2xl font-bold text-slate-900 dark:text-white pt-4">
+        <h2 className="text-xl sm:text-2xl font-bold text-[#0F172A] pt-4">
           3. Rujukan Resmi
         </h2>
         <p>
@@ -80,10 +80,10 @@ export default function DisclaimerPage() {
           Untuk mengakses layanan akademik resmi Universitas Terbuka, silakan kunjungi portal resmi berikut:
         </p>
         <ul className="list-disc pl-5 space-y-1">
-          <li>Portal Utama UT: <a href="https://www.ut.ac.id" target="_blank" rel="noopener noreferrer" className="text-blue-600 underline inline-flex items-center gap-1">www.ut.ac.id <ExternalLink className="w-3.5 h-3.5" /></a></li>
-          <li>Portal Layanan Mahasiswa (MyUT): <a href="https://myut.ut.ac.id" target="_blank" rel="noopener noreferrer" className="text-blue-600 underline inline-flex items-center gap-1">myut.ut.ac.id <ExternalLink className="w-3.5 h-3.5" /></a></li>
-          <li>Portal e-Learning (Tuton): <a href="https://elearning.ut.ac.id" target="_blank" rel="noopener noreferrer" className="text-blue-600 underline inline-flex items-center gap-1">elearning.ut.ac.id <ExternalLink className="w-3.5 h-3.5" /></a></li>
-          <li>Portal Layanan Pengaduan (Hallo-UT): <a href="https://hallo-ut.ut.ac.id" target="_blank" rel="noopener noreferrer" className="text-blue-600 underline inline-flex items-center gap-1">hallo-ut.ut.ac.id <ExternalLink className="w-3.5 h-3.5" /></a></li>
+          <li>Portal Utama UT: <a href="https://www.ut.ac.id" target="_blank" rel="noopener noreferrer" className="text-[#0F172A] underline font-medium inline-flex items-center gap-1">www.ut.ac.id <ExternalLink className="w-3.5 h-3.5" /></a></li>
+          <li>Portal Layanan Mahasiswa (MyUT): <a href="https://myut.ut.ac.id" target="_blank" rel="noopener noreferrer" className="text-[#0F172A] underline font-medium inline-flex items-center gap-1">myut.ut.ac.id <ExternalLink className="w-3.5 h-3.5" /></a></li>
+          <li>Portal e-Learning (Tuton): <a href="https://elearning.ut.ac.id" target="_blank" rel="noopener noreferrer" className="text-[#0F172A] underline font-medium inline-flex items-center gap-1">elearning.ut.ac.id <ExternalLink className="w-3.5 h-3.5" /></a></li>
+          <li>Portal Layanan Pengaduan (Hallo-UT): <a href="https://hallo-ut.ut.ac.id" target="_blank" rel="noopener noreferrer" className="text-[#0F172A] underline font-medium inline-flex items-center gap-1">hallo-ut.ut.ac.id <ExternalLink className="w-3.5 h-3.5" /></a></li>
         </ul>
       </div>
     </div>

@@ -74,7 +74,7 @@ export default function KalkulatorTmkPage() {
       <div>
         <Link
           href="/"
-          className="inline-flex items-center gap-1.5 text-xs font-bold text-[#002D72] hover:underline"
+          className="inline-flex items-center gap-1.5 text-xs font-semibold text-[#0F172A] hover:underline"
         >
           <ArrowLeft className="w-3.5 h-3.5" />
           <span>Kembali ke Beranda</span>
@@ -82,13 +82,13 @@ export default function KalkulatorTmkPage() {
       </div>
 
       <header className="space-y-2 border-b border-slate-200 pb-6">
-        <span className="text-xs font-bold uppercase tracking-wider text-[#002D72]">
+        <span className="text-xs font-semibold uppercase tracking-wider text-[#64748B]">
           Modus Tugas Mandiri UT
         </span>
-        <h1 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-[#0F172A] tracking-tight">
+        <h1 className="text-2xl sm:text-3xl font-heading font-extrabold text-[#0F172A] tracking-tight">
           Kalkulator Nilai TMK UT (Bobot 80:20)
         </h1>
-        <p className="text-sm sm:text-base text-[#475569] leading-relaxed max-w-3xl">
+        <p className="text-sm sm:text-base text-[#334155] leading-relaxed max-w-3xl">
           Hitung estimasi nilai akhir mata kuliah Tugas Mata Kuliah (TMK) dengan formula pembobotan 80% UAS dan 20% TMK.
         </p>
       </header>
@@ -97,14 +97,14 @@ export default function KalkulatorTmkPage() {
         <GradeCalculator />
       </section>
 
-      <section className="bg-white rounded-2xl border border-slate-200 p-6 sm:p-8 space-y-4 shadow-sm text-sm sm:text-base text-[#475569] leading-relaxed">
-        <h2 className="text-lg sm:text-xl font-bold text-[#0F172A]">
+      <section className="bg-white rounded-2xl border border-slate-200 p-6 sm:p-8 space-y-4 shadow-sm text-sm sm:text-base text-[#334155] leading-relaxed">
+        <h2 className="text-lg sm:text-xl font-heading font-bold text-[#0F172A]">
           Karakteristik Skema Tugas Mata Kuliah (TMK) UT
         </h2>
         <p>
           Skema TMK merupakan alternatif bantuan belajar bagi mahasiswa UT yang tidak sempat mengaktivasi Tuton. Mahasiswa mengunggah Buku Jawaban Tugas (BJT) untuk 3 tugas mandiri di laman tmk.ut.ac.id.
         </p>
-        <div className="p-3.5 rounded-xl bg-blue-50 border border-blue-200 font-mono text-xs sm:text-sm text-[#002D72] font-bold">
+        <div className="p-3.5 rounded-xl bg-slate-100 border border-slate-200 font-mono text-xs sm:text-sm text-[#0F172A] font-bold">
           Nilai Akhir = (0.80 × Nilai UAS) + (0.20 × Nilai TMK)
         </div>
         <p>

@@ -63,7 +63,7 @@ export default function CaraHitungIpkPage() {
       <div>
         <Link
           href="/"
-          className="inline-flex items-center gap-1.5 text-xs font-bold text-[#002D72] hover:underline"
+          className="inline-flex items-center gap-1.5 text-xs font-semibold text-[#0F172A] hover:underline"
         >
           <ArrowLeft className="w-3.5 h-3.5" />
           <span>Kembali ke Beranda</span>
@@ -71,28 +71,28 @@ export default function CaraHitungIpkPage() {
       </div>
 
       <header className="space-y-2 border-b border-slate-200 pb-6">
-        <span className="text-xs font-bold uppercase tracking-wider text-[#002D72]">
+        <span className="text-xs font-semibold uppercase tracking-wider text-[#64748B]">
           Pedoman Yudisium &amp; Kelulusan Resmi UT
         </span>
-        <h1 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-[#0F172A] tracking-tight">
+        <h1 className="text-2xl sm:text-3xl font-heading font-extrabold text-[#0F172A] tracking-tight">
           Cara Menghitung IPK &amp; Predikat Kelulusan Universitas Terbuka
         </h1>
-        <p className="text-sm sm:text-base text-[#475569] leading-relaxed">
+        <p className="text-sm sm:text-base text-[#334155] leading-relaxed">
           Formula baku perhitungan Indeks Prestasi Semester (IPS) dan Kumulatif (IPK), konversi angka mutu, serta kriteria resmi meraih predikat Cumlaude.
         </p>
       </header>
 
-      <article className="bg-white rounded-2xl border border-slate-200 p-6 sm:p-10 shadow-sm space-y-5 text-[#475569] text-sm sm:text-base leading-relaxed">
+      <article className="bg-white rounded-2xl border border-slate-200 p-6 sm:p-10 shadow-sm space-y-5 text-[#334155] text-sm sm:text-base leading-relaxed">
         <p>
           Indeks Prestasi Kumulatif (IPK) merupakan tolok ukur kuantitatif keberhasilan studi mahasiswa sepanjang menempuh pendidikan di perguruan tinggi. Di Universitas Terbuka, pencapaian IPK menentukan status kelulusan pada saat yudisium kelulusan sarjana.
         </p>
 
-        <h2 className="text-lg sm:text-xl font-bold text-slate-900 dark:text-white pt-2">
+        <h2 className="text-lg sm:text-xl font-heading font-bold text-[#0F172A] pt-2">
           Bobot Angka Mutu Nilai Huruf di UT
         </h2>
-        <div className="not-prose my-4 overflow-x-auto rounded-xl border border-slate-200 dark:border-slate-800">
+        <div className="not-prose my-4 overflow-x-auto rounded-xl border border-slate-200">
           <table className="w-full text-left text-xs sm:text-sm border-collapse">
-            <thead className="bg-slate-50 dark:bg-slate-800/80 text-slate-700 dark:text-slate-300 font-semibold border-b border-slate-200 dark:border-slate-800">
+            <thead className="bg-slate-50 text-[#0F172A] font-semibold border-b border-slate-200">
               <tr>
                 <th className="p-3">Huruf Mutu</th>
                 <th className="p-3">Angka Mutu (Bobot)</th>
@@ -100,45 +100,45 @@ export default function CaraHitungIpkPage() {
                 <th className="p-3">Sebutan Kualitatif</th>
               </tr>
             </thead>
-            <tbody className="divide-y divide-slate-100 dark:divide-slate-800 text-slate-700 dark:text-slate-300">
+            <tbody className="divide-y divide-slate-100 text-[#334155]">
               <tr>
-                <td className="p-3 font-bold text-slate-900 dark:text-white">A</td>
+                <td className="p-3 font-bold text-[#0F172A]">A</td>
                 <td className="p-3 font-mono font-semibold">4.00</td>
                 <td className="p-3">80,00 - 100,00</td>
                 <td className="p-3">Sangat Baik</td>
               </tr>
               <tr>
-                <td className="p-3 font-bold text-slate-900 dark:text-white">A-</td>
+                <td className="p-3 font-bold text-[#0F172A]">A-</td>
                 <td className="p-3 font-mono font-semibold">3.50</td>
                 <td className="p-3">75,00 - 79,99</td>
                 <td className="p-3">Antara Baik Sekali &amp; Sangat Baik</td>
               </tr>
               <tr>
-                <td className="p-3 font-bold text-slate-900 dark:text-white">B</td>
+                <td className="p-3 font-bold text-[#0F172A]">B</td>
                 <td className="p-3 font-mono font-semibold">3.00</td>
                 <td className="p-3">70,00 - 74,99</td>
                 <td className="p-3">Baik Sekali</td>
               </tr>
               <tr>
-                <td className="p-3 font-bold text-slate-900 dark:text-white">B-</td>
+                <td className="p-3 font-bold text-[#0F172A]">B-</td>
                 <td className="p-3 font-mono font-semibold">2.50</td>
                 <td className="p-3">65,00 - 69,99</td>
                 <td className="p-3">Antara Cukup Baik &amp; Baik Sekali</td>
               </tr>
               <tr>
-                <td className="p-3 font-bold text-slate-900 dark:text-white">C</td>
+                <td className="p-3 font-bold text-[#0F172A]">C</td>
                 <td className="p-3 font-mono font-semibold">2.00</td>
                 <td className="p-3">60,00 - 64,99</td>
                 <td className="p-3">Cukup</td>
               </tr>
               <tr>
-                <td className="p-3 font-bold text-slate-900 dark:text-white">D</td>
+                <td className="p-3 font-bold text-amber-700">D</td>
                 <td className="p-3 font-mono font-semibold">1.00</td>
                 <td className="p-3">55,00 - 59,99</td>
                 <td className="p-3">Kurang (Lulus Bersyarat)</td>
               </tr>
               <tr>
-                <td className="p-3 font-bold text-red-700 dark:text-red-400">E</td>
+                <td className="p-3 font-bold text-rose-700">E</td>
                 <td className="p-3 font-mono font-semibold">0.00</td>
                 <td className="p-3">0,00 - 54,99</td>
                 <td className="p-3">Gagal (Tidak Lulus)</td>
@@ -147,20 +147,20 @@ export default function CaraHitungIpkPage() {
           </table>
         </div>
 
-        <h2 className="text-lg sm:text-xl font-bold text-slate-900 dark:text-white pt-2">
+        <h2 className="text-lg sm:text-xl font-heading font-bold text-[#0F172A] pt-2">
           Formula Perhitungan Nilai Mutu dan IPK
         </h2>
         <p>
           Perhitungan IPK menggunakan konsep rata-rata tertimbang terhadap Satuan Kredit Semester (SKS):
         </p>
-        <div className="p-3.5 rounded-lg bg-slate-100 dark:bg-slate-800 font-mono text-xs sm:text-sm text-slate-900 dark:text-slate-100 font-semibold not-prose">
+        <div className="p-3.5 rounded-lg bg-slate-100 font-mono text-xs sm:text-sm text-[#0F172A] font-semibold not-prose">
           IPK = ∑ (SKS × Angka Mutu) / ∑ (SKS)
         </div>
 
-        <h2 className="text-lg sm:text-xl font-bold text-slate-900 dark:text-white pt-2">
+        <h2 className="text-lg sm:text-xl font-heading font-bold text-[#0F172A] pt-2">
           Predikat Kelulusan Resmi UT
         </h2>
-        <ul className="list-disc pl-5 space-y-1.5 text-sm">
+        <ul className="list-disc pl-5 space-y-1.5 text-sm text-[#334155]">
           <li><strong>Dengan Pujian (Cumlaude):</strong> IPK 3.51 - 4.00, dengan syarat masa studi tepat waktu dan tidak memiliki nilai E sama sekali.</li>
           <li><strong>Sangat Memuaskan:</strong> IPK 3.01 - 3.50.</li>
           <li><strong>Memuaskan:</strong> IPK 2.76 - 3.00.</li>
@@ -168,7 +168,7 @@ export default function CaraHitungIpkPage() {
         </ul>
       </article>
 
-      <section className="pt-6 border-t border-slate-200 dark:border-slate-800">
+      <section className="pt-6 border-t border-slate-200">
         <FaqAccordion items={IPK_FAQS} title="FAQ Perhitungan IPK & Kelulusan UT" subtitle="" />
       </section>
     </div>

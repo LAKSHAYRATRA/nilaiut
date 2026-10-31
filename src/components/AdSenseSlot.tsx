@@ -12,7 +12,7 @@ export default function AdSenseSlot({ slotId = '1234567890', format = 'auto', cl
   return (
     <div className={`w-full max-w-4xl mx-auto my-6 text-center overflow-hidden ${className}`}>
       {/* Placeholder container with layout reservation to avoid CLS */}
-      <div className="min-h-[90px] p-3 rounded-xl border border-dashed border-slate-200 dark:border-slate-800 bg-slate-50/50 dark:bg-slate-900/40 flex flex-col items-center justify-center text-xs text-slate-400">
+      <div className="min-h-[90px] p-3 rounded-xl border border-dashed border-slate-200 bg-slate-50/70 flex flex-col items-center justify-center text-xs text-slate-400">
         <span className="font-semibold uppercase tracking-wider text-[10px] text-slate-400 mb-1">
           Iklan Sponsor
         </span>
