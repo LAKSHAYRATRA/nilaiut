@@ -1,61 +1,47 @@
-@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400;1,600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&family=Inter:wght@400;500;600;700&display=swap');
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 :root {
-  --background: #fbfbfc;
-  --foreground: #0b1a2d;
+  --background: #f8fafc;
+  --foreground: #0f172a;
   --surface: #ffffff;
-  --surface-muted: #f4f6f9;
-  --border: #dbe2ea;
-  --primary: #0b2545; /* Deep Academic Navy */
-  --primary-hover: #07162b;
-  --primary-light: #eaf1f9;
-  --accent: #b0851f; /* Academic Crest Gold */
-  --accent-light: #faf4e2;
+  --surface-muted: #f1f5f9;
+  --border: #e2e8f0;
+  --primary: #2563eb;
+  --primary-hover: #1d4ed8;
+  --primary-light: #eff6ff;
 }
 
 .dark {
-  --background: #080f1a;
-  --foreground: #f1f5f9;
-  --surface: #0e1828;
-  --surface-muted: #152238;
-  --border: #1e304a;
-  --primary: #3267be;
-  --primary-hover: #4884d2;
-  --primary-light: #152238;
-  --accent: #deb563;
-  --accent-light: #241c0e;
+  --background: #090d16;
+  --foreground: #f8fafc;
+  --surface: #111827;
+  --surface-muted: #1e293b;
+  --border: #1f293d;
+  --primary: #3b82f6;
+  --primary-hover: #60a5fa;
+  --primary-light: #172554;
 }
 
 body {
   background-color: var(--background);
   color: var(--foreground);
-  font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  font-family: 'Plus Jakarta Sans', 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
   font-feature-settings: "cv02", "cv03", "cv04", "cv11";
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
 }
 
-/* Authentic Educational Institution Serif Headings */
-h1, h2, h3, h4, .font-academic-serif {
-  font-family: 'Lora', 'Merriweather', Georgia, 'Times New Roman', serif;
-  letter-spacing: -0.015em;
+/* Friendly, normal, modern typography */
+h1, h2, h3, h4 {
+  font-family: 'Plus Jakarta Sans', 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  letter-spacing: -0.02em;
 }
 
-/* Academic citation rule / seal box */
-.academic-citation {
-  border-left: 3px solid #b0851f;
-  background-color: #faf8f3;
-}
-.dark .academic-citation {
-  border-left: 3px solid #deb563;
-  background-color: #121c2d;
-}
-
-/* Clean, restrained institutional scrollbars */
+/* Clean, restrained scrollbars */
 ::-webkit-scrollbar {
   width: 6px;
   height: 6px;
@@ -68,5 +54,5 @@ h1, h2, h3, h4, .font-academic-serif {
   border-radius: 3px;
 }
 .dark ::-webkit-scrollbar-thumb {
-  background: #273b57;
+  background: #334155;
 }

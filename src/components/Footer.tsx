@@ -4,13 +4,13 @@ import { GraduationCap, ShieldCheck, ExternalLink } from 'lucide-react';
 
 export default function Footer() {
   return (
-    <footer className="bg-[#07162b] text-slate-300 border-t-2 border-[#c59b27] transition-colors">
+    <footer className="bg-slate-900 text-slate-400 border-t border-slate-800 transition-colors">
       {/* Top Disclaimer Notice */}
-      <div className="bg-[#040e1c] border-b border-[#1e304a] py-3 px-4 text-xs text-slate-400 font-sans">
+      <div className="bg-slate-950 border-b border-slate-800 py-3.5 px-4 text-xs text-slate-400">
         <div className="max-w-7xl mx-auto flex items-center justify-center gap-2 text-center flex-wrap">
-          <ShieldCheck className="w-4 h-4 text-[#deb563] shrink-0" />
+          <ShieldCheck className="w-4 h-4 text-blue-400 shrink-0" />
           <span>
-            <strong className="text-slate-200">Penafian Independen:</strong> NilaiUT adalah platform kalkulator akademik independen yang dikembangkan untuk mahasiswa UT dan bukan bagian resmi dari Universitas Terbuka. Seluruh rujukan nilai resmi mutlak bersumber dari portal <a href="https://myut.ut.ac.id" target="_blank" rel="noopener noreferrer" className="text-[#deb563] hover:underline inline-flex items-center gap-0.5">MyUT (myut.ut.ac.id) <ExternalLink className="w-3 h-3" /></a>.
+            <strong className="text-slate-300">Penafian Independen:</strong> NilaiUT adalah platform kalkulator akademik independen untuk mahasiswa UT dan bukan bagian resmi dari Universitas Terbuka. Rujukan nilai resmi mutlak bersumber dari portal <a href="https://myut.ut.ac.id" target="_blank" rel="noopener noreferrer" className="text-blue-400 hover:underline inline-flex items-center gap-0.5 font-medium">MyUT (myut.ut.ac.id) <ExternalLink className="w-3 h-3" /></a>.
           </span>
         </div>
       </div>
@@ -20,51 +20,51 @@ export default function Footer() {
           {/* Col 1 & 2: Platform Identity */}
           <div className="lg:col-span-2 space-y-3">
             <Link href="/" className="flex items-center gap-2.5">
-              <div className="w-9 h-9 rounded-md bg-[#0b2545] border border-[#c59b27]/60 flex items-center justify-center text-[#deb563] font-bold shadow-sm">
-                <GraduationCap className="w-5 h-5" />
+              <div className="w-8 h-8 rounded-lg bg-blue-600 flex items-center justify-center text-white font-bold shadow-sm">
+                <GraduationCap className="w-4 h-4" />
               </div>
-              <span className="font-serif font-bold text-xl text-white tracking-tight">
-                Nilai<span className="text-[#deb563]">UT</span>
+              <span className="font-bold text-xl text-white tracking-tight">
+                Nilai<span className="text-blue-400">UT</span>
               </span>
             </Link>
             <p className="text-xs sm:text-sm text-slate-400 leading-relaxed max-w-sm">
-              Portal Kalkulator Nilai Akhir &amp; IPK Mahasiswa Universitas Terbuka berbasis Peraturan Rektor No. 16/2017. Dioperasikan 100% di sisi peramban klien tanpa transmisi data nilai ke server luar.
+              Kalkulator Nilai Akhir &amp; IPK Universitas Terbuka berbasis Peraturan Rektor No. 16/2017. Dioperasikan 100% di sisi peramban klien tanpa transmisi data nilai ke server luar.
             </p>
           </div>
 
           {/* Col 3: Alat Hitung */}
           <div className="space-y-2.5">
-            <span className="text-xs font-serif font-bold uppercase tracking-wider text-[#deb563] block">
+            <span className="text-xs font-semibold uppercase tracking-wider text-slate-200 block">
               Alat Hitung
             </span>
-            <ul className="space-y-1.5 text-xs text-slate-300">
+            <ul className="space-y-1.5 text-xs text-slate-400">
               <li>
-                <Link href="/kalkulator-nilai-tuton-ut" className="hover:text-[#deb563] transition-colors">
+                <Link href="/kalkulator-nilai-tuton-ut" className="hover:text-white transition-colors">
                   Kalkulator Tuton (70:30)
                 </Link>
               </li>
               <li>
-                <Link href="/kalkulator-nilai-tmk-ut" className="hover:text-[#deb563] transition-colors">
+                <Link href="/kalkulator-nilai-tmk-ut" className="hover:text-white transition-colors">
                   Kalkulator TMK (80:20)
                 </Link>
               </li>
               <li>
-                <Link href="/kalkulator-nilai-tuweb-ut" className="hover:text-[#deb563] transition-colors">
+                <Link href="/kalkulator-nilai-tuweb-ut" className="hover:text-white transition-colors">
                   Kalkulator Tuweb (50:50)
                 </Link>
               </li>
               <li>
-                <Link href="/target-nilai-uas" className="hover:text-[#deb563] transition-colors">
+                <Link href="/target-nilai-uas" className="hover:text-white transition-colors">
                   Target Solver Nilai UAS
                 </Link>
               </li>
               <li>
-                <Link href="/kalkulator-ipk-ut" className="hover:text-[#deb563] transition-colors">
+                <Link href="/kalkulator-ipk-ut" className="hover:text-white transition-colors">
                   Kalkulator IPK Kelulusan
                 </Link>
               </li>
               <li>
-                <Link href="/pasang-widget" className="hover:text-[#deb563] transition-colors">
+                <Link href="/pasang-widget" className="hover:text-white transition-colors">
                   Widget Iframe Blog
                 </Link>
               </li>
@@ -73,32 +73,32 @@ export default function Footer() {
 
           {/* Col 4: Panduan */}
           <div className="space-y-2.5">
-            <span className="text-xs font-serif font-bold uppercase tracking-wider text-[#deb563] block">
+            <span className="text-xs font-semibold uppercase tracking-wider text-slate-200 block">
               Panduan Akademik
             </span>
-            <ul className="space-y-1.5 text-xs text-slate-300">
+            <ul className="space-y-1.5 text-xs text-slate-400">
               <li>
-                <Link href="/panduan/cara-hitung-nilai-akhir-ut" className="hover:text-[#deb563] transition-colors">
+                <Link href="/panduan/cara-hitung-nilai-akhir-ut" className="hover:text-white transition-colors">
                   Cara Hitung Nilai Akhir
                 </Link>
               </li>
               <li>
-                <Link href="/panduan/skema-bobot-tuton-tmk-tuweb" className="hover:text-[#deb563] transition-colors">
+                <Link href="/panduan/skema-bobot-tuton-tmk-tuweb" className="hover:text-white transition-colors">
                   Skema Bobot Tutorial
                 </Link>
               </li>
               <li>
-                <Link href="/panduan/aturan-syarat-minimal-uas-30" className="hover:text-[#deb563] transition-colors">
+                <Link href="/panduan/aturan-syarat-minimal-uas-30" className="hover:text-white transition-colors">
                   Aturan Minimal UAS 30
                 </Link>
               </li>
               <li>
-                <Link href="/panduan/cara-menghitung-ipk-dan-predikat-kelulusan-ut" className="hover:text-[#deb563] transition-colors">
+                <Link href="/panduan/cara-menghitung-ipk-dan-predikat-kelulusan-ut" className="hover:text-white transition-colors">
                   Predikat Cumlaude &amp; IPK
                 </Link>
               </li>
               <li>
-                <Link href="/panduan/kalender-akademik-dan-jadwal-uas-ut" className="hover:text-[#deb563] transition-colors">
+                <Link href="/panduan/kalender-akademik-dan-jadwal-uas-ut" className="hover:text-white transition-colors">
                   Kalender Akademik &amp; KTPU
                 </Link>
               </li>
@@ -107,32 +107,32 @@ export default function Footer() {
 
           {/* Col 5: Legal */}
           <div className="space-y-2.5">
-            <span className="text-xs font-serif font-bold uppercase tracking-wider text-[#deb563] block">
+            <span className="text-xs font-semibold uppercase tracking-wider text-slate-200 block">
               Informasi Legal
             </span>
-            <ul className="space-y-1.5 text-xs text-slate-300">
+            <ul className="space-y-1.5 text-xs text-slate-400">
               <li>
-                <Link href="/tentang-kami" className="hover:text-[#deb563] transition-colors">
+                <Link href="/tentang-kami" className="hover:text-white transition-colors">
                   Tentang Kami
                 </Link>
               </li>
               <li>
-                <Link href="/kontak" className="hover:text-[#deb563] transition-colors">
+                <Link href="/kontak" className="hover:text-white transition-colors">
                   Kontak Pengembang
                 </Link>
               </li>
               <li>
-                <Link href="/kebijakan-privasi" className="hover:text-[#deb563] transition-colors">
+                <Link href="/kebijakan-privasi" className="hover:text-white transition-colors">
                   Kebijakan Privasi
                 </Link>
               </li>
               <li>
-                <Link href="/syarat-ketentuan" className="hover:text-[#deb563] transition-colors">
+                <Link href="/syarat-ketentuan" className="hover:text-white transition-colors">
                   Syarat &amp; Ketentuan
                 </Link>
               </li>
               <li>
-                <Link href="/disclaimer" className="hover:text-[#deb563] transition-colors">
+                <Link href="/disclaimer" className="hover:text-white transition-colors">
                   Penafian Resmi
                 </Link>
               </li>
@@ -141,15 +141,15 @@ export default function Footer() {
         </div>
 
         {/* Bottom Bar */}
-        <div className="mt-10 pt-6 border-t border-[#1e304a] flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-slate-400">
+        <div className="mt-10 pt-6 border-t border-slate-800 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-slate-500">
           <p>
-            &copy; {new Date().getFullYear()} NilaiUT. Seluruh hak cipta dilindungi. Portal Mandiri Evaluasi Nilai Akademik Mahasiswa UT.
+            &copy; {new Date().getFullYear()} NilaiUT. Seluruh hak cipta dilindungi.
           </p>
-          <div className="flex items-center gap-4 text-slate-400">
-            <Link href="/kebijakan-privasi" className="hover:text-[#deb563]">Privasi</Link>
-            <Link href="/syarat-ketentuan" className="hover:text-[#deb563]">Ketentuan</Link>
-            <Link href="/disclaimer" className="hover:text-[#deb563]">Penafian</Link>
-            <Link href="/kontak" className="hover:text-[#deb563]">Kontak</Link>
+          <div className="flex items-center gap-4">
+            <Link href="/kebijakan-privasi" className="hover:underline">Privasi</Link>
+            <Link href="/syarat-ketentuan" className="hover:underline">Ketentuan</Link>
+            <Link href="/disclaimer" className="hover:underline">Penafian</Link>
+            <Link href="/kontak" className="hover:underline">Kontak</Link>
           </div>
         </div>
       </div>

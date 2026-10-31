@@ -8,9 +8,6 @@ import JsonLd from '@/components/JsonLd';
 import {
   ShieldAlert,
   ArrowRight,
-  BookOpen,
-  FileText,
-  Sliders,
   Check,
   Scale
 } from 'lucide-react';
@@ -69,14 +66,14 @@ export default function HomePage() {
     <div className="pb-16">
       <JsonLd data={faqSchema} />
 
-      {/* Editorial Academic Header */}
-      <section className="border-b border-slate-200 dark:border-slate-800 bg-white dark:bg-[#0e1828] py-10 sm:py-14">
+      {/* Clean, friendly hero header */}
+      <section className="border-b border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 py-10 sm:py-14">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-3xl">
-            <span className="text-xs font-serif font-bold uppercase tracking-wider text-[#8c6519] dark:text-[#deb563]">
+            <span className="text-xs font-semibold uppercase tracking-wider text-blue-600 dark:text-blue-400">
               Sistem Evaluasi Belajar Mahasiswa
             </span>
-            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-serif font-bold text-[#0b2545] dark:text-white mt-2 tracking-tight">
+            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-slate-900 dark:text-white mt-2 tracking-tight">
               Kalkulator Nilai Akhir &amp; IPK Universitas Terbuka
             </h1>
             <p className="text-base sm:text-lg text-slate-600 dark:text-slate-300 mt-3 leading-relaxed">
@@ -84,11 +81,11 @@ export default function HomePage() {
             </p>
             <div className="flex flex-wrap items-center gap-x-6 gap-y-2 mt-5 text-xs text-slate-500 dark:text-slate-400">
               <span className="flex items-center gap-1.5">
-                <Check className="w-4 h-4 text-[#8c6519] dark:text-[#deb563]" />
+                <Check className="w-4 h-4 text-emerald-600" />
                 <span>Pemrosesan lokal di browser tanpa penyimpanan server</span>
               </span>
               <span className="flex items-center gap-1.5">
-                <Scale className="w-4 h-4 text-[#8c6519] dark:text-[#deb563]" />
+                <Scale className="w-4 h-4 text-blue-600" />
                 <span>Rujukan resmi Buku Pedoman Mahasiswa UT</span>
               </span>
             </div>
@@ -96,30 +93,30 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Main Workspace: Functional Layout */}
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 space-y-14">
+      {/* Main Workspace */}
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 space-y-12">
         {/* SECTION 1: CORE CALCULATOR TOOL */}
         <section id="kalkulator-nilai" className="scroll-mt-20">
           <GradeCalculator />
         </section>
 
         {/* SECTION 2: CRITICAL REGULATION NOTICE */}
-        <section className="p-6 sm:p-7 rounded-xl bg-[#faf8f3] dark:bg-[#121c2d] border-l-4 border-[#b0851f] border-y border-r border-[#c59b27]/30 dark:border-[#deb563]/20">
+        <section className="p-6 rounded-2xl bg-amber-50/60 dark:bg-amber-950/30 border border-amber-200 dark:border-amber-900/40">
           <div className="flex items-start gap-4">
-            <div className="p-2 rounded-lg bg-amber-100 dark:bg-amber-950/60 text-[#8c6519] dark:text-[#deb563] shrink-0">
+            <div className="p-2 rounded-xl bg-amber-100 dark:bg-amber-900/50 text-amber-700 dark:text-amber-300 shrink-0">
               <ShieldAlert className="w-5 h-5" />
             </div>
             <div className="space-y-2">
-              <h2 className="text-base sm:text-lg font-serif font-bold text-[#0b2545] dark:text-[#f4e6be]">
+              <h2 className="text-base sm:text-lg font-bold text-slate-900 dark:text-white">
                 Ketentuan Wajib: Mengapa Nilai Tuton Hangus Jika Skor UAS Kurang dari 30?
               </h2>
               <p className="text-sm text-slate-700 dark:text-slate-300 leading-relaxed">
-                Pasal evaluasi hasil belajar pada Peraturan Rektor UT menetapkan bahwa nilai tutorial (baik Tuton, Tuweb, maupun TMK) hanya dapat digabungkan ke nilai akhir apabila mahasiswa mencapai skor minimal <strong>30% dari skor maksimal ujian</strong> (skor UAS murni $\ge 30$). Apabila ujian Anda memperoleh skor 29 atau lebih rendah, nilai keaktifan diskusi dan tugas Anda tidak diperhitungkan dan nilai akhir Anda otomatis dinyatakan sebagai huruf mutu <strong>E (Gagal)</strong>.
+                Pasal evaluasi hasil belajar pada Peraturan Rektor UT menetapkan bahwa nilai tutorial (baik Tuton, Tuweb, maupun TMK) hanya dapat digabungkan ke nilai akhir apabila mahasiswa mencapai skor minimal <strong>30% dari skor maksimal ujian</strong> (skor UAS murni &ge; 30). Apabila ujian Anda memperoleh skor 29 atau lebih rendah, nilai keaktifan diskusi dan tugas Anda tidak diperhitungkan dan nilai akhir Anda otomatis dinyatakan sebagai huruf mutu <strong>E (Gagal)</strong>.
               </p>
               <div className="pt-1">
                 <Link
                   href="/panduan/aturan-syarat-minimal-uas-30"
-                  className="inline-flex items-center gap-1.5 text-xs font-semibold text-[#0b2545] dark:text-[#deb563] hover:underline"
+                  className="inline-flex items-center gap-1.5 text-xs font-semibold text-blue-600 dark:text-blue-400 hover:underline"
                 >
                   <span>Baca rincian aturan batas minimal UAS 30 dan solusinya</span>
                   <ArrowRight className="w-3.5 h-3.5" />
@@ -137,7 +134,7 @@ export default function HomePage() {
         {/* SECTION 4: OFFICIAL GRADING SCALE REFERENCE TABLE */}
         <section id="tabel-huruf-mutu" className="space-y-4">
           <div>
-            <h2 className="text-xl sm:text-2xl font-serif font-bold text-[#0b2545] dark:text-white">
+            <h2 className="text-xl sm:text-2xl font-bold text-slate-900 dark:text-white">
               Tabel Rentang Nilai dan Angka Mutu Resmi UT
             </h2>
             <p className="text-sm text-slate-600 dark:text-slate-400 mt-1">
@@ -145,66 +142,66 @@ export default function HomePage() {
             </p>
           </div>
 
-          <div className="overflow-x-auto rounded-lg border border-slate-200 dark:border-slate-800 bg-white dark:bg-[#0e1828]">
+          <div className="overflow-x-auto rounded-2xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 shadow-sm">
             <table className="w-full text-left border-collapse text-sm">
               <thead>
-                <tr className="bg-[#0b2545] text-[#f4e6be] text-xs font-serif font-semibold border-b border-[#c59b27]">
-                  <th className="py-3 px-4">Huruf Mutu</th>
-                  <th className="py-3 px-4">Rentang Skor</th>
-                  <th className="py-3 px-4">Bobot (Angka Mutu)</th>
-                  <th className="py-3 px-4">Status</th>
-                  <th className="py-3 px-4">Keterangan Akademik</th>
+                <tr className="bg-slate-50 dark:bg-slate-800/80 text-slate-700 dark:text-slate-300 text-xs font-semibold border-b border-slate-200 dark:border-slate-800">
+                  <th className="py-3.5 px-4">Huruf Mutu</th>
+                  <th className="py-3.5 px-4">Rentang Skor</th>
+                  <th className="py-3.5 px-4">Bobot (Angka Mutu)</th>
+                  <th className="py-3.5 px-4">Status</th>
+                  <th className="py-3.5 px-4">Keterangan Akademik</th>
                 </tr>
               </thead>
               <tbody className="divide-y divide-slate-100 dark:divide-slate-800 text-slate-700 dark:text-slate-300 text-xs sm:text-sm">
                 <tr>
-                  <td className="py-3 px-4 font-serif font-bold text-slate-900 dark:text-white">A</td>
-                  <td className="py-3 px-4 font-mono">80,00 - 100,00</td>
-                  <td className="py-3 px-4 font-semibold">4.00</td>
-                  <td className="py-3 px-4"><span className="text-emerald-700 dark:text-emerald-400 font-semibold">Lulus</span></td>
-                  <td className="py-3 px-4">Sangat Baik</td>
+                  <td className="py-3.5 px-4 font-bold text-slate-900 dark:text-white">A</td>
+                  <td className="py-3.5 px-4 font-mono">80,00 - 100,00</td>
+                  <td className="py-3.5 px-4 font-semibold">4.00</td>
+                  <td className="py-3.5 px-4"><span className="text-emerald-600 dark:text-emerald-400 font-semibold">Lulus</span></td>
+                  <td className="py-3.5 px-4">Sangat Baik</td>
                 </tr>
                 <tr>
-                  <td className="py-3 px-4 font-serif font-bold text-slate-900 dark:text-white">A-</td>
-                  <td className="py-3 px-4 font-mono">75,00 - 79,99</td>
-                  <td className="py-3 px-4 font-semibold">3.50</td>
-                  <td className="py-3 px-4"><span className="text-emerald-700 dark:text-emerald-400 font-semibold">Lulus</span></td>
-                  <td className="py-3 px-4">Antara Baik Sekali &amp; Sangat Baik</td>
+                  <td className="py-3.5 px-4 font-bold text-slate-900 dark:text-white">A-</td>
+                  <td className="py-3.5 px-4 font-mono">75,00 - 79,99</td>
+                  <td className="py-3.5 px-4 font-semibold">3.50</td>
+                  <td className="py-3.5 px-4"><span className="text-emerald-600 dark:text-emerald-400 font-semibold">Lulus</span></td>
+                  <td className="py-3.5 px-4">Antara Baik Sekali &amp; Sangat Baik</td>
                 </tr>
                 <tr>
-                  <td className="py-3 px-4 font-serif font-bold text-slate-900 dark:text-white">B</td>
-                  <td className="py-3 px-4 font-mono">70,00 - 74,99</td>
-                  <td className="py-3 px-4 font-semibold">3.00</td>
-                  <td className="py-3 px-4"><span className="text-blue-700 dark:text-blue-400 font-semibold">Lulus</span></td>
-                  <td className="py-3 px-4">Baik Sekali</td>
+                  <td className="py-3.5 px-4 font-bold text-slate-900 dark:text-white">B</td>
+                  <td className="py-3.5 px-4 font-mono">70,00 - 74,99</td>
+                  <td className="py-3.5 px-4 font-semibold">3.00</td>
+                  <td className="py-3.5 px-4"><span className="text-blue-600 dark:text-blue-400 font-semibold">Lulus</span></td>
+                  <td className="py-3.5 px-4">Baik Sekali</td>
                 </tr>
                 <tr>
-                  <td className="py-3 px-4 font-serif font-bold text-slate-900 dark:text-white">B-</td>
-                  <td className="py-3 px-4 font-mono">65,00 - 69,99</td>
-                  <td className="py-3 px-4 font-semibold">2.50</td>
-                  <td className="py-3 px-4"><span className="text-blue-700 dark:text-blue-400 font-semibold">Lulus</span></td>
-                  <td className="py-3 px-4">Antara Cukup Baik &amp; Baik Sekali</td>
+                  <td className="py-3.5 px-4 font-bold text-slate-900 dark:text-white">B-</td>
+                  <td className="py-3.5 px-4 font-mono">65,00 - 69,99</td>
+                  <td className="py-3.5 px-4 font-semibold">2.50</td>
+                  <td className="py-3.5 px-4"><span className="text-blue-600 dark:text-blue-400 font-semibold">Lulus</span></td>
+                  <td className="py-3.5 px-4">Antara Cukup Baik &amp; Baik Sekali</td>
                 </tr>
                 <tr>
-                  <td className="py-3 px-4 font-serif font-bold text-slate-900 dark:text-white">C</td>
-                  <td className="py-3 px-4 font-mono">60,00 - 64,99</td>
-                  <td className="py-3 px-4 font-semibold">2.00</td>
-                  <td className="py-3 px-4"><span className="text-slate-700 dark:text-slate-300 font-semibold">Lulus</span></td>
-                  <td className="py-3 px-4">Cukup (Ambang batas minimal kelulusan reguler)</td>
+                  <td className="py-3.5 px-4 font-bold text-slate-900 dark:text-white">C</td>
+                  <td className="py-3.5 px-4 font-mono">60,00 - 64,99</td>
+                  <td className="py-3.5 px-4 font-semibold">2.00</td>
+                  <td className="py-3.5 px-4"><span className="text-slate-600 dark:text-slate-400 font-semibold">Lulus</span></td>
+                  <td className="py-3.5 px-4">Cukup (Ambang batas minimal kelulusan reguler)</td>
                 </tr>
                 <tr>
-                  <td className="py-3 px-4 font-serif font-bold text-slate-900 dark:text-white">D</td>
-                  <td className="py-3 px-4 font-mono">55,00 - 59,99</td>
-                  <td className="py-3 px-4 font-semibold">1.00</td>
-                  <td className="py-3 px-4"><span className="text-amber-700 dark:text-amber-400 font-semibold">Lulus Bersyarat</span></td>
-                  <td className="py-3 px-4">Kurang (Wajib perhatikan batas SKS D dan larangan pada MK Inti/TAP)</td>
+                  <td className="py-3.5 px-4 font-bold text-slate-900 dark:text-white">D</td>
+                  <td className="py-3.5 px-4 font-mono">55,00 - 59,99</td>
+                  <td className="py-3.5 px-4 font-semibold">1.00</td>
+                  <td className="py-3.5 px-4"><span className="text-amber-600 dark:text-amber-400 font-semibold">Lulus Bersyarat</span></td>
+                  <td className="py-3.5 px-4">Kurang (Wajib perhatikan batas SKS D dan larangan pada MK Inti/TAP)</td>
                 </tr>
                 <tr>
-                  <td className="py-3 px-4 font-serif font-bold text-red-700 dark:text-red-400">E</td>
-                  <td className="py-3 px-4 font-mono">0,00 - 54,99 (atau UAS &lt; 30)</td>
-                  <td className="py-3 px-4 font-semibold">0.00</td>
-                  <td className="py-3 px-4"><span className="text-red-700 dark:text-red-400 font-semibold">Gagal</span></td>
-                  <td className="py-3 px-4">Tidak Lulus (Wajib registrasi ulang / ujian ulang)</td>
+                  <td className="py-3.5 px-4 font-bold text-red-600 dark:text-red-400">E</td>
+                  <td className="py-3.5 px-4 font-mono">0,00 - 54,99 (atau UAS &lt; 30)</td>
+                  <td className="py-3.5 px-4 font-semibold">0.00</td>
+                  <td className="py-3.5 px-4"><span className="text-red-600 dark:text-red-400 font-semibold">Gagal</span></td>
+                  <td className="py-3.5 px-4">Tidak Lulus (Wajib registrasi ulang / ujian ulang)</td>
                 </tr>
               </tbody>
             </table>
@@ -219,7 +216,7 @@ export default function HomePage() {
         {/* SECTION 6: EDITORIAL GUIDES */}
         <section id="panduan-akademik" className="space-y-6 scroll-mt-20">
           <div className="border-b border-slate-200 dark:border-slate-800 pb-3">
-            <h2 className="text-xl sm:text-2xl font-serif font-bold text-[#0b2545] dark:text-white">
+            <h2 className="text-xl sm:text-2xl font-bold text-slate-900 dark:text-white">
               Artikel &amp; Panduan Perkuliahan UT
             </h2>
             <p className="text-sm text-slate-600 dark:text-slate-400 mt-1">
@@ -233,7 +230,7 @@ export default function HomePage() {
               <div className="space-y-1 max-w-3xl">
                 <Link
                   href="/panduan/cara-hitung-nilai-akhir-ut"
-                  className="font-serif font-bold text-base sm:text-lg text-slate-900 dark:text-white group-hover:text-[#0b2545] dark:group-hover:text-[#deb563] transition-colors"
+                  className="font-bold text-base sm:text-lg text-slate-900 dark:text-white group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors"
                 >
                   Cara Menghitung Nilai Akhir UT Berdasarkan Peraturan Rektor No. 16/2017
                 </Link>
@@ -243,7 +240,7 @@ export default function HomePage() {
               </div>
               <Link
                 href="/panduan/cara-hitung-nilai-akhir-ut"
-                className="text-xs font-semibold text-[#0b2545] dark:text-[#deb563] shrink-0 flex items-center gap-1 hover:underline"
+                className="text-xs font-semibold text-blue-600 dark:text-blue-400 shrink-0 flex items-center gap-1 hover:underline"
               >
                 <span>Baca artikel</span>
                 <ArrowRight className="w-3.5 h-3.5" />
@@ -255,7 +252,7 @@ export default function HomePage() {
               <div className="space-y-1 max-w-3xl">
                 <Link
                   href="/panduan/skema-bobot-tuton-tmk-tuweb"
-                  className="font-serif font-bold text-base sm:text-lg text-slate-900 dark:text-white group-hover:text-[#0b2545] dark:group-hover:text-[#deb563] transition-colors"
+                  className="font-bold text-base sm:text-lg text-slate-900 dark:text-white group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors"
                 >
                   Perbedaan Bobot Nilai Tuton (70:30), TMK (80:20), dan Tuweb (50:50)
                 </Link>
@@ -265,7 +262,7 @@ export default function HomePage() {
               </div>
               <Link
                 href="/panduan/skema-bobot-tuton-tmk-tuweb"
-                className="text-xs font-semibold text-[#0b2545] dark:text-[#deb563] shrink-0 flex items-center gap-1 hover:underline"
+                className="text-xs font-semibold text-blue-600 dark:text-blue-400 shrink-0 flex items-center gap-1 hover:underline"
               >
                 <span>Baca artikel</span>
                 <ArrowRight className="w-3.5 h-3.5" />
@@ -277,7 +274,7 @@ export default function HomePage() {
               <div className="space-y-1 max-w-3xl">
                 <Link
                   href="/panduan/aturan-syarat-minimal-uas-30"
-                  className="font-serif font-bold text-base sm:text-lg text-slate-900 dark:text-white group-hover:text-[#0b2545] dark:group-hover:text-[#deb563] transition-colors"
+                  className="font-bold text-base sm:text-lg text-slate-900 dark:text-white group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors"
                 >
                   Klausul Syarat Minimal UAS 30 di UT: Mengapa Ada dan Cara Mengantisipasinya
                 </Link>
@@ -287,7 +284,7 @@ export default function HomePage() {
               </div>
               <Link
                 href="/panduan/aturan-syarat-minimal-uas-30"
-                className="text-xs font-semibold text-[#0b2545] dark:text-[#deb563] shrink-0 flex items-center gap-1 hover:underline"
+                className="text-xs font-semibold text-blue-600 dark:text-blue-400 shrink-0 flex items-center gap-1 hover:underline"
               >
                 <span>Baca artikel</span>
                 <ArrowRight className="w-3.5 h-3.5" />
@@ -299,7 +296,7 @@ export default function HomePage() {
               <div className="space-y-1 max-w-3xl">
                 <Link
                   href="/panduan/cara-menghitung-ipk-dan-predikat-kelulusan-ut"
-                  className="font-serif font-bold text-base sm:text-lg text-slate-900 dark:text-white group-hover:text-[#0b2545] dark:group-hover:text-[#deb563] transition-colors"
+                  className="font-bold text-base sm:text-lg text-slate-900 dark:text-white group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors"
                 >
                   Cara Menghitung Indeks Prestasi Kumulatif (IPK) dan Predikat Kelulusan UT
                 </Link>
@@ -309,7 +306,7 @@ export default function HomePage() {
               </div>
               <Link
                 href="/panduan/cara-menghitung-ipk-dan-predikat-kelulusan-ut"
-                className="text-xs font-semibold text-[#0b2545] dark:text-[#deb563] shrink-0 flex items-center gap-1 hover:underline"
+                className="text-xs font-semibold text-blue-600 dark:text-blue-400 shrink-0 flex items-center gap-1 hover:underline"
               >
                 <span>Baca artikel</span>
                 <ArrowRight className="w-3.5 h-3.5" />
@@ -321,7 +318,7 @@ export default function HomePage() {
               <div className="space-y-1 max-w-3xl">
                 <Link
                   href="/panduan/kalender-akademik-dan-jadwal-uas-ut"
-                  className="font-serif font-bold text-base sm:text-lg text-slate-900 dark:text-white group-hover:text-[#0b2545] dark:group-hover:text-[#deb563] transition-colors"
+                  className="font-bold text-base sm:text-lg text-slate-900 dark:text-white group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors"
                 >
                   Kalender Akademik Universitas Terbuka: Jadwal Registrasi, Cetak KTPU &amp; Pengumuman DNP
                 </Link>
@@ -331,7 +328,7 @@ export default function HomePage() {
               </div>
               <Link
                 href="/panduan/kalender-akademik-dan-jadwal-uas-ut"
-                className="text-xs font-semibold text-[#0b2545] dark:text-[#deb563] shrink-0 flex items-center gap-1 hover:underline"
+                className="text-xs font-semibold text-blue-600 dark:text-blue-400 shrink-0 flex items-center gap-1 hover:underline"
               >
                 <span>Baca artikel</span>
                 <ArrowRight className="w-3.5 h-3.5" />

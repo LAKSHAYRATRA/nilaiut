@@ -30,7 +30,7 @@ export default function FaqAccordion({
       {(title || subtitle) && (
         <div className="space-y-1 border-b border-slate-200 dark:border-slate-800 pb-3">
           {title && (
-            <h2 className="text-xl sm:text-2xl font-serif font-bold text-[#0b2545] dark:text-white">
+            <h2 className="text-xl sm:text-2xl font-bold text-slate-900 dark:text-white">
               {title}
             </h2>
           )}
@@ -50,13 +50,13 @@ export default function FaqAccordion({
               <button
                 type="button"
                 onClick={() => toggle(index)}
-                className="w-full text-left flex items-start justify-between gap-4 font-serif font-bold text-slate-900 dark:text-white hover:text-[#0b2545] dark:hover:text-[#deb563] transition-colors"
+                className="w-full text-left flex items-start justify-between gap-4 font-semibold text-slate-900 dark:text-white hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
                 aria-expanded={isOpen}
               >
                 <span className="text-sm sm:text-base leading-snug">{item.question}</span>
                 <ChevronDown
                   className={`w-4 h-4 text-slate-400 shrink-0 mt-1 transition-transform duration-200 ${
-                    isOpen ? 'rotate-180 text-[#8c6519] dark:text-[#deb563]' : ''
+                    isOpen ? 'rotate-180 text-blue-600 dark:text-blue-400' : ''
                   }`}
                 />
               </button>

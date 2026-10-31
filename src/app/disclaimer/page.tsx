@@ -17,7 +17,7 @@ export default function DisclaimerPage() {
       <div>
         <Link
           href="/"
-          className="inline-flex items-center gap-2 text-sm font-semibold text-slate-600 dark:text-slate-400 hover:text-[#0b2545] dark:hover:text-[#deb563]"
+          className="inline-flex items-center gap-2 text-sm font-semibold text-slate-600 dark:text-slate-400 hover:text-blue-600 dark:hover:text-blue-400"
         >
           <ArrowLeft className="w-4 h-4" />
           <span>Kembali ke Beranda</span>
@@ -25,11 +25,11 @@ export default function DisclaimerPage() {
       </div>
 
       <header className="space-y-4 border-b border-slate-200 dark:border-slate-800 pb-8">
-        <div className="inline-flex items-center gap-2 px-3 py-1 rounded-md text-xs font-serif font-bold uppercase tracking-wider bg-amber-50 dark:bg-amber-950/50 text-[#8c6519] dark:text-[#deb563] border border-amber-200 dark:border-amber-800">
+        <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-semibold bg-amber-100 dark:bg-amber-900/40 text-amber-800 dark:text-amber-300">
           <ShieldAlert className="w-3.5 h-3.5" />
-          <span>Penafian Akademik &amp; Legal</span>
+          <span>Penafian Legal &amp; Akademik</span>
         </div>
-        <h1 className="text-3xl sm:text-4xl lg:text-5xl font-serif font-bold tracking-tight text-[#0b2545] dark:text-white leading-tight">
+        <h1 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight text-slate-900 dark:text-white leading-tight">
           Penafian Resmi (Disclaimer)
         </h1>
         <p className="text-base sm:text-lg text-slate-600 dark:text-slate-300 leading-relaxed">
