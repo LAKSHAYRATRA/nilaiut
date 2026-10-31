@@ -22,7 +22,7 @@ export default function KontakPage() {
       <div>
         <Link
           href="/"
-          className="inline-flex items-center gap-1.5 text-xs font-semibold text-slate-600 dark:text-slate-400 hover:text-blue-700 dark:hover:text-blue-400"
+          className="inline-flex items-center gap-1.5 text-xs font-semibold text-slate-600 dark:text-slate-400 hover:text-[#0b2545] dark:hover:text-[#deb563]"
         >
           <ArrowLeft className="w-3.5 h-3.5" />
           <span>Kembali ke Beranda</span>
@@ -30,10 +30,10 @@ export default function KontakPage() {
       </div>
 
       <header className="space-y-2 border-b border-slate-200 dark:border-slate-800 pb-6">
-        <span className="text-xs font-semibold text-blue-800 dark:text-blue-400">
-          Layanan Komunikasi
+        <span className="text-xs font-serif font-bold uppercase tracking-wider text-[#8c6519] dark:text-[#deb563]">
+          Layanan Komunikasi Akademik
         </span>
-        <h1 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-slate-900 dark:text-white tracking-tight">
+        <h1 className="text-2xl sm:text-3xl lg:text-4xl font-serif font-bold text-[#0b2545] dark:text-white tracking-tight">
           Kontak &amp; Masukan
         </h1>
         <p className="text-sm sm:text-base text-slate-600 dark:text-slate-300 leading-relaxed">
@@ -169,9 +169,9 @@ export default function KontakPage() {
 
                 <button
                   type="submit"
-                  className="w-full py-2.5 rounded bg-blue-700 hover:bg-blue-800 text-white font-semibold text-xs flex items-center justify-center gap-1.5 transition-colors"
+                  className="w-full py-2.5 rounded-md bg-[#0b2545] hover:bg-[#07162b] text-[#f4e6be] font-bold text-xs flex items-center justify-center gap-1.5 transition-colors border border-[#c59b27]/40 shadow-sm"
                 >
-                  <Send className="w-3.5 h-3.5" />
+                  <Send className="w-3.5 h-3.5 text-[#deb563]" />
                   <span>Kirim Pesan</span>
                 </button>
               </form>

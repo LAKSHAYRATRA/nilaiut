@@ -63,7 +63,7 @@ export default function CaraHitungNilaiPage() {
       <div>
         <Link
           href="/"
-          className="inline-flex items-center gap-1.5 text-xs font-semibold text-slate-600 dark:text-slate-400 hover:text-blue-700 dark:hover:text-blue-400"
+          className="inline-flex items-center gap-1.5 text-xs font-semibold text-slate-600 dark:text-slate-400 hover:text-[#0b2545] dark:hover:text-[#deb563]"
         >
           <ArrowLeft className="w-3.5 h-3.5" />
           <span>Kembali ke Beranda</span>
@@ -71,10 +71,10 @@ export default function CaraHitungNilaiPage() {
       </div>
 
       <header className="space-y-2 border-b border-slate-200 dark:border-slate-800 pb-6">
-        <span className="text-xs font-semibold text-blue-800 dark:text-blue-400">
-          Pedoman Evaluasi Belajar
+        <span className="text-xs font-serif font-bold uppercase tracking-wider text-[#8c6519] dark:text-[#deb563]">
+          Pedoman Evaluasi Belajar Resmi UT
         </span>
-        <h1 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-slate-900 dark:text-white tracking-tight">
+        <h1 className="text-2xl sm:text-3xl lg:text-4xl font-serif font-bold text-[#0b2545] dark:text-white tracking-tight">
           Cara Menghitung Nilai Akhir Mata Kuliah Universitas Terbuka
         </h1>
         <p className="text-sm sm:text-base text-slate-600 dark:text-slate-300 leading-relaxed">
@@ -90,14 +90,14 @@ export default function CaraHitungNilaiPage() {
           Proses pembelajaran mandiri dipadukan dengan layanan bantuan belajar terbimbing. Oleh sebab itu, nilai akhir mata kuliah bukan hanya bersumber dari ujian akhir, melainkan integrasi antara <strong>Aktivitas Tutorial</strong> dan <strong>Ujian Akhir Semester (UAS)</strong>.
         </p>
 
-        <h2 className="text-lg sm:text-xl font-bold text-slate-900 dark:text-white pt-2">
+        <h2 className="text-lg sm:text-xl font-serif font-bold text-[#0b2545] dark:text-white pt-2">
           Dasar Hukum: Peraturan Rektor UT No. 16 Tahun 2017
         </h2>
         <p>
           Sistem penilaian hasil belajar mahasiswa UT diatur dalam <strong>Peraturan Rektor Universitas Terbuka Nomor 16 Tahun 2017</strong> tentang Sistem Penilaian dan Evaluasi Akademik. Ketentuan pokoknya menyatakan:
         </p>
-        <blockquote className="p-3.5 my-3 border-l-4 border-slate-800 dark:border-slate-600 bg-slate-50 dark:bg-slate-850 italic text-slate-800 dark:text-slate-200">
-          "Nilai akhir mata kuliah merupakan gabungan dari nilai tutorial atau tugas mata kuliah dengan nilai ujian akhir semester, dengan ketentuan nilai ujian akhir semester mahasiswa mencapai skor minimal 30 persen dari skor maksimal."
+        <blockquote className="academic-citation p-4 my-4 rounded-r-lg italic text-[#0b2545] dark:text-[#faf4e2]">
+          &ldquo;Nilai akhir mata kuliah merupakan gabungan dari nilai tutorial atau tugas mata kuliah dengan nilai ujian akhir semester, dengan ketentuan nilai ujian akhir semester mahasiswa mencapai skor minimal 30 persen dari skor maksimal.&rdquo;
         </blockquote>
 
         <h2 className="text-lg sm:text-xl font-bold text-slate-900 dark:text-white pt-2">

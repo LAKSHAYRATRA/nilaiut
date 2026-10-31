@@ -100,6 +100,8 @@ export default function RootLayout({
     <html lang="id" className="scroll-smooth">
       <head>
         <link rel="icon" href="/icon.svg" type="image/svg+xml" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <JsonLd data={websiteSchema} />
         <JsonLd data={softwareSchema} />
         {/* Anti-flicker dark mode script */}
@@ -119,7 +121,7 @@ export default function RootLayout({
           }}
         />
       </head>
-      <body className="min-h-screen flex flex-col bg-slate-50 dark:bg-slate-950 text-slate-900 dark:text-slate-100 antialiased selection:bg-blue-600 selection:text-white transition-colors">
+      <body className="min-h-screen flex flex-col bg-[#fbfbfc] dark:bg-[#080f1a] text-slate-900 dark:text-slate-100 antialiased selection:bg-[#0b2545] selection:text-[#faf4e2] font-sans transition-colors">
         <Navbar />
         <main className="flex-1">
           {children}

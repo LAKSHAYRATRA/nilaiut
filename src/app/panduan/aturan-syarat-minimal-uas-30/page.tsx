@@ -63,7 +63,7 @@ export default function AturanUas30Page() {
       <div>
         <Link
           href="/"
-          className="inline-flex items-center gap-1.5 text-xs font-semibold text-slate-600 dark:text-slate-400 hover:text-blue-700 dark:hover:text-blue-400"
+          className="inline-flex items-center gap-1.5 text-xs font-semibold text-slate-600 dark:text-slate-400 hover:text-[#0b2545] dark:hover:text-[#deb563]"
         >
           <ArrowLeft className="w-3.5 h-3.5" />
           <span>Kembali ke Beranda</span>
@@ -71,10 +71,10 @@ export default function AturanUas30Page() {
       </div>
 
       <header className="space-y-2 border-b border-slate-200 dark:border-slate-800 pb-6">
-        <span className="text-xs font-semibold text-blue-800 dark:text-blue-400">
-          Regulasi Krusial UT
+        <span className="text-xs font-serif font-bold uppercase tracking-wider text-[#8c6519] dark:text-[#deb563]">
+          Regulasi Akademik Krusial UT
         </span>
-        <h1 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-slate-900 dark:text-white tracking-tight">
+        <h1 className="text-2xl sm:text-3xl lg:text-4xl font-serif font-bold text-[#0b2545] dark:text-white tracking-tight">
           Aturan Syarat Minimal UAS 30 di UT: Mengapa Ada dan Cara Menghindarinya
         </h1>
         <p className="text-sm sm:text-base text-slate-600 dark:text-slate-300 leading-relaxed">
@@ -87,7 +87,7 @@ export default function AturanUas30Page() {
           Banyak mahasiswa Universitas Terbuka heran ketika mendapatkan nilai akhir huruf mutu E padahal selalu aktif mengerjakan diskusi dan tugas di portal elearning dengan nilai tinggi. Penyebab utamanya adalah <strong>Klausul Syarat Minimal UAS 30 Poin</strong>.
         </p>
 
-        <h2 className="text-lg sm:text-xl font-bold text-slate-900 dark:text-white pt-2">
+        <h2 className="text-lg sm:text-xl font-serif font-bold text-[#0b2545] dark:text-white pt-2">
           Mengapa Universitas Terbuka Menerapkan Aturan Minimal 30?
         </h2>
         <p>
@@ -98,7 +98,7 @@ export default function AturanUas30Page() {
           <li><strong>Standar Kompetensi Lulusan:</strong> Mahasiswa dipandang menguasai kompetensi dasar modul Buku Materi Pokok (BMP) hanya jika mampu menjawab benar minimal 30% dari materi ujian.</li>
         </ol>
 
-        <h2 className="text-lg sm:text-xl font-bold text-slate-900 dark:text-white pt-2">
+        <h2 className="text-lg sm:text-xl font-serif font-bold text-[#0b2545] dark:text-white pt-2">
           Simulasi Kasus: Lolos vs Terjebak Batas 30
         </h2>
 

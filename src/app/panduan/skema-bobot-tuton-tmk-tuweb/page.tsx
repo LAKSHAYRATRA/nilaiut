@@ -63,7 +63,7 @@ export default function SkemaBobotPage() {
       <div>
         <Link
           href="/"
-          className="inline-flex items-center gap-1.5 text-xs font-semibold text-slate-600 dark:text-slate-400 hover:text-blue-700 dark:hover:text-blue-400"
+          className="inline-flex items-center gap-1.5 text-xs font-semibold text-slate-600 dark:text-slate-400 hover:text-[#0b2545] dark:hover:text-[#deb563]"
         >
           <ArrowLeft className="w-3.5 h-3.5" />
           <span>Kembali ke Beranda</span>
@@ -71,10 +71,10 @@ export default function SkemaBobotPage() {
       </div>
 
       <header className="space-y-2 border-b border-slate-200 dark:border-slate-800 pb-6">
-        <span className="text-xs font-semibold text-blue-800 dark:text-blue-400">
-          Analisis Skema Tutorial
+        <span className="text-xs font-serif font-bold uppercase tracking-wider text-[#8c6519] dark:text-[#deb563]">
+          Analisis Skema Tutorial Resmi UT
         </span>
-        <h1 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-slate-900 dark:text-white tracking-tight">
+        <h1 className="text-2xl sm:text-3xl lg:text-4xl font-serif font-bold text-[#0b2545] dark:text-white tracking-tight">
           Skema Bobot Tuton 70:30, TMK 80:20 &amp; Tuweb 50:50
         </h1>
         <p className="text-sm sm:text-base text-slate-600 dark:text-slate-300 leading-relaxed">
@@ -87,14 +87,14 @@ export default function SkemaBobotPage() {
           Dalam sistem Pendidikan Tinggi Terbuka dan Jarak Jauh (PTJJ), mahasiswa UT dapat memilih atau dialokasikan ke jalur bantuan belajar yang sesuai dengan ritme pekerjaan dan akses internet masing-masing.
         </p>
 
-        <h2 className="text-lg sm:text-xl font-bold text-slate-900 dark:text-white pt-2">
+        <h2 className="text-lg sm:text-xl font-serif font-bold text-[#0b2545] dark:text-white pt-2">
           1. Tutorial Online (Tuton) - Formula: 70% UAS + 30% Tuton
         </h2>
         <p>
           Tutorial Online berlangsung selama 8 minggu via elearning.ut.ac.id. Komposisi penilaian: kehadiran (20%), diskusi mingguan (30%), dan 3 tugas tutorial (50%).
         </p>
 
-        <h2 className="text-lg sm:text-xl font-bold text-slate-900 dark:text-white pt-2">
+        <h2 className="text-lg sm:text-xl font-serif font-bold text-[#0b2545] dark:text-white pt-2">
           2. Tuweb / TTM - Formula: 50% UAS + 50% Tuweb
         </h2>
         <p>

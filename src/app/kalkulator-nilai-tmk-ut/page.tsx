@@ -74,7 +74,7 @@ export default function KalkulatorTmkPage() {
       <div>
         <Link
           href="/"
-          className="inline-flex items-center gap-1.5 text-xs font-semibold text-slate-600 dark:text-slate-400 hover:text-blue-700 dark:hover:text-blue-400"
+          className="inline-flex items-center gap-1.5 text-xs font-semibold text-slate-600 dark:text-slate-400 hover:text-[#0b2545] dark:hover:text-[#deb563]"
         >
           <ArrowLeft className="w-3.5 h-3.5" />
           <span>Kembali ke Beranda</span>
@@ -82,10 +82,10 @@ export default function KalkulatorTmkPage() {
       </div>
 
       <header className="space-y-2 border-b border-slate-200 dark:border-slate-800 pb-6">
-        <span className="text-xs font-semibold text-blue-800 dark:text-blue-400">
+        <span className="text-xs font-serif font-bold uppercase tracking-wider text-[#8c6519] dark:text-[#deb563]">
           Modus Tugas Mandiri UT
         </span>
-        <h1 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-slate-900 dark:text-white tracking-tight">
+        <h1 className="text-2xl sm:text-3xl lg:text-4xl font-serif font-bold text-[#0b2545] dark:text-white tracking-tight">
           Kalkulator Nilai TMK UT (Bobot 80:20)
         </h1>
         <p className="text-sm sm:text-base text-slate-600 dark:text-slate-300 leading-relaxed max-w-3xl">
@@ -98,13 +98,13 @@ export default function KalkulatorTmkPage() {
       </section>
 
       <section className="prose dark:prose-invert max-w-none text-slate-700 dark:text-slate-300 text-sm sm:text-base leading-relaxed space-y-4 pt-6 border-t border-slate-200 dark:border-slate-800">
-        <h2 className="text-lg sm:text-xl font-bold text-slate-900 dark:text-white">
+        <h2 className="text-lg sm:text-xl font-serif font-bold text-[#0b2545] dark:text-white">
           Karakteristik Skema Tugas Mata Kuliah (TMK) UT
         </h2>
         <p>
           Skema TMK merupakan alternatif bantuan belajar bagi mahasiswa UT yang tidak sempat mengaktivasi Tuton. Mahasiswa mengunggah Buku Jawaban Tugas (BJT) untuk 3 tugas mandiri di laman tmk.ut.ac.id.
         </p>
-        <div className="p-3.5 rounded-lg bg-slate-100 dark:bg-slate-800 font-mono text-xs sm:text-sm text-slate-900 dark:text-slate-100 font-semibold not-prose">
+        <div className="p-3.5 rounded-lg bg-[#faf8f3] dark:bg-[#121c2d] border border-[#c59b27]/30 dark:border-[#deb563]/20 font-mono text-xs sm:text-sm text-[#0b2545] dark:text-[#deb563] font-semibold not-prose">
           Nilai Akhir = (0.80 × Nilai UAS) + (0.20 × Nilai TMK)
         </div>
         <p>

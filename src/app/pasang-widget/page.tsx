@@ -36,7 +36,7 @@ export default function PasangWidgetPage() {
       <div>
         <Link
           href="/"
-          className="inline-flex items-center gap-1.5 text-xs font-semibold text-slate-600 dark:text-slate-400 hover:text-blue-700 dark:hover:text-blue-400"
+          className="inline-flex items-center gap-1.5 text-xs font-semibold text-slate-600 dark:text-slate-400 hover:text-[#0b2545] dark:hover:text-[#deb563]"
         >
           <ArrowLeft className="w-3.5 h-3.5" />
           <span>Kembali ke Beranda</span>
@@ -44,10 +44,10 @@ export default function PasangWidgetPage() {
       </div>
 
       <header className="space-y-2 border-b border-slate-200 dark:border-slate-800 pb-6">
-        <span className="text-xs font-semibold text-blue-800 dark:text-blue-400">
+        <span className="text-xs font-serif font-bold uppercase tracking-wider text-[#8c6519] dark:text-[#deb563]">
           Integrasi Webmaster &amp; Blogger
         </span>
-        <h1 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-slate-900 dark:text-white tracking-tight">
+        <h1 className="text-2xl sm:text-3xl lg:text-4xl font-serif font-bold text-[#0b2545] dark:text-white tracking-tight">
           Pasang Widget Kalkulator Nilai UT di Blog Anda
         </h1>
         <p className="text-sm sm:text-base text-slate-600 dark:text-slate-300 leading-relaxed">
@@ -62,7 +62,7 @@ export default function PasangWidgetPage() {
 
       {/* Tutorial How to Embed on Platforms */}
       <section className="prose dark:prose-invert max-w-none space-y-4 text-slate-700 dark:text-slate-300 text-sm sm:text-base leading-relaxed pt-6">
-        <h2 className="text-lg sm:text-xl font-bold text-slate-900 dark:text-white">
+        <h2 className="text-lg sm:text-xl font-serif font-bold text-[#0b2545] dark:text-white">
           Petunjuk Pemasangan di Berbagai Platform CMS
         </h2>
 

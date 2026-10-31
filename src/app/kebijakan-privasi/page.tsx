@@ -17,7 +17,7 @@ export default function KebijakanPrivasiPage() {
       <div>
         <Link
           href="/"
-          className="inline-flex items-center gap-2 text-sm font-semibold text-blue-600 dark:text-blue-400 hover:underline"
+          className="inline-flex items-center gap-2 text-sm font-semibold text-slate-600 dark:text-slate-400 hover:text-[#0b2545] dark:hover:text-[#deb563]"
         >
           <ArrowLeft className="w-4 h-4" />
           <span>Kembali ke Beranda</span>
@@ -25,11 +25,11 @@ export default function KebijakanPrivasiPage() {
       </div>
 
       <header className="space-y-4 border-b border-slate-200 dark:border-slate-800 pb-8">
-        <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-semibold bg-emerald-100 dark:bg-emerald-900/40 text-emerald-800 dark:text-emerald-300">
+        <div className="inline-flex items-center gap-2 px-3 py-1 rounded-md text-xs font-serif font-bold uppercase tracking-wider bg-emerald-50 dark:bg-emerald-950/50 text-emerald-800 dark:text-emerald-300 border border-emerald-200 dark:border-emerald-800">
           <Shield className="w-3.5 h-3.5" />
           <span>Dokumen Kepatuhan Hukum &amp; Privasi</span>
         </div>
-        <h1 className="text-3xl sm:text-4xl lg:text-5xl font-black tracking-tight text-slate-900 dark:text-white leading-tight">
+        <h1 className="text-3xl sm:text-4xl lg:text-5xl font-serif font-bold tracking-tight text-[#0b2545] dark:text-white leading-tight">
           Kebijakan Privasi (Privacy Policy)
         </h1>
         <p className="text-base sm:text-lg text-slate-600 dark:text-slate-300 leading-relaxed">

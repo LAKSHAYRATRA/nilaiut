@@ -77,24 +77,24 @@ export default function IpkCalculator() {
   };
 
   return (
-    <div className="bg-white dark:bg-slate-900 rounded-xl border border-slate-200 dark:border-slate-800 shadow-sm overflow-hidden transition-colors">
+    <div className="bg-white dark:bg-[#0e1828] rounded-xl border border-slate-200 dark:border-[#1e304a] shadow-md overflow-hidden transition-colors">
       {/* Institutional Top Bar */}
-      <div className="bg-slate-900 text-white px-6 py-4 flex flex-col sm:flex-row sm:items-center justify-between gap-3 border-b border-slate-800">
+      <div className="bg-[#0b2545] text-white px-6 py-4 flex flex-col sm:flex-row sm:items-center justify-between gap-3 border-b-2 border-[#c59b27]">
         <div>
           <div className="flex items-center gap-2">
-            <Award className="w-5 h-5 text-emerald-400" />
-            <h2 className="text-base sm:text-lg font-bold tracking-tight text-white">
+            <Award className="w-5 h-5 text-[#deb563]" />
+            <h2 className="text-base sm:text-lg font-serif font-bold tracking-tight text-white">
               Kalkulator IPK &amp; Predikat Kelulusan UT
             </h2>
           </div>
-          <p className="text-xs text-slate-400 mt-0.5">
-            Perhitungan Indeks Prestasi Kumulatif Skala 4.00 Resmi
+          <p className="text-xs text-[#deb563] mt-0.5 font-sans font-medium">
+            Perhitungan Indeks Prestasi Kumulatif Skala 4.00 Resmi Buku Pedoman UT
           </p>
         </div>
         <button
           type="button"
           onClick={resetCourses}
-          className="px-2.5 py-1 rounded text-xs text-slate-300 hover:text-white border border-slate-700 hover:bg-slate-800 transition-colors flex items-center gap-1 self-start sm:self-auto"
+          className="px-2.5 py-1 rounded text-xs text-slate-200 hover:text-white border border-[#1e3e7f] hover:bg-[#152238] transition-colors flex items-center gap-1 self-start sm:self-auto font-medium"
         >
           <RotateCcw className="w-3.5 h-3.5" />
           <span>Reset Contoh</span>
@@ -102,43 +102,43 @@ export default function IpkCalculator() {
       </div>
 
       <div className="p-6 sm:p-8 space-y-6">
-        {/* Metric Summary Strip: Clean & Grounded */}
+        {/* Metric Summary Strip: Clean Academic Parchment */}
         <div className="grid grid-cols-2 lg:grid-cols-4 gap-3">
-          <div className="p-4 rounded-lg bg-slate-50 dark:bg-slate-800/40 border border-slate-200 dark:border-slate-800">
-            <span className="text-xs text-slate-500 dark:text-slate-400 block">
+          <div className="p-4 rounded-lg bg-[#faf8f3] dark:bg-[#121c2d] border border-[#c59b27]/30 dark:border-[#deb563]/20">
+            <span className="text-xs text-slate-500 dark:text-slate-400 block font-medium">
               Indeks Prestasi (IPK/IPS)
             </span>
-            <div className="text-2xl sm:text-3xl font-extrabold text-slate-900 dark:text-white mt-1">
+            <div className="text-2xl sm:text-3xl font-serif font-bold text-[#0b2545] dark:text-[#f4e6be] mt-1">
               {result.ipk.toFixed(2)}
             </div>
-            <span className="text-[11px] text-slate-500">Skala 4.00</span>
+            <span className="text-[11px] text-[#8c6519] dark:text-[#deb563] font-semibold">Skala 4.00</span>
           </div>
 
-          <div className="p-4 rounded-lg bg-slate-50 dark:bg-slate-800/40 border border-slate-200 dark:border-slate-800">
-            <span className="text-xs text-slate-500 dark:text-slate-400 block">
+          <div className="p-4 rounded-lg bg-[#faf8f3] dark:bg-[#121c2d] border border-[#c59b27]/30 dark:border-[#deb563]/20">
+            <span className="text-xs text-slate-500 dark:text-slate-400 block font-medium">
               Predikat Kelulusan
             </span>
-            <div className="text-base sm:text-lg font-bold text-slate-900 dark:text-white mt-1 truncate" title={result.predikat}>
+            <div className="text-base sm:text-lg font-serif font-bold text-[#8c6519] dark:text-[#deb563] mt-1 truncate" title={result.predikat}>
               {result.predikat}
             </div>
-            <span className="text-[11px] text-slate-500">Buku Pedoman UT</span>
+            <span className="text-[11px] text-slate-500 font-medium">Standar Yudisium UT</span>
           </div>
 
-          <div className="p-4 rounded-lg bg-slate-50 dark:bg-slate-800/40 border border-slate-200 dark:border-slate-800">
-            <span className="text-xs text-slate-500 dark:text-slate-400 block">
+          <div className="p-4 rounded-lg bg-[#faf8f3] dark:bg-[#121c2d] border border-[#c59b27]/30 dark:border-[#deb563]/20">
+            <span className="text-xs text-slate-500 dark:text-slate-400 block font-medium">
               Total SKS Dihitung
             </span>
-            <div className="text-2xl sm:text-3xl font-extrabold text-slate-900 dark:text-white mt-1">
+            <div className="text-2xl sm:text-3xl font-serif font-bold text-[#0b2545] dark:text-[#f4e6be] mt-1">
               {result.totalSks}
             </div>
             <span className="text-[11px] text-slate-500">{courses.length} Mata Kuliah</span>
           </div>
 
-          <div className="p-4 rounded-lg bg-slate-50 dark:bg-slate-800/40 border border-slate-200 dark:border-slate-800">
-            <span className="text-xs text-slate-500 dark:text-slate-400 block">
+          <div className="p-4 rounded-lg bg-[#faf8f3] dark:bg-[#121c2d] border border-[#c59b27]/30 dark:border-[#deb563]/20">
+            <span className="text-xs text-slate-500 dark:text-slate-400 block font-medium">
               Total Nilai Mutu (M)
             </span>
-            <div className="text-2xl sm:text-3xl font-extrabold text-slate-900 dark:text-white mt-1">
+            <div className="text-2xl sm:text-3xl font-serif font-bold text-[#0b2545] dark:text-[#f4e6be] mt-1">
               {result.totalMutu}
             </div>
             <span className="text-[11px] text-slate-500">∑ (SKS × Bobot)</span>
@@ -150,7 +150,7 @@ export default function IpkCalculator() {
           <div className="p-3.5 rounded-lg bg-red-50 dark:bg-red-950/40 border border-red-300 dark:border-red-900 text-red-900 dark:text-red-200 text-xs flex items-start gap-2.5">
             <AlertTriangle className="w-4 h-4 text-red-600 shrink-0 mt-0.5" />
             <div>
-              <strong>Perhatian Mata Kuliah Nilai E:</strong> Terdapat {result.countE} mata kuliah bernilai E. Ketentuan kelulusan sarjana UT mewajibkan mahasiswa tidak memiliki nilai E untuk dapat mengikuti yudisium.
+              <strong className="font-serif">Perhatian Mata Kuliah Nilai E:</strong> Terdapat {result.countE} mata kuliah bernilai E. Ketentuan kelulusan sarjana UT mewajibkan mahasiswa tidak memiliki nilai E untuk dapat mengikuti yudisium.
             </div>
           </div>
         )}
@@ -164,9 +164,9 @@ export default function IpkCalculator() {
             <button
               type="button"
               onClick={addCourse}
-              className="px-3 py-1.5 rounded-md bg-slate-900 dark:bg-slate-800 hover:bg-slate-800 text-white text-xs font-medium flex items-center gap-1.5 transition-colors"
+              className="px-3 py-1.5 rounded-md bg-[#0b2545] dark:bg-[#152238] hover:bg-[#07162b] text-[#f4e6be] text-xs font-medium flex items-center gap-1.5 transition-colors border border-[#c59b27]/40 shadow-sm"
             >
-              <Plus className="w-3.5 h-3.5" />
+              <Plus className="w-3.5 h-3.5 text-[#deb563]" />
               <span>Tambah Baris</span>
             </button>
           </div>
@@ -175,7 +175,7 @@ export default function IpkCalculator() {
             {courses.map((course) => (
               <div
                 key={course.id}
-                className="grid grid-cols-12 gap-2 p-2.5 rounded-lg border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 items-center text-xs"
+                className="grid grid-cols-12 gap-2 p-2.5 rounded-lg border border-slate-200 dark:border-slate-800 bg-white dark:bg-[#0e1828] items-center text-xs"
               >
                 <div className="col-span-12 sm:col-span-3">
                   <input
@@ -183,7 +183,7 @@ export default function IpkCalculator() {
                     value={course.code}
                     onChange={(e) => updateCourse(course.id, 'code', e.target.value.toUpperCase())}
                     placeholder="Kode MK"
-                    className="w-full px-2.5 py-1.5 font-mono uppercase rounded border border-slate-300 dark:border-slate-700 bg-white dark:bg-slate-900 focus:outline-none focus:ring-1 focus:ring-blue-600"
+                    className="w-full px-2.5 py-1.5 font-mono uppercase rounded border border-slate-300 dark:border-slate-700 bg-white dark:bg-[#0e1828] focus:outline-none focus:ring-1 focus:ring-[#0b2545] dark:focus:ring-[#deb563]"
                   />
                 </div>
 
@@ -193,7 +193,7 @@ export default function IpkCalculator() {
                     value={course.name}
                     onChange={(e) => updateCourse(course.id, 'name', e.target.value)}
                     placeholder="Nama Mata Kuliah"
-                    className="w-full px-2.5 py-1.5 rounded border border-slate-300 dark:border-slate-700 bg-white dark:bg-slate-900 focus:outline-none focus:ring-1 focus:ring-blue-600"
+                    className="w-full px-2.5 py-1.5 rounded border border-slate-300 dark:border-slate-700 bg-white dark:bg-[#0e1828] focus:outline-none focus:ring-1 focus:ring-[#0b2545] dark:focus:ring-[#deb563]"
                   />
                 </div>
 
@@ -201,7 +201,7 @@ export default function IpkCalculator() {
                   <select
                     value={course.sks}
                     onChange={(e) => updateCourse(course.id, 'sks', Number(e.target.value))}
-                    className="w-full px-2 py-1.5 rounded border border-slate-300 dark:border-slate-700 bg-white dark:bg-slate-900 focus:outline-none focus:ring-1 focus:ring-blue-600 font-semibold"
+                    className="w-full px-2 py-1.5 rounded border border-slate-300 dark:border-slate-700 bg-white dark:bg-[#0e1828] focus:outline-none focus:ring-1 focus:ring-[#0b2545] dark:focus:ring-[#deb563] font-semibold"
                   >
                     <option value="1">1 SKS</option>
                     <option value="2">2 SKS</option>
@@ -215,7 +215,7 @@ export default function IpkCalculator() {
                   <select
                     value={course.letter}
                     onChange={(e) => updateCourse(course.id, 'letter', e.target.value)}
-                    className="w-full px-2 py-1.5 rounded border border-slate-300 dark:border-slate-700 bg-white dark:bg-slate-900 focus:outline-none focus:ring-1 focus:ring-blue-600 font-bold"
+                    className="w-full px-2 py-1.5 rounded border border-slate-300 dark:border-slate-700 bg-white dark:bg-[#0e1828] focus:outline-none focus:ring-1 focus:ring-[#0b2545] dark:focus:ring-[#deb563] font-bold"
                   >
                     <option value="A">A</option>
                     <option value="A-">A-</option>
@@ -245,22 +245,22 @@ export default function IpkCalculator() {
 
         {/* Action row */}
         <div className="flex flex-col sm:flex-row items-center justify-between gap-3 pt-2">
-          <span className="text-xs text-slate-500 dark:text-slate-400">
+          <span className="text-xs text-slate-500 dark:text-slate-400 font-medium">
             Simpan atau bagikan rangkuman IPK:
           </span>
           <div className="flex items-center gap-2 w-full sm:w-auto">
             <button
               type="button"
               onClick={handleWhatsAppDirect}
-              className="flex-1 sm:flex-none px-3.5 py-2 rounded-lg bg-slate-900 hover:bg-slate-800 text-white font-medium text-xs flex items-center justify-center gap-1.5 transition-colors"
+              className="flex-1 sm:flex-none px-3.5 py-2 rounded-md bg-[#0b2545] hover:bg-[#07162b] text-[#f4e6be] font-medium text-xs flex items-center justify-center gap-1.5 transition-colors border border-[#c59b27]/40 shadow-sm"
             >
-              <MessageSquare className="w-3.5 h-3.5" />
+              <MessageSquare className="w-3.5 h-3.5 text-[#deb563]" />
               <span>Kirim WhatsApp</span>
             </button>
             <button
               type="button"
               onClick={handleCopyShare}
-              className="flex-1 sm:flex-none px-3.5 py-2 rounded-lg border border-slate-300 dark:border-slate-700 hover:bg-slate-100 dark:hover:bg-slate-800 text-slate-800 dark:text-slate-200 font-medium text-xs flex items-center justify-center gap-1.5 transition-colors"
+              className="flex-1 sm:flex-none px-3.5 py-2 rounded-md border border-slate-300 dark:border-slate-700 hover:bg-slate-100 dark:hover:bg-slate-800 text-slate-800 dark:text-slate-200 font-medium text-xs flex items-center justify-center gap-1.5 transition-colors"
             >
               {copied ? (
                 <>
@@ -269,7 +269,7 @@ export default function IpkCalculator() {
                 </>
               ) : (
                 <>
-                  <Copy className="w-3.5 h-3.5" />
+                  <Copy className="w-3.5 h-3.5 text-slate-500" />
                   <span>Salin Rekap IPK</span>
                 </>
               )}
