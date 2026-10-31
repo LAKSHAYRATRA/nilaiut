@@ -36,21 +36,21 @@ export default function PasangWidgetPage() {
       <div>
         <Link
           href="/"
-          className="inline-flex items-center gap-1.5 text-xs font-semibold text-slate-600 dark:text-slate-400 hover:text-blue-600 dark:hover:text-blue-400"
+          className="inline-flex items-center gap-1.5 text-xs font-bold text-[#002D72] hover:underline"
         >
           <ArrowLeft className="w-3.5 h-3.5" />
           <span>Kembali ke Beranda</span>
         </Link>
       </div>
 
-      <header className="space-y-2 border-b border-slate-200 dark:border-slate-800 pb-6">
-        <span className="text-xs font-semibold uppercase tracking-wider text-blue-600 dark:text-blue-400">
+      <header className="space-y-2 border-b border-slate-200 pb-6">
+        <span className="text-xs font-bold uppercase tracking-wider text-[#002D72]">
           Integrasi Webmaster &amp; Blogger
         </span>
-        <h1 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-slate-900 dark:text-white tracking-tight">
+        <h1 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-[#0F172A] tracking-tight">
           Pasang Widget Kalkulator Nilai UT di Blog Anda
         </h1>
-        <p className="text-sm sm:text-base text-slate-600 dark:text-slate-300 leading-relaxed">
+        <p className="text-sm sm:text-base text-[#475569] leading-relaxed">
           Sematkan kalkulator interaktif NilaiUT pada situs web, portal himpunan, atau artikel blog Anda agar pembaca dapat melakukan simulasi nilai secara langsung.
         </p>
       </header>
@@ -61,17 +61,17 @@ export default function PasangWidgetPage() {
       </section>
 
       {/* Tutorial How to Embed on Platforms */}
-      <section className="prose dark:prose-invert max-w-none space-y-4 text-slate-700 dark:text-slate-300 text-sm sm:text-base leading-relaxed pt-6">
-        <h2 className="text-lg sm:text-xl font-bold text-slate-900 dark:text-white">
+      <section className="bg-white rounded-2xl border border-slate-200 p-6 sm:p-8 space-y-4 shadow-sm text-sm sm:text-base text-[#475569] leading-relaxed">
+        <h2 className="text-lg sm:text-xl font-bold text-[#0F172A]">
           Petunjuk Pemasangan di Berbagai Platform CMS
         </h2>
 
         <div className="space-y-3 not-prose my-4">
-          <div className="p-4 rounded-lg border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 space-y-1.5">
-            <h3 className="font-bold text-slate-900 dark:text-white text-sm">
+          <div className="p-4 rounded-xl border border-slate-200 bg-[#F4F6F9] space-y-1.5">
+            <h3 className="font-bold text-[#0F172A] text-sm">
               1. Pemasangan di WordPress (Gutenberg Block)
             </h3>
-            <ol className="list-decimal pl-5 text-xs text-slate-600 dark:text-slate-400 space-y-1">
+            <ol className="list-decimal pl-5 text-xs text-[#475569] space-y-1">
               <li>Buka editor postingan WordPress Anda.</li>
               <li>Tambahkan blok baru lalu cari dan pilih <strong>Custom HTML</strong>.</li>
               <li>Tempel (paste) kode embed iframe yang disalin dari generator di atas.</li>
@@ -79,11 +79,11 @@ export default function PasangWidgetPage() {
             </ol>
           </div>
 
-          <div className="p-4 rounded-lg border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 space-y-1.5">
-            <h3 className="font-bold text-slate-900 dark:text-white text-sm">
+          <div className="p-4 rounded-xl border border-slate-200 bg-[#F4F6F9] space-y-1.5">
+            <h3 className="font-bold text-[#0F172A] text-sm">
               2. Pemasangan di Blogger / Blogspot
             </h3>
-            <ol className="list-decimal pl-5 text-xs text-slate-600 dark:text-slate-400 space-y-1">
+            <ol className="list-decimal pl-5 text-xs text-[#475569] space-y-1">
               <li>Buka postingan artikel di Blogger.</li>
               <li>Ubah mode editor dari <em>Tampilan Menulis (Compose view)</em> ke <strong>Tampilan HTML (HTML view)</strong>.</li>
               <li>Tempel kode iframe pada posisi paragraf yang Anda inginkan.</li>
@@ -92,7 +92,7 @@ export default function PasangWidgetPage() {
           </div>
         </div>
 
-        <h2 className="text-lg sm:text-xl font-bold text-slate-900 dark:text-white pt-2">
+        <h2 className="text-lg sm:text-xl font-bold text-[#0F172A] pt-2">
           Ketentuan Lisensi
         </h2>
         <p>

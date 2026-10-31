@@ -63,26 +63,26 @@ export default function AturanUas30Page() {
       <div>
         <Link
           href="/"
-          className="inline-flex items-center gap-1.5 text-xs font-semibold text-slate-600 dark:text-slate-400 hover:text-blue-600 dark:hover:text-blue-400"
+          className="inline-flex items-center gap-1.5 text-xs font-bold text-[#002D72] hover:underline"
         >
           <ArrowLeft className="w-3.5 h-3.5" />
           <span>Kembali ke Beranda</span>
         </Link>
       </div>
 
-      <header className="space-y-2 border-b border-slate-200 dark:border-slate-800 pb-6">
-        <span className="text-xs font-semibold uppercase tracking-wider text-blue-600 dark:text-blue-400">
+      <header className="space-y-2 border-b border-slate-200 pb-6">
+        <span className="text-xs font-bold uppercase tracking-wider text-[#002D72]">
           Regulasi Akademik Krusial UT
         </span>
-        <h1 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-slate-900 dark:text-white tracking-tight">
+        <h1 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-[#0F172A] tracking-tight">
           Aturan Syarat Minimal UAS 30 di UT: Mengapa Ada dan Cara Menghindarinya
         </h1>
-        <p className="text-sm sm:text-base text-slate-600 dark:text-slate-300 leading-relaxed">
+        <p className="text-sm sm:text-base text-[#475569] leading-relaxed">
           Kupas tuntas aturan penghangusan nilai tutorial saat ujian di bawah 30 poin, dasar penjaminan mutu akademik, dan strategi taktis agar aman saat hari ujian.
         </p>
       </header>
 
-      <article className="prose dark:prose-invert max-w-none space-y-5 text-slate-700 dark:text-slate-300 text-sm sm:text-base leading-relaxed">
+      <article className="bg-white rounded-2xl border border-slate-200 p-6 sm:p-10 shadow-sm space-y-5 text-[#475569] text-sm sm:text-base leading-relaxed">
         <p>
           Banyak mahasiswa Universitas Terbuka heran ketika mendapatkan nilai akhir huruf mutu E padahal selalu aktif mengerjakan diskusi dan tugas di portal elearning dengan nilai tinggi. Penyebab utamanya adalah <strong>Klausul Syarat Minimal UAS 30 Poin</strong>.
         </p>

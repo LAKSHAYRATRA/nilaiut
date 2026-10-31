@@ -104,14 +104,13 @@ export default function RootLayout({
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <JsonLd data={websiteSchema} />
         <JsonLd data={softwareSchema} />
-        {/* Anti-flicker dark mode script */}
+        {/* Anti-flicker dark mode script - Default to clean Light Mode */}
         <script
           dangerouslySetInnerHTML={{
             __html: `
               try {
                 var theme = localStorage.getItem('nilaiut-theme');
-                var prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-                if (theme === 'dark' || (!theme && prefersDark)) {
+                if (theme === 'dark') {
                   document.documentElement.classList.add('dark');
                 } else {
                   document.documentElement.classList.remove('dark');
@@ -121,7 +120,7 @@ export default function RootLayout({
           }}
         />
       </head>
-      <body className="min-h-screen flex flex-col bg-slate-50 dark:bg-slate-950 text-slate-900 dark:text-slate-100 antialiased selection:bg-blue-600 selection:text-white font-sans transition-colors">
+      <body className="min-h-screen flex flex-col bg-[#F4F6F9] dark:bg-[#090E17] text-[#0F172A] dark:text-[#F8FAFC] antialiased selection:bg-[#002D72] selection:text-[#FFC72C] font-sans transition-colors">
         <Navbar />
         <main className="flex-1">
           {children}

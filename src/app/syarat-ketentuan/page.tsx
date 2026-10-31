@@ -17,27 +17,27 @@ export default function SyaratKetentuanPage() {
       <div>
         <Link
           href="/"
-          className="inline-flex items-center gap-2 text-sm font-semibold text-slate-600 dark:text-slate-400 hover:text-blue-600 dark:hover:text-blue-400"
+          className="inline-flex items-center gap-1.5 text-xs font-bold text-[#002D72] hover:underline"
         >
-          <ArrowLeft className="w-4 h-4" />
+          <ArrowLeft className="w-3.5 h-3.5" />
           <span>Kembali ke Beranda</span>
         </Link>
       </div>
 
-      <header className="space-y-4 border-b border-slate-200 dark:border-slate-800 pb-8">
-        <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-semibold bg-blue-100 dark:bg-blue-900/40 text-blue-800 dark:text-blue-300">
-          <FileCheck className="w-3.5 h-3.5" />
+      <header className="space-y-4 border-b border-slate-200 pb-8">
+        <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-bold bg-blue-100 text-[#002D72] border border-blue-200">
+          <FileCheck className="w-3.5 h-3.5 text-[#002D72]" />
           <span>Aturan Penggunaan Layanan</span>
         </div>
-        <h1 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight text-slate-900 dark:text-white leading-tight">
+        <h1 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight text-[#0F172A] leading-tight">
           Syarat &amp; Ketentuan Penggunaan
         </h1>
-        <p className="text-base sm:text-lg text-slate-600 dark:text-slate-300 leading-relaxed">
+        <p className="text-base sm:text-lg text-[#475569] leading-relaxed">
           Harap baca syarat dan ketentuan ini secara saksama sebelum menggunakan kalkulator dan seluruh layanan terkait NilaiUT.
         </p>
       </header>
 
-      <div className="prose dark:prose-invert max-w-none space-y-6 text-slate-700 dark:text-slate-300 text-sm sm:text-base leading-relaxed">
+      <div className="bg-white rounded-2xl border border-slate-200 p-6 sm:p-10 shadow-sm space-y-6 text-[#475569] text-sm sm:text-base leading-relaxed">
         <h2 className="text-xl sm:text-2xl font-bold text-slate-900 dark:text-white">
           1. Penerimaan Ketentuan
         </h2>

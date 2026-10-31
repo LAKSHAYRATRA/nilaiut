@@ -17,27 +17,27 @@ export default function KebijakanPrivasiPage() {
       <div>
         <Link
           href="/"
-          className="inline-flex items-center gap-2 text-sm font-semibold text-slate-600 dark:text-slate-400 hover:text-blue-600 dark:hover:text-blue-400"
+          className="inline-flex items-center gap-1.5 text-xs font-bold text-[#002D72] hover:underline"
         >
-          <ArrowLeft className="w-4 h-4" />
+          <ArrowLeft className="w-3.5 h-3.5" />
           <span>Kembali ke Beranda</span>
         </Link>
       </div>
 
-      <header className="space-y-4 border-b border-slate-200 dark:border-slate-800 pb-8">
-        <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-semibold bg-emerald-100 dark:bg-emerald-900/40 text-emerald-800 dark:text-emerald-300">
+      <header className="space-y-4 border-b border-slate-200 pb-8">
+        <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-bold bg-emerald-100 text-emerald-800 border border-emerald-200">
           <Shield className="w-3.5 h-3.5" />
           <span>Dokumen Kepatuhan Hukum &amp; Privasi</span>
         </div>
-        <h1 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight text-slate-900 dark:text-white leading-tight">
+        <h1 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight text-[#0F172A] leading-tight">
           Kebijakan Privasi (Privacy Policy)
         </h1>
-        <p className="text-base sm:text-lg text-slate-600 dark:text-slate-300 leading-relaxed">
+        <p className="text-base sm:text-lg text-[#475569] leading-relaxed">
           Terakhir diperbarui: 30 Oktober 2026. Mematuhi Kebijakan Program Google AdSense, Peraturan Perlindungan Data Umum (GDPR), serta UU Perlindungan Data Pribadi Republik Indonesia (UU PDP No. 27/2022).
         </p>
       </header>
 
-      <div className="prose dark:prose-invert max-w-none space-y-6 text-slate-700 dark:text-slate-300 text-sm sm:text-base leading-relaxed">
+      <div className="bg-white rounded-2xl border border-slate-200 p-6 sm:p-10 shadow-sm space-y-6 text-[#475569] text-sm sm:text-base leading-relaxed">
         <p>
           Selamat datang di <strong>NilaiUT</strong> (dapat diakses melalui <a href="https://nilaiut.com" className="text-blue-600 underline">https://nilaiut.com</a>). Kami berkomitmen penuh untuk menjaga transparansi dan menghormati hak privasi setiap pengunjung. Kebijakan Privasi ini menguraikan jenis informasi yang kami kumpulkan, cara kami memprosesnya, serta langkah perlindungan data yang kami terapkan.
         </p>

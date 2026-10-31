@@ -63,26 +63,26 @@ export default function KalenderAkademikPage() {
       <div>
         <Link
           href="/"
-          className="inline-flex items-center gap-1.5 text-xs font-semibold text-slate-600 dark:text-slate-400 hover:text-blue-600 dark:hover:text-blue-400"
+          className="inline-flex items-center gap-1.5 text-xs font-bold text-[#002D72] hover:underline"
         >
           <ArrowLeft className="w-3.5 h-3.5" />
           <span>Kembali ke Beranda</span>
         </Link>
       </div>
 
-      <header className="space-y-2 border-b border-slate-200 dark:border-slate-800 pb-6">
-        <span className="text-xs font-semibold uppercase tracking-wider text-blue-600 dark:text-blue-400">
+      <header className="space-y-2 border-b border-slate-200 pb-6">
+        <span className="text-xs font-bold uppercase tracking-wider text-[#002D72]">
           Linimasa Perkuliahan Resmi UT
         </span>
-        <h1 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-slate-900 dark:text-white tracking-tight">
+        <h1 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-[#0F172A] tracking-tight">
           Kalender Akademik Universitas Terbuka: Siklus Semester &amp; Jadwal KTPU
         </h1>
-        <p className="text-sm sm:text-base text-slate-600 dark:text-slate-300 leading-relaxed">
+        <p className="text-sm sm:text-base text-[#475569] leading-relaxed">
           Alur semester mahasiswa UT dari masa registrasi mata kuliah, aktivasi Tuton, cetak kartu ujian, hingga hari pengumuman Daftar Nilai Perkuliahan (DNP) di MyUT.
         </p>
       </header>
 
-      <article className="prose dark:prose-invert max-w-none space-y-5 text-slate-700 dark:text-slate-300 text-sm sm:text-base leading-relaxed">
+      <article className="bg-white rounded-2xl border border-slate-200 p-6 sm:p-10 shadow-sm space-y-5 text-[#475569] text-sm sm:text-base leading-relaxed">
         <p>
           Bagi mahasiswa pendidikan jarak jauh, disiplin memantau linimasa kalender akademik merupakan kunci kelancaran studi. Kelalaian tanggal aktivasi Tuton dapat mengalihkan mata kuliah Anda ke skema tugas mandiri (TMK).
         </p>

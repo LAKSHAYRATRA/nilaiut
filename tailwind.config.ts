@@ -21,17 +21,16 @@ const config: Config = {
         ],
       },
       colors: {
-        brand: {
-          50: "#eff6ff",
-          100: "#dbeafe",
-          200: "#bfdbfe",
-          300: "#93c5fd",
-          400: "#60a5fa",
-          500: "#3b82f6",
-          600: "#2563eb",
-          700: "#1d4ed8",
-          800: "#1e40af",
-          900: "#1e3a8a",
+        ut: {
+          blue: "#002D72",      // Official UT Reflex Blue
+          "blue-hover": "#002257",
+          "blue-light": "#E8EEF8",
+          gold: "#FFC72C",      // Official UT Gold / Yellow
+          "gold-hover": "#E5B220",
+          "gold-light": "#FFF7DF",
+          bg: "#F4F6F9",        // Recommended clean Light Slate/Gray background
+          dark: "#0F172A",      // Crisp Slate Dark Black heading
+          muted: "#475569",     // Muted Slate Charcoal body text
         },
       },
     },

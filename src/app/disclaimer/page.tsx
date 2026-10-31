@@ -17,33 +17,33 @@ export default function DisclaimerPage() {
       <div>
         <Link
           href="/"
-          className="inline-flex items-center gap-2 text-sm font-semibold text-slate-600 dark:text-slate-400 hover:text-blue-600 dark:hover:text-blue-400"
+          className="inline-flex items-center gap-1.5 text-xs font-bold text-[#002D72] hover:underline"
         >
-          <ArrowLeft className="w-4 h-4" />
+          <ArrowLeft className="w-3.5 h-3.5" />
           <span>Kembali ke Beranda</span>
         </Link>
       </div>
 
-      <header className="space-y-4 border-b border-slate-200 dark:border-slate-800 pb-8">
-        <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-semibold bg-amber-100 dark:bg-amber-900/40 text-amber-800 dark:text-amber-300">
-          <ShieldAlert className="w-3.5 h-3.5" />
+      <header className="space-y-4 border-b border-slate-200 pb-8">
+        <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-bold bg-amber-100 text-amber-800 border border-amber-200">
+          <ShieldAlert className="w-3.5 h-3.5 text-amber-700" />
           <span>Penafian Legal &amp; Akademik</span>
         </div>
-        <h1 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight text-slate-900 dark:text-white leading-tight">
+        <h1 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight text-[#0F172A] leading-tight">
           Penafian Resmi (Disclaimer)
         </h1>
-        <p className="text-base sm:text-lg text-slate-600 dark:text-slate-300 leading-relaxed">
+        <p className="text-base sm:text-lg text-[#475569] leading-relaxed">
           Pernyataan penting mengenai batasan hukum, sifat hasil simulasi, dan independensi dari Universitas Terbuka (UT).
         </p>
       </header>
 
-      <div className="prose dark:prose-invert max-w-none space-y-6 text-slate-700 dark:text-slate-300 text-sm sm:text-base leading-relaxed">
-        <div className="p-5 rounded-2xl bg-amber-50 dark:bg-amber-950/40 border border-amber-300 dark:border-amber-700/60 space-y-2 not-prose">
-          <div className="flex items-center gap-2 text-amber-800 dark:text-amber-300 font-bold text-sm">
-            <AlertTriangle className="w-5 h-5 shrink-0" />
+      <div className="bg-white rounded-2xl border border-slate-200 p-6 sm:p-10 shadow-sm space-y-6 text-[#475569] text-sm sm:text-base leading-relaxed">
+        <div className="p-5 rounded-2xl bg-amber-50 border border-amber-200 space-y-2">
+          <div className="flex items-center gap-2 text-amber-800 font-bold text-sm">
+            <AlertTriangle className="w-5 h-5 shrink-0 text-amber-600" />
             <span>Pernyataan Utama Sifat Simulasi</span>
           </div>
-          <p className="text-xs sm:text-sm text-amber-900 dark:text-amber-200 leading-relaxed">
+          <p className="text-xs sm:text-sm text-amber-900 leading-relaxed">
             Seluruh angka, huruf mutu, dan predikat yang dihasilkan oleh situs web NilaiUT adalah <strong>hasil simulasi matematis independen</strong> yang dirancang untuk mempermudah perkiraan belajar mahasiswa. Nilai resmi yang mengikat secara hukum akademik hanya diterbitkan oleh Universitas Terbuka melalui sistem resmi <strong>myut.ut.ac.id</strong>.
           </p>
         </div>
