@@ -58,7 +58,8 @@ export const GRADE_THRESHOLDS: GradeThreshold[] = [
   { letter: 'B', minScore: 70, bobot: 3.00, status: 'Lulus', keterangan: 'Baik Sekali' },
   { letter: 'B-', minScore: 65, bobot: 2.50, status: 'Lulus', keterangan: 'Antara Cukup Baik & Baik Sekali' },
   { letter: 'C', minScore: 60, bobot: 2.00, status: 'Lulus', keterangan: 'Cukup' },
-  { letter: 'D', minScore: 55, bobot: 1.00, status: 'Lulus Bersyarat', keterangan: 'Kurang (Tidak diperbolehkan pada MK Inti/TAP/Karil)' },
+  { letter: 'C-', minScore: 55, bobot: 1.50, status: 'Lulus', keterangan: 'Antara Kurang & Cukup' },
+  { letter: 'D', minScore: 50, bobot: 1.00, status: 'Lulus Bersyarat', keterangan: 'Kurang (Tidak diperbolehkan pada MK Inti/TAP/Karil)' },
   { letter: 'E', minScore: 0, bobot: 0.00, status: 'Tidak Lulus', keterangan: 'Gagal (Wajib registrasi ulang mata kuliah)' }
 ];
 
@@ -261,6 +262,7 @@ export function calculateIpk(courses: CourseGradeItem[]): IpkCalculationResult {
     'B': 3.0,
     'B-': 2.5,
     'C': 2.0,
+    'C-': 1.5,
     'D': 1.0,
     'E': 0.0
   };
@@ -273,7 +275,7 @@ export function calculateIpk(courses: CourseGradeItem[]): IpkCalculationResult {
 
     if (c.letter === 'E') countE++;
     else if (c.letter === 'D') countD++;
-    else if (c.letter === 'C') countC++;
+    else if (c.letter === 'C' || c.letter === 'C-') countC++;
     else if (c.letter === 'B' || c.letter === 'B-') countB++;
     else if (c.letter === 'A' || c.letter === 'A-') countA++;
   });

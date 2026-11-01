@@ -187,21 +187,28 @@ export default function HomePage() {
                   <td className="py-3.5 px-4 font-mono font-semibold text-slate-800">60,00 - 64,99</td>
                   <td className="py-3.5 px-4 font-bold text-slate-900">2.00</td>
                   <td className="py-3.5 px-4"><span className="inline-flex px-2.5 py-0.5 rounded-full text-xs font-bold bg-slate-100 text-slate-700 border border-slate-300">Lulus</span></td>
-                  <td className="py-3.5 px-4 font-medium">Cukup (Ambang batas minimal kelulusan reguler)</td>
+                  <td className="py-3.5 px-4 font-medium">Cukup (Batas minimal kelulusan MK Inti, TAP &amp; Karil)</td>
+                </tr>
+                <tr className="hover:bg-slate-50/80 transition-colors">
+                  <td className="py-3.5 px-4 font-extrabold text-[#0F172A] text-base">C-</td>
+                  <td className="py-3.5 px-4 font-mono font-semibold text-slate-800">55,00 - 59,99</td>
+                  <td className="py-3.5 px-4 font-bold text-slate-900">1.50</td>
+                  <td className="py-3.5 px-4"><span className="inline-flex px-2.5 py-0.5 rounded-full text-xs font-bold bg-slate-100 text-slate-700 border border-slate-300">Lulus</span></td>
+                  <td className="py-3.5 px-4 font-medium">Antara Kurang &amp; Cukup</td>
                 </tr>
                 <tr className="hover:bg-slate-50/80 transition-colors">
                   <td className="py-3.5 px-4 font-extrabold text-amber-700 text-base">D</td>
-                  <td className="py-3.5 px-4 font-mono font-semibold text-slate-800">55,00 - 59,99</td>
+                  <td className="py-3.5 px-4 font-mono font-semibold text-slate-800">50,00 - 54,99</td>
                   <td className="py-3.5 px-4 font-bold text-slate-900">1.00</td>
                   <td className="py-3.5 px-4"><span className="inline-flex px-2.5 py-0.5 rounded-full text-xs font-bold bg-amber-50 text-amber-800 border border-amber-200">Lulus Bersyarat</span></td>
-                  <td className="py-3.5 px-4 font-medium">Kurang (Wajib perhatikan batas SKS D dan larangan pada MK Inti/TAP)</td>
+                  <td className="py-3.5 px-4 font-medium">Kurang (Wajib perhatikan batas persentase SKS nilai D di fakultas)</td>
                 </tr>
                 <tr className="hover:bg-rose-50/40 transition-colors">
                   <td className="py-3.5 px-4 font-extrabold text-rose-700 text-base">E</td>
-                  <td className="py-3.5 px-4 font-mono font-semibold text-rose-800">0,00 - 54,99 (atau UAS &lt; 30)</td>
+                  <td className="py-3.5 px-4 font-mono font-semibold text-rose-800">0,00 - 49,99 (atau UAS &lt; 30)</td>
                   <td className="py-3.5 px-4 font-bold text-rose-800">0.00</td>
                   <td className="py-3.5 px-4"><span className="inline-flex px-2.5 py-0.5 rounded-full text-xs font-bold bg-rose-50 text-rose-800 border border-rose-200">Gagal</span></td>
-                  <td className="py-3.5 px-4 font-medium text-rose-700">Tidak Lulus (Wajib registrasi ulang / ujian online SUO)</td>
+                  <td className="py-3.5 px-4 font-medium text-rose-700">Tidak Lulus (Wajib registrasi ulang mata kuliah / ujian online)</td>
                 </tr>
               </tbody>
             </table>
