@@ -7,13 +7,15 @@ import JsonLd from '@/components/JsonLd';
 import { ArrowLeft } from 'lucide-react';
 
 export const metadata: Metadata = {
-  title: 'Kalkulator Nilai TMK UT Online (Bobot 80% UAS : 20% TMK) - NilaiUT',
-  description: 'Kalkulator khusus menghitung nilai akhir Tugas Mata Kuliah (TMK) Universitas Terbuka. Rumus resmi 80% UAS + 20% TMK, simulasi nilai huruf mutu, dan deteksi UAS minimal 30.',
+  title: 'Kalkulator Nilai TMK UT (80:20) - Kalkulator Nilai UT & Kalkulator UT',
+  description: 'Kalkulator Nilai TMK UT resmi & akurat. Cara hitung nilai Tugas Mata Kuliah (TMK) dengan bobot 80% UAS + 20% TMK sesuai pedoman Universitas Terbuka.',
   alternates: {
     canonical: 'https://nilaiut.com/kalkulator-nilai-tmk-ut/',
   },
   keywords: [
     'kalkulator nilai tmk ut',
+    'kalkulator nilai ut',
+    'kalkulator ut',
     'hitung nilai tmk ut',
     'rumus nilai tmk ut',
     'bobot tmk ut 80 20',

@@ -6,11 +6,19 @@ import FaqAccordion, { FaqItem } from '@/components/FaqAccordion';
 import { ArrowLeft } from 'lucide-react';
 
 export const metadata: Metadata = {
-  title: 'Kalender Akademik Universitas Terbuka: Jadwal Registrasi, Cetak KTPU & Rilis Nilai MyUT',
-  description: 'Jadwal lengkap kegiatan akademik UT: masa registrasi mata kuliah, batas aktivasi Tuton, jadwal cetak Kartu Tanda Peserta Ujian (KTPU), hingga tanggal rilis DNP.',
+  title: 'Kalender Akademik UT & Jadwal UAS - Kalkulator Nilai UT & Kalkulator UT',
+  description: 'Jadwal lengkap kegiatan akademik UT: masa registrasi mata kuliah, batas aktivasi Tuton, jadwal cetak KTPU, dan tanggal pengumuman nilai resmi di MyUT.',
   alternates: {
     canonical: 'https://nilaiut.com/panduan/kalender-akademik-dan-jadwal-uas-ut/',
   },
+  keywords: [
+    'kalender akademik ut',
+    'jadwal uas ut',
+    'kalkulator nilai ut',
+    'kalkulator ut',
+    'pengumuman nilai ut',
+    'cetak ktpu ut'
+  ],
   openGraph: {
     title: 'Kalender Akademik Universitas Terbuka: Jadwal Registrasi, KTPU & Nilai MyUT',
     description: 'Panduan jadwal lengkap tahapan semester UT dari masa registrasi hingga pengumuman nilai resmi di MyUT.',

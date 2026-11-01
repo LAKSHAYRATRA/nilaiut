@@ -6,13 +6,22 @@ import FaqAccordion, { FaqItem } from '@/components/FaqAccordion';
 import { ArrowLeft } from 'lucide-react';
 
 export const metadata: Metadata = {
-  title: 'Skema Bobot Tuton 70:30, TMK 80:20 & Tuweb 50:50 Universitas Terbuka: Panduan Komparasi Lengkap',
-  description: 'Ulasan mendalam perbedaan skema bobot nilai Tuton, TMK, dan Tuweb di Universitas Terbuka. Temukan perbandingan kelebihan, kekurangan, dan strategi meraih IPK Cumlaude.',
+  title: 'Skema Bobot Nilai UT (Tuton, TMK, Tuweb) - Kalkulator Nilai UT & Kalkulator UT',
+  description: 'Komparasi skema bobot nilai UT: Tuton (70:30), TMK (80:20), dan Tuweb (50:50). Panduan lengkap cara hitung nilai UT untuk meraih IPK tinggi.',
   alternates: {
     canonical: 'https://nilaiut.com/panduan/skema-bobot-tuton-tmk-tuweb/',
   },
+  keywords: [
+    'bobot nilai ut',
+    'kalkulator nilai ut',
+    'kalkulator ut',
+    'bobot tuton ut',
+    'bobot tmk ut',
+    'bobot tuweb ut',
+    'cara hitung nilai ut'
+  ],
   openGraph: {
-    title: 'Skema Bobot Tuton, TMK & Tuweb Universitas Terbuka: Komparasi Lengkap',
+    title: 'Skema Bobot Nilai UT: Tuton, TMK, dan Tuweb Lengkap',
     description: 'Bandingkan skema bobot 70:30, 80:20, dan 50:50 di UT untuk menyusun strategi kelulusan mata kuliah Anda.',
     url: 'https://nilaiut.com/panduan/skema-bobot-tuton-tmk-tuweb/',
     type: 'article',

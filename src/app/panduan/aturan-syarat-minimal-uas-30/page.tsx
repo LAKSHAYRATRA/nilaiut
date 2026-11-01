@@ -6,11 +6,19 @@ import FaqAccordion, { FaqItem } from '@/components/FaqAccordion';
 import { ArrowLeft, AlertTriangle } from 'lucide-react';
 
 export const metadata: Metadata = {
-  title: 'Aturan Syarat Minimal UAS 30 Universitas Terbuka: Penyebab Nilai E & Cara Mengatasinya',
-  description: 'Mengapa nilai Tuton hangus jika nilai UAS di bawah 30? Kupas tuntas aturan minimal UAS 30 poin UT, dampaknya pada DNP, serta tips lulus ujian online.',
+  title: 'Aturan Syarat Minimal UAS 30 UT - Kalkulator Nilai UT & Kalkulator UT',
+  description: 'Penyebab nilai Tuton hangus dan otomatis E jika nilai UAS kurang dari 30 poin. Panduan lengkap aturan minimal UAS 30 di Universitas Terbuka dan solusinya.',
   alternates: {
     canonical: 'https://nilaiut.com/panduan/aturan-syarat-minimal-uas-30/',
   },
+  keywords: [
+    'aturan minimal uas 30 ut',
+    'kalkulator nilai ut',
+    'kalkulator ut',
+    'nilai uas di bawah 30 ut',
+    'syarat minimal uas 30 ut',
+    'nilai tuton hangus ut'
+  ],
   openGraph: {
     title: 'Aturan Syarat Minimal UAS 30 Universitas Terbuka: Panduan Lengkap',
     description: 'Pelajari mekanisme gugurnya nilai Tuton akibat nilai UAS di bawah 30 dan cara mengantisipasinya.',

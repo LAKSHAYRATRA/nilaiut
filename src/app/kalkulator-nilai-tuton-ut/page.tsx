@@ -7,13 +7,15 @@ import JsonLd from '@/components/JsonLd';
 import { ArrowLeft } from 'lucide-react';
 
 export const metadata: Metadata = {
-  title: 'Kalkulator Nilai Tuton UT Online (Bobot 70% UAS : 30% Tuton) - NilaiUT',
-  description: 'Kalkulator khusus menghitung nilai akhir Tutorial Online (Tuton) Universitas Terbuka. Rumus resmi 70% UAS + 30% Tuton, deteksi aturan UAS minimal 30, dan Target Solver.',
+  title: 'Kalkulator Nilai Tuton UT (70:30) - Kalkulator Nilai UT & Kalkulator UT',
+  description: 'Kalkulator Nilai Tuton UT terlengkap. Cara hitung nilai Tuton (Tutorial Online) 70% UAS + 30% Tuton sesuai Peraturan Rektor UT No. 16/2017 lengkap dengan pencegah nilai E & Target Solver.',
   alternates: {
     canonical: 'https://nilaiut.com/kalkulator-nilai-tuton-ut/',
   },
   keywords: [
     'kalkulator nilai tuton ut',
+    'kalkulator nilai ut',
+    'kalkulator ut',
     'hitung nilai tuton ut',
     'rumus nilai tuton ut',
     'bobot tuton ut 70 30',

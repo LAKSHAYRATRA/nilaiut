@@ -7,13 +7,16 @@ import JsonLd from '@/components/JsonLd';
 import { ArrowLeft } from 'lucide-react';
 
 export const metadata: Metadata = {
-  title: 'Target Solver Nilai UAS UT: Hitung Skor Ujian Minimal untuk Dapat Nilai A/B - NilaiUT',
-  description: 'Fitur Target Solver untuk menghitung berapa skor minimal UAS yang wajib diraih di Universitas Terbuka berdasarkan nilai Tuton/TMK saat ini.',
+  title: 'Target Solver Nilai UAS UT - Kalkulator Nilai UT & Kalkulator UT',
+  description: 'Target Solver Nilai UAS UT: Hitung berapa skor minimal ujian yang wajib Anda raih di Universitas Terbuka untuk mengamankan nilai A, B, atau C dengan nilai Tuton saat ini.',
   alternates: {
     canonical: 'https://nilaiut.com/target-nilai-uas/',
   },
   keywords: [
     'target nilai uas ut',
+    'kalkulator nilai ut',
+    'kalkulator ut',
+    'kalkulator uas ut',
     'hitung target uas ut',
     'skor minimal uas ut',
     'cara dapat nilai a di ut',

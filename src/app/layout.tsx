@@ -6,24 +6,34 @@ import JsonLd from '@/components/JsonLd';
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://nilaiut.com'),
-  title: 'NilaiUT - Kalkulator Nilai & IPK Universitas Terbuka Terakurat',
-  description: 'Kalkulator Nilai Akhir UT dan IPK 100% akurat sesuai Peraturan Rektor No. 16/2017. Lengkap dengan deteksi aturan minimal UAS 30, Tuton 70:30, TMK 80:20, Tuweb 50:50, dan Target Solver.',
+  title: {
+    default: 'Kalkulator Nilai UT & Kalkulator UT - Hitung Nilai Akhir & IPK Universitas Terbuka',
+    template: '%s | NilaiUT - Kalkulator Nilai UT',
+  },
+  description: 'Kalkulator Nilai UT & Kalkulator UT online terlengkap & 100% akurat sesuai Peraturan Rektor No. 16/2017. Hitung nilai akhir Tuton 70:30, TMK 80:20, Tuweb 50:50, Target Solver UAS, dan IPK semester dengan deteksi syarat minimal UAS 30.',
   keywords: [
     'kalkulator nilai ut',
+    'kalkulator ut',
     'cara hitung nilai ut',
     'kalkulator ipk ut',
+    'hitung nilai ut',
     'nilai akhir universitas terbuka',
-    'aturan minimal uas 30 ut',
+    'kalkulator uas ut',
     'bobot tuton ut',
     'bobot tmk ut',
+    'bobot tuweb ut',
+    'aturan minimal uas 30 ut',
+    'simulasi nilai ut',
     'predikat kelulusan ut',
     'hitung ipk ut online',
-    'uasut'
+    'cek nilai ut',
+    'uas ut',
+    'nilaiut'
   ],
   authors: [{ name: 'Tim NilaiUT' }],
   creator: 'NilaiUT.com',
   publisher: 'NilaiUT',
-  applicationName: 'NilaiUT',
+  applicationName: 'Kalkulator Nilai UT',
   category: 'Education, Productivity',
   icons: {
     icon: '/icon.svg',
@@ -33,17 +43,17 @@ export const metadata: Metadata = {
     canonical: 'https://nilaiut.com/',
   },
   openGraph: {
-    title: 'NilaiUT - Kalkulator Nilai & IPK Universitas Terbuka',
-    description: 'Hitung nilai akhir Tuton, TMK, Tuweb & IPK semester Anda dengan formula resmi Universitas Terbuka. Lengkap dengan pencegah nilai E & Target Solver ujian.',
+    title: 'Kalkulator Nilai UT & Kalkulator UT - Hitung Nilai Akhir & IPK Resmi',
+    description: 'Kalkulator Nilai UT & Kalkulator UT online terlengkap. Hitung nilai akhir Tuton, TMK, Tuweb & IPK semester Anda dengan formula resmi Universitas Terbuka.',
     url: 'https://nilaiut.com',
-    siteName: 'NilaiUT',
+    siteName: 'NilaiUT - Kalkulator Nilai UT',
     locale: 'id_ID',
     type: 'website',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'NilaiUT - Kalkulator Nilai & IPK Universitas Terbuka',
-    description: 'Hitung nilai akhir Tuton, TMK, Tuweb & IPK semester Anda dengan formula resmi Universitas Terbuka.',
+    title: 'Kalkulator Nilai UT & Kalkulator UT - Hitung Nilai Akhir & IPK Resmi',
+    description: 'Kalkulator Nilai UT & Kalkulator UT online 100% akurat. Hitung nilai akhir Tuton, TMK, Tuweb & IPK semester Anda dengan formula resmi Universitas Terbuka.',
   },
   robots: {
     index: true,
@@ -66,9 +76,10 @@ export default function RootLayout({
   const websiteSchema = {
     '@context': 'https://schema.org',
     '@type': 'WebSite',
-    name: 'NilaiUT',
+    name: 'Kalkulator Nilai UT',
+    alternateName: ['Kalkulator UT', 'NilaiUT', 'Kalkulator Nilai Akhir UT'],
     url: 'https://nilaiut.com',
-    description: 'Kalkulator Nilai Akhir dan IPK Universitas Terbuka Online Terlengkap & Terakurat.',
+    description: 'Kalkulator Nilai UT & Kalkulator UT online tercepat & terakurat. Hitung nilai akhir Tuton, TMK, Tuweb, dan IPK mahasiswa Universitas Terbuka.',
     inLanguage: 'id-ID',
     potentialAction: {
       '@type': 'SearchAction',
@@ -80,7 +91,8 @@ export default function RootLayout({
   const softwareSchema = {
     '@context': 'https://schema.org',
     '@type': 'SoftwareApplication',
-    name: 'Kalkulator Nilai UT & Target Solver',
+    name: 'Kalkulator Nilai UT - Kalkulator UT & IPK Online',
+    alternateName: 'Kalkulator UT',
     operatingSystem: 'Any (Web Browser)',
     applicationCategory: 'EducationalApplication',
     offers: {

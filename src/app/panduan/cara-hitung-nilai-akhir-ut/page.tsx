@@ -6,14 +6,22 @@ import FaqAccordion, { FaqItem } from '@/components/FaqAccordion';
 import { ArrowLeft, AlertTriangle } from 'lucide-react';
 
 export const metadata: Metadata = {
-  title: 'Panduan Lengkap Cara Menghitung Nilai Akhir Mata Kuliah Universitas Terbuka (UT)',
-  description: 'Pelajari rumus resmi penilaian Universitas Terbuka berdasarkan Peraturan Rektor No. 16/2017. Simulasi perhitungan Tuton, TMK, Tuweb, dan contoh kasus riil.',
+  title: 'Cara Hitung Nilai UT Resmi - Rumus Kalkulator Nilai UT & Kalkulator UT',
+  description: 'Cara hitung nilai UT resmi berdasarkan Peraturan Rektor No. 16/2017. Panduan lengkap rumus Tuton 70:30, TMK 80:20, Tuweb 50:50, serta simulasi kalkulator nilai UT.',
   alternates: {
     canonical: 'https://nilaiut.com/panduan/cara-hitung-nilai-akhir-ut/',
   },
+  keywords: [
+    'cara hitung nilai ut',
+    'kalkulator nilai ut',
+    'kalkulator ut',
+    'hitung nilai ut',
+    'rumus nilai ut',
+    'simulasi nilai akhir ut'
+  ],
   openGraph: {
-    title: 'Panduan Lengkap Cara Menghitung Nilai Akhir Mata Kuliah UT',
-    description: 'Rumus resmi penilaian Universitas Terbuka berdasarkan Peraturan Rektor No. 16/2017 dengan simulasi perhitungan riil.',
+    title: 'Cara Hitung Nilai UT Resmi - Rumus Kalkulator Nilai UT',
+    description: 'Panduan lengkap cara hitung nilai UT resmi berdasarkan Peraturan Rektor No. 16/2017 dengan rumus Tuton, TMK, Tuweb & kalkulator online.',
     url: 'https://nilaiut.com/panduan/cara-hitung-nilai-akhir-ut/',
     type: 'article',
   },

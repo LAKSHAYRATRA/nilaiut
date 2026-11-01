@@ -7,13 +7,15 @@ import JsonLd from '@/components/JsonLd';
 import { ArrowLeft } from 'lucide-react';
 
 export const metadata: Metadata = {
-  title: 'Kalkulator IPK UT & Predikat Kelulusan Online (Skala 4.00) - NilaiUT',
-  description: 'Kalkulator IPK Universitas Terbuka terlengkap. Hitung Indeks Prestasi Semester (IPS), IPK Kumulatif, total nilai mutu, dan cek syarat predikat Cumlaude resmi UT.',
+  title: 'Kalkulator IPK UT - Hitung IPK & Predikat Kelulusan Universitas Terbuka',
+  description: 'Kalkulator IPK UT online terakurat. Hitung IPS, IPK Kumulatif, bobot mutu SKS, dan simulasi predikat kelulusan Cumlaude resmi Universitas Terbuka.',
   alternates: {
     canonical: 'https://nilaiut.com/kalkulator-ipk-ut/',
   },
   keywords: [
     'kalkulator ipk ut',
+    'kalkulator nilai ut',
+    'kalkulator ut',
     'hitung ipk ut online',
     'cara hitung ipk ut',
     'kalkulator ips ut',
@@ -25,7 +27,7 @@ export const metadata: Metadata = {
 const IPK_PAGE_FAQS: FaqItem[] = [
   {
     question: "Bagaimana rumus dasar menghitung IPK di Universitas Terbuka?",
-    answer: "IPK dihitung dengan membagi Total Nilai Mutu (∑M) dengan Total SKS (∑K). Nilai mutu per mata kuliah didapat dari mengalikan SKS mata kuliah dengan bobot angka mutu nilai huruf (A = 4.0, A- = 3.5, B = 3.0, B- = 2.5, C = 2.0, D = 1.0, E = 0.0)."
+    answer: "IPK dihitung dengan membagi Total Nilai Mutu (∑M) dengan Total SKS (∑K). Nilai mutu per mata kuliah didapat dari mengalikan SKS mata kuliah dengan bobot angka mutu nilai huruf (A = 4.0, A- = 3.5, B = 3.0, B- = 2.5, C = 2.0, C- = 1.5, D = 1.0, E = 0.0)."
   },
   {
     question: "Berapa standar IPK minimal untuk kelulusan program Sarjana di UT?",

@@ -6,11 +6,20 @@ import FaqAccordion, { FaqItem } from '@/components/FaqAccordion';
 import { ArrowLeft } from 'lucide-react';
 
 export const metadata: Metadata = {
-  title: 'Cara Menghitung IPK & Predikat Kelulusan Universitas Terbuka (Cumlaude, Sangat Memuaskan)',
-  description: 'Panduan lengkap menghitung Indeks Prestasi Kumulatif (IPK) UT, bobot SKS, syarat predikat kelulusan Cumlaude, batas nilai D, dan persiapan yudisium.',
+  title: 'Cara Hitung IPK UT & Predikat Kelulusan - Kalkulator IPK UT & Kalkulator UT',
+  description: 'Cara hitung IPK UT resmi dan simulasi predikat kelulusan yudisium (Cumlaude, Sangat Memuaskan). Hitung total mutu SKS dengan kalkulator IPK UT online.',
   alternates: {
     canonical: 'https://nilaiut.com/panduan/cara-menghitung-ipk-dan-predikat-kelulusan-ut/',
   },
+  keywords: [
+    'cara hitung ipk ut',
+    'kalkulator ipk ut',
+    'kalkulator nilai ut',
+    'kalkulator ut',
+    'predikat kelulusan ut',
+    'syarat cumlaude ut',
+    'hitung ipk universitas terbuka'
+  ],
   openGraph: {
     title: 'Cara Menghitung IPK & Predikat Kelulusan Universitas Terbuka',
     description: 'Panduan lengkap rumus perhitungan IPK UT, bobot mutu, dan syarat yudisium kelulusan sarjana.',

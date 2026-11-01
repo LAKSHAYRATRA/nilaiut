@@ -6,13 +6,16 @@ import JsonLd from '@/components/JsonLd';
 import { ArrowLeft } from 'lucide-react';
 
 export const metadata: Metadata = {
-  title: 'Pasang Widget Kalkulator Nilai UT di Website atau Blog Anda - NilaiUT',
-  description: 'Panduan dan generator kode embed iframe widget Kalkulator Nilai UT. Pasang kalkulator nilai interaktif di blog WordPress, Blogspot, atau portal himpunan mahasiswa Anda.',
+  title: 'Pasang Widget Kalkulator Nilai UT - Widget Kalkulator UT Gratis',
+  description: 'Pasang widget Kalkulator Nilai UT & Kalkulator UT interaktif di blog atau website Anda secara gratis dengan kode embed iframe responsif.',
   alternates: {
     canonical: 'https://nilaiut.com/pasang-widget/',
   },
   keywords: [
     'widget kalkulator nilai ut',
+    'widget kalkulator ut',
+    'kalkulator nilai ut',
+    'kalkulator ut',
     'embed kalkulator nilai ut',
     'pasang kalkulator nilai ut di blog',
     'script kalkulator nilai universitas terbuka'

@@ -14,15 +14,19 @@ import {
 
 const HOME_FAQS: FaqItem[] = [
   {
-    question: "Bagaimana rumus resmi menghitung nilai akhir mata kuliah di Universitas Terbuka?",
-    answer: `Berdasarkan <strong>Peraturan Rektor Universitas Terbuka No. 16/2017</strong>, formula penilaian disesuaikan dengan jenis modus tutorial yang Anda ikuti:
+    question: "Apa itu Kalkulator Nilai UT (Kalkulator UT) dan bagaimana cara kerjanya?",
+    answer: `<strong>Kalkulator Nilai UT</strong> (atau biasa disebut <strong>Kalkulator UT</strong>) adalah aplikasi web interaktif yang dirancang khusus untuk mahasiswa Universitas Terbuka guna menghitung simulasi nilai akhir mata kuliah dan IPK secara instan. Algoritma kalkulator ini menerapkan formula resmi <strong>Peraturan Rektor UT No. 16/2017</strong>, mencakup pembobotan Tuton (70:30), TMK (80:20), Tuweb (50:50), konversi huruf mutu (A hingga E), serta sistem proteksi otomatis terhadap <strong>aturan minimal UAS 30</strong>.`
+  },
+  {
+    question: "Bagaimana cara hitung nilai UT resmi untuk Tuton, TMK, dan Tuweb?",
+    answer: `Cara hitung nilai UT didasarkan pada rumus pembobotan resmi Universitas Terbuka:
     <ul class='list-disc pl-5 mt-2 space-y-1'>
-      <li><strong>Tutorial Online (Tuton):</strong> Nilai Akhir = (70% × Nilai UAS) + (30% × Nilai Tuton).</li>
-      <li><strong>Tutorial Tatap Muka / Webinar (Tuweb/TTM):</strong> Nilai Akhir = (50% × Nilai UAS) + (50% × Nilai Tuweb).</li>
-      <li><strong>Tugas Mata Kuliah (TMK):</strong> Nilai Akhir = (80% × Nilai UAS) + (20% × Nilai TMK).</li>
-      <li><strong>Mata Kuliah Praktik / Berpraktik:</strong> Bobot disesuaikan panduan buku materi pokok (default 50% UAS : 50% Laporan Praktik atau 100% Praktik).</li>
+      <li><strong>Skema Tuton (Tutorial Online):</strong> Nilai Akhir = (70% × Skor UAS) + (30% × Skor Tuton).</li>
+      <li><strong>Skema TMK (Tugas Mata Kuliah):</strong> Nilai Akhir = (80% × Skor UAS) + (20% × Skor TMK).</li>
+      <li><strong>Skema Tuweb / TTM (Webinar & Tatap Muka):</strong> Nilai Akhir = (50% × Skor UAS) + (50% × Skor Tuweb).</li>
+      <li><strong>Mata Kuliah Praktik:</strong> Default 50% UAS + 50% Laporan Praktik atau disesuaikan dengan ketentuan fakultas.</li>
     </ul>
-    <strong>Syarat Wajib:</strong> Nilai keaktifan (Tuton/TMK/Tuweb) hanya diperhitungkan jika nilai UAS murni Anda mencapai minimal 30 poin.`
+    <em>Catatan penting:</em> Nilai bantuan belajar hanya berlaku jika nilai UAS murni Anda &ge; 30 poin.`
   },
   {
     question: "Apa yang terjadi jika nilai UAS saya di bawah 30 (misal 28 atau 29)?",
@@ -71,22 +75,22 @@ export default function HomePage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-3xl space-y-3">
             <div className="inline-flex items-center gap-2 px-2.5 py-1 rounded-full bg-slate-100 text-slate-700 text-xs font-semibold uppercase tracking-wider border border-slate-200">
-              <span>Sistem Evaluasi Belajar Mahasiswa UT</span>
+              <span>Aplikasi Kalkulator Nilai UT &amp; Kalkulator UT #1 Terakurat</span>
             </div>
-            <h1 className="text-2xl sm:text-3xl font-extrabold text-[#0F172A] tracking-tight leading-snug">
-              Kalkulator Nilai Akhir &amp; IPK Universitas Terbuka
+            <h1 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-[#0F172A] tracking-tight leading-snug">
+              Kalkulator Nilai UT &amp; Kalkulator UT: Cara Hitung Nilai Akhir &amp; IPK Resmi
             </h1>
             <p className="text-sm sm:text-base text-[#334155] leading-relaxed max-w-3xl">
-              Simulator perhitungan nilai mata kuliah berdasarkan Peraturan Rektor No. 16/2017 untuk skema Tutorial Online (70:30), Tugas Mata Kuliah (80:20), dan Tutorial Webinar (50:50). Dilengkapi sistem deteksi batas minimal ujian 30 poin.
+              <strong>Kalkulator Nilai UT</strong> (sering disebut <strong>Kalkulator UT</strong>) adalah alat bantu resmi dan terakurat untuk simulasi cara hitung nilai UT mata kuliah Anda. 100% akurat sesuai Peraturan Rektor No. 16/2017 untuk skema Tutorial Online (Tuton 70:30), Tugas Mata Kuliah (TMK 80:20), Tutorial Webinar (Tuweb 50:50), Target Solver UAS, serta proteksi batas minimal UAS 30 poin.
             </p>
             <div className="flex flex-wrap items-center gap-x-6 gap-y-2 pt-2 text-xs text-[#64748B]">
               <span className="flex items-center gap-2">
                 <Check className="w-4 h-4 text-emerald-600" />
-                <span>Pemrosesan lokal di browser tanpa penyimpanan server</span>
+                <span>Kalkulator Nilai UT 100% Client-Side &amp; Privasi Terjaga</span>
               </span>
               <span className="flex items-center gap-2">
                 <Scale className="w-4 h-4 text-slate-600" />
-                <span>Rujukan resmi Buku Pedoman Mahasiswa UT</span>
+                <span>Rujukan Resmi Buku Pedoman &amp; Katalog Penyelenggaraan UT</span>
               </span>
             </div>
           </div>
@@ -344,7 +348,60 @@ export default function HomePage() {
           </div>
         </section>
 
-        {/* SECTION 7: FAQS */}
+        {/* SECTION 7: SEO DEEP-DIVE CONTENT */}
+        <section className="bg-white rounded-2xl border border-slate-200 p-6 sm:p-10 shadow-sm space-y-6 text-[#334155] leading-relaxed">
+          <header className="border-b border-slate-200 pb-4">
+            <span className="text-xs font-bold uppercase tracking-wider text-[#64748B]">
+              Panduan Akademik Mahasiswa
+            </span>
+            <h2 className="text-xl sm:text-2xl font-bold text-[#0F172A] mt-1">
+              Panduan Lengkap Menggunakan Kalkulator Nilai UT &amp; Kalkulator UT
+            </h2>
+            <p className="text-sm text-[#64748B] mt-1">
+              Ketahui bagaimana kalkulator nilai UT membantu Anda merencanakan kelulusan dan memprediksi nilai akhir dengan rumus resmi.
+            </p>
+          </header>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 text-sm">
+            <div className="space-y-3">
+              <h3 className="text-base font-bold text-[#0F172A]">
+                1. Mengapa Butuh Kalkulator Nilai UT?
+              </h3>
+              <p>
+                Sebagai mahasiswa Universitas Terbuka (UT), sistem pembelajaran jarak jauh menuntut kemandirian dalam memantau capaian akademik. Menghitung nilai secara manual kerap membingungkan karena adanya perbedaan bobot antara skema <strong>Tutorial Online (Tuton)</strong>, <strong>Tugas Mata Kuliah (TMK)</strong>, dan <strong>Tutorial Webinar (Tuweb/TTM)</strong>.
+              </p>
+              <p>
+                Aplikasi <strong>Kalkulator UT</strong> di NilaiUT.com menyederhanakan proses ini. Cukup masukkan nilai ujian dan nilai tugas atau diskusi, sistem akan mengolah angka secara otomatis sesuai standar Buku Katalog Penyelenggaraan UT edisi terkini.
+              </p>
+            </div>
+
+            <div className="space-y-3">
+              <h3 className="text-base font-bold text-[#0F172A]">
+                2. Cara Hitung Nilai UT Berdasarkan Modus Belajar
+              </h3>
+              <p>
+                Berikut formula resmi yang diterapkan oleh kalkulator nilai UT:
+              </p>
+              <ul className="list-disc pl-5 space-y-1.5 text-xs sm:text-sm">
+                <li><strong>Skema Tuton:</strong> Nilai Akhir = <code>(70% × UAS) + (30% × Tuton)</code></li>
+                <li><strong>Skema TMK:</strong> Nilai Akhir = <code>(80% × UAS) + (20% × TMK)</code></li>
+                <li><strong>Skema Tuweb / TTM:</strong> Nilai Akhir = <code>(50% × UAS) + (50% × Tuweb)</code></li>
+                <li><strong>Praktik / Praktikum:</strong> Disesuaikan dengan pedoman program studi (50:50 atau 100% praktik).</li>
+              </ul>
+            </div>
+          </div>
+
+          <div className="p-4 rounded-xl bg-slate-50 border border-slate-200 text-xs sm:text-sm space-y-2">
+            <h4 className="font-bold text-[#0F172A]">
+              Penting: Selalu Ingat Aturan Minimal UAS 30 Poin
+            </h4>
+            <p>
+              Nilai bantuan belajar Anda (Tuton 30%, TMK 20%, Tuweb 50%) <strong>hanya memiliki bobot</strong> jika nilai murni ujian akhir semester (UAS) Anda mencapai <strong>minimal 30 poin</strong>. Jika nilai UAS Anda &lt; 30, maka nilai akhir otomatis menjadi huruf mutu <strong>E (Gagal)</strong>. Gunakan fitur <strong>Target Solver UAS</strong> pada kalkulator nilai UT kami untuk mengetahui berapa skor ujian minimal yang harus Anda raih demi mengamankan target nilai A, B, atau C.
+            </p>
+          </div>
+        </section>
+
+        {/* SECTION 8: FAQS */}
         <section>
           <FaqAccordion items={HOME_FAQS} />
         </section>

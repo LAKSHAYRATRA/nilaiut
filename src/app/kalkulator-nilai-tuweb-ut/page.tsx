@@ -7,13 +7,15 @@ import JsonLd from '@/components/JsonLd';
 import { ArrowLeft } from 'lucide-react';
 
 export const metadata: Metadata = {
-  title: 'Kalkulator Nilai Tuweb & TTM UT (Bobot 50% UAS : 50% Tuweb) - NilaiUT',
-  description: 'Kalkulator khusus menghitung nilai akhir Tutorial Webinar (Tuweb) dan Tatap Muka (TTM) Universitas Terbuka. Rumus seimbang 50% UAS + 50% Tuweb.',
+  title: 'Kalkulator Nilai Tuweb UT (50:50) - Kalkulator Nilai UT & Kalkulator UT',
+  description: 'Kalkulator Nilai Tuweb & TTM UT resmi. Cara hitung nilai Tutorial Webinar dan Tatap Muka 50% UAS + 50% Tuweb sesuai pedoman Universitas Terbuka.',
   alternates: {
     canonical: 'https://nilaiut.com/kalkulator-nilai-tuweb-ut/',
   },
   keywords: [
     'kalkulator nilai tuweb ut',
+    'kalkulator nilai ut',
+    'kalkulator ut',
     'hitung nilai tuweb ut',
     'bobot tuweb ut 50 50',
     'cara hitung nilai ttm ut'
