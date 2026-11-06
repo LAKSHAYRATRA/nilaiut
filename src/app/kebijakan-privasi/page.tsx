@@ -1,6 +1,7 @@
 import React from 'react';
 import type { Metadata } from 'next';
 import Link from 'next/link';
+import JsonLd from '@/components/JsonLd';
 import { ArrowLeft, Shield, Lock, Eye, FileText, CheckCircle2 } from 'lucide-react';
 
 export const metadata: Metadata = {
@@ -12,8 +13,24 @@ export const metadata: Metadata = {
 };
 
 export default function KebijakanPrivasiPage() {
+  const privacySchema = {
+    '@context': 'https://schema.org',
+    '@type': 'WebPage',
+    name: 'Kebijakan Privasi (Privacy Policy)',
+    url: 'https://nilaiut.com/kebijakan-privasi/',
+    description: 'Dokumen transparansi perlindungan data pribadi dan privasi pengguna NilaiUT.',
+    datePublished: '2026-01-01T00:00:00+07:00',
+    dateModified: '2026-11-06T00:00:00+07:00',
+    publisher: {
+      '@type': 'Organization',
+      name: 'NilaiUT',
+      url: 'https://nilaiut.com'
+    }
+  };
+
   return (
     <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-10 sm:py-16 space-y-10">
+      <JsonLd data={privacySchema} />
       <div>
         <Link
           href="/"

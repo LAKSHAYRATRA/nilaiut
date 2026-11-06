@@ -35,36 +35,36 @@ export default function Footer() {
           {/* Col 3: Alat Hitung */}
           <div className="space-y-2.5">
             <span className="text-xs font-semibold uppercase tracking-wider text-[#0F172A] block">
-              Alat Hitung
+              Alat Hitung Nilai UT
             </span>
             <ul className="space-y-1.5 text-xs text-[#64748B]">
               <li>
-                <Link href="/kalkulator-nilai-tuton-ut" className="hover:text-[#0F172A] hover:underline transition-colors">
+                <Link href="/kalkulator-nilai-tuton-ut/" className="hover:text-[#0F172A] hover:underline transition-colors">
                   Kalkulator Tuton (70:30)
                 </Link>
               </li>
               <li>
-                <Link href="/kalkulator-nilai-tmk-ut" className="hover:text-[#0F172A] hover:underline transition-colors">
+                <Link href="/kalkulator-nilai-tmk-ut/" className="hover:text-[#0F172A] hover:underline transition-colors">
                   Kalkulator TMK (80:20)
                 </Link>
               </li>
               <li>
-                <Link href="/kalkulator-nilai-tuweb-ut" className="hover:text-[#0F172A] hover:underline transition-colors">
+                <Link href="/kalkulator-nilai-tuweb-ut/" className="hover:text-[#0F172A] hover:underline transition-colors">
                   Kalkulator Tuweb (50:50)
                 </Link>
               </li>
               <li>
-                <Link href="/target-nilai-uas" className="hover:text-[#0F172A] hover:underline transition-colors">
+                <Link href="/target-nilai-uas/" className="hover:text-[#0F172A] hover:underline transition-colors">
                   Target Solver Nilai UAS
                 </Link>
               </li>
               <li>
-                <Link href="/kalkulator-ipk-ut" className="hover:text-[#0F172A] hover:underline transition-colors">
+                <Link href="/kalkulator-ipk-ut/" className="hover:text-[#0F172A] hover:underline transition-colors">
                   Kalkulator IPK Kelulusan
                 </Link>
               </li>
               <li>
-                <Link href="/pasang-widget" className="hover:text-[#0F172A] hover:underline transition-colors">
+                <Link href="/pasang-widget/" className="hover:text-[#0F172A] hover:underline transition-colors">
                   Widget Iframe Blog
                 </Link>
               </li>
@@ -78,62 +78,62 @@ export default function Footer() {
             </span>
             <ul className="space-y-1.5 text-xs text-[#64748B]">
               <li>
-                <Link href="/panduan/cara-hitung-nilai-akhir-ut" className="hover:text-[#0F172A] hover:underline transition-colors">
+                <Link href="/panduan/cara-hitung-nilai-akhir-ut/" className="hover:text-[#0F172A] hover:underline transition-colors">
                   Cara Hitung Nilai Akhir
                 </Link>
               </li>
               <li>
-                <Link href="/panduan/skema-bobot-tuton-tmk-tuweb" className="hover:text-[#0F172A] hover:underline transition-colors">
+                <Link href="/panduan/skema-bobot-tuton-tmk-tuweb/" className="hover:text-[#0F172A] hover:underline transition-colors">
                   Skema Bobot Tutorial
                 </Link>
               </li>
               <li>
-                <Link href="/panduan/aturan-syarat-minimal-uas-30" className="hover:text-[#0F172A] hover:underline transition-colors">
+                <Link href="/panduan/aturan-syarat-minimal-uas-30/" className="hover:text-[#0F172A] hover:underline transition-colors">
                   Aturan Minimal UAS 30
                 </Link>
               </li>
               <li>
-                <Link href="/panduan/cara-menghitung-ipk-dan-predikat-kelulusan-ut" className="hover:text-[#0F172A] hover:underline transition-colors">
+                <Link href="/panduan/cara-menghitung-ipk-dan-predikat-kelulusan-ut/" className="hover:text-[#0F172A] hover:underline transition-colors">
                   Predikat Cumlaude &amp; IPK
                 </Link>
               </li>
               <li>
-                <Link href="/panduan/kalender-akademik-dan-jadwal-uas-ut" className="hover:text-[#0F172A] hover:underline transition-colors">
+                <Link href="/panduan/kalender-akademik-dan-jadwal-uas-ut/" className="hover:text-[#0F172A] hover:underline transition-colors">
                   Kalender Akademik &amp; KTPU
                 </Link>
               </li>
             </ul>
           </div>
 
-          {/* Col 5: Legal */}
+          {/* Col 5: Legal & Trust */}
           <div className="space-y-2.5">
             <span className="text-xs font-semibold uppercase tracking-wider text-[#0F172A] block">
-              Informasi Legal
+              Informasi &amp; Legal
             </span>
             <ul className="space-y-1.5 text-xs text-[#64748B]">
               <li>
-                <Link href="/tentang-kami" className="hover:text-[#0F172A] hover:underline transition-colors">
-                  Tentang Kami
+                <Link href="/tentang-kami/" aria-label="About Us" className="hover:text-[#0F172A] hover:underline transition-colors">
+                  Tentang Kami (About Us)
                 </Link>
               </li>
               <li>
-                <Link href="/kontak" className="hover:text-[#0F172A] hover:underline transition-colors">
-                  Kontak Pengembang
+                <Link href="/kontak/" aria-label="Contact Us" className="hover:text-[#0F172A] hover:underline transition-colors">
+                  Kontak (Contact Us)
                 </Link>
               </li>
               <li>
-                <Link href="/kebijakan-privasi" className="hover:text-[#0F172A] hover:underline transition-colors">
-                  Kebijakan Privasi
+                <Link href="/kebijakan-privasi/" aria-label="Privacy Policy" className="hover:text-[#0F172A] hover:underline transition-colors">
+                  Kebijakan Privasi (Privacy Policy)
                 </Link>
               </li>
               <li>
-                <Link href="/syarat-ketentuan" className="hover:text-[#0F172A] hover:underline transition-colors">
-                  Syarat &amp; Ketentuan
+                <Link href="/syarat-ketentuan/" aria-label="Terms of Service" className="hover:text-[#0F172A] hover:underline transition-colors">
+                  Syarat &amp; Ketentuan (Terms)
                 </Link>
               </li>
               <li>
-                <Link href="/disclaimer" className="hover:text-[#0F172A] hover:underline transition-colors">
-                  Penafian Resmi
+                <Link href="/disclaimer/" aria-label="Disclaimer" className="hover:text-[#0F172A] hover:underline transition-colors">
+                  Penafian Resmi (Disclaimer)
                 </Link>
               </li>
             </ul>
@@ -146,10 +146,11 @@ export default function Footer() {
             &copy; {new Date().getFullYear()} NilaiUT.com &bull; Rujukan Resmi Peraturan Rektor UT No. 16/2017.
           </p>
           <div className="flex items-center gap-4">
-            <Link href="/kebijakan-privasi" className="hover:text-[#0F172A] hover:underline transition-colors">Privasi</Link>
-            <Link href="/syarat-ketentuan" className="hover:text-[#0F172A] hover:underline transition-colors">Ketentuan</Link>
-            <Link href="/disclaimer" className="hover:text-[#0F172A] hover:underline transition-colors">Penafian</Link>
-            <Link href="/kontak" className="hover:text-[#0F172A] hover:underline transition-colors">Kontak</Link>
+            <Link href="/tentang-kami/" aria-label="About Us" className="hover:text-[#0F172A] hover:underline transition-colors">About Us</Link>
+            <Link href="/kontak/" aria-label="Contact Us" className="hover:text-[#0F172A] hover:underline transition-colors">Contact</Link>
+            <Link href="/kebijakan-privasi/" aria-label="Privacy Policy" className="hover:text-[#0F172A] hover:underline transition-colors">Privacy Policy</Link>
+            <Link href="/syarat-ketentuan/" aria-label="Terms of Service" className="hover:text-[#0F172A] hover:underline transition-colors">Terms of Service</Link>
+            <Link href="/disclaimer/" aria-label="Disclaimer" className="hover:text-[#0F172A] hover:underline transition-colors">Disclaimer</Link>
           </div>
         </div>
       </div>

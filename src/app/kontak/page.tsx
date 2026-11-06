@@ -2,6 +2,7 @@
 
 import React, { useState } from 'react';
 import Link from 'next/link';
+import JsonLd from '@/components/JsonLd';
 import { ArrowLeft, Mail, Send, CheckCircle2 } from 'lucide-react';
 
 export default function KontakPage() {
@@ -11,6 +12,25 @@ export default function KontakPage() {
   const [message, setMessage] = useState('');
   const [submitted, setSubmitted] = useState(false);
 
+  const contactSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'ContactPage',
+    name: 'Kontak NilaiUT (Contact Us)',
+    url: 'https://nilaiut.com/kontak/',
+    description: 'Saluran resmi komunikasi dan masukan pengguna kalkulator nilai Universitas Terbuka.',
+    mainEntity: {
+      '@type': 'Organization',
+      name: 'NilaiUT',
+      url: 'https://nilaiut.com',
+      contactPoint: {
+        '@type': 'ContactPoint',
+        contactType: 'Customer Support',
+        email: 'halo@nilaiut.com',
+        url: 'https://nilaiut.com/kontak/'
+      }
+    }
+  };
+
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     if (!name || !email || !message) return;
@@ -19,6 +39,7 @@ export default function KontakPage() {
 
   return (
     <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12 space-y-8">
+      <JsonLd data={contactSchema} />
       <div>
         <Link
           href="/"

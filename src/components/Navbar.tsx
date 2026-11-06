@@ -51,7 +51,7 @@ export default function Navbar() {
                   className="absolute top-full left-0 w-64 p-2 mt-1 rounded-xl bg-white border border-slate-200 shadow-xl z-50 space-y-1"
                 >
                   <Link
-                    href="/kalkulator-nilai-tuton-ut"
+                    href="/kalkulator-nilai-tuton-ut/"
                     onClick={() => setToolsDropdownOpen(false)}
                     className="block px-3 py-2 rounded-lg hover:bg-slate-50 text-xs transition-colors"
                   >
@@ -59,7 +59,7 @@ export default function Navbar() {
                     <span className="text-[11px] text-[#64748B]">Skema Tuton elearning.ut.ac.id</span>
                   </Link>
                   <Link
-                    href="/kalkulator-nilai-tmk-ut"
+                    href="/kalkulator-nilai-tmk-ut/"
                     onClick={() => setToolsDropdownOpen(false)}
                     className="block px-3 py-2 rounded-lg hover:bg-slate-50 text-xs transition-colors"
                   >
@@ -67,7 +67,7 @@ export default function Navbar() {
                     <span className="text-[11px] text-[#64748B]">Skema TMK 3 tugas mandiri</span>
                   </Link>
                   <Link
-                    href="/kalkulator-nilai-tuweb-ut"
+                    href="/kalkulator-nilai-tuweb-ut/"
                     onClick={() => setToolsDropdownOpen(false)}
                     className="block px-3 py-2 rounded-lg hover:bg-slate-50 text-xs transition-colors"
                   >
@@ -79,14 +79,14 @@ export default function Navbar() {
             </div>
 
             <Link
-              href="/target-nilai-uas"
+              href="/target-nilai-uas/"
               className="text-[#334155] hover:text-[#0F172A] py-2 transition-colors font-medium"
             >
               Target Solver UAS
             </Link>
 
             <Link
-              href="/kalkulator-ipk-ut"
+              href="/kalkulator-ipk-ut/"
               className="text-[#334155] hover:text-[#0F172A] py-2 transition-colors font-medium"
             >
               Kalkulator IPK
@@ -96,14 +96,30 @@ export default function Navbar() {
               href="/#panduan-akademik"
               className="text-[#334155] hover:text-[#0F172A] py-2 transition-colors font-medium"
             >
-              Panduan Resmi
+              Panduan
             </Link>
 
             <Link
-              href="/pasang-widget"
+              href="/tentang-kami/"
+              aria-label="About Us"
+              className="text-[#334155] hover:text-[#0F172A] py-2 transition-colors font-medium"
+            >
+              Tentang Kami
+            </Link>
+
+            <Link
+              href="/kontak/"
+              aria-label="Contact Us"
+              className="text-[#334155] hover:text-[#0F172A] py-2 transition-colors font-medium"
+            >
+              Kontak
+            </Link>
+
+            <Link
+              href="/pasang-widget/"
               className="text-[#64748B] hover:text-[#0F172A] py-2 text-xs transition-colors"
             >
-              Pasang Widget
+              Widget
             </Link>
           </nav>
 
@@ -125,35 +141,35 @@ export default function Navbar() {
       {mobileMenuOpen && (
         <div className="md:hidden border-t border-slate-200 bg-white px-4 py-3 space-y-1">
           <Link
-            href="/kalkulator-nilai-tuton-ut"
+            href="/kalkulator-nilai-tuton-ut/"
             onClick={() => setMobileMenuOpen(false)}
             className="block px-3 py-2 rounded-lg text-[#334155] text-sm font-medium hover:bg-slate-50"
           >
             Kalkulator Tuton (70:30)
           </Link>
           <Link
-            href="/kalkulator-nilai-tmk-ut"
+            href="/kalkulator-nilai-tmk-ut/"
             onClick={() => setMobileMenuOpen(false)}
             className="block px-3 py-2 rounded-lg text-[#334155] text-sm font-medium hover:bg-slate-50"
           >
             Kalkulator TMK (80:20)
           </Link>
           <Link
-            href="/kalkulator-nilai-tuweb-ut"
+            href="/kalkulator-nilai-tuweb-ut/"
             onClick={() => setMobileMenuOpen(false)}
             className="block px-3 py-2 rounded-lg text-[#334155] text-sm font-medium hover:bg-slate-50"
           >
             Kalkulator Tuweb (50:50)
           </Link>
           <Link
-            href="/target-nilai-uas"
+            href="/target-nilai-uas/"
             onClick={() => setMobileMenuOpen(false)}
             className="block px-3 py-2 rounded-lg text-[#334155] text-sm font-medium hover:bg-slate-50"
           >
             Target Solver Nilai UAS
           </Link>
           <Link
-            href="/kalkulator-ipk-ut"
+            href="/kalkulator-ipk-ut/"
             onClick={() => setMobileMenuOpen(false)}
             className="block px-3 py-2 rounded-lg text-[#334155] text-sm font-medium hover:bg-slate-50"
           >
@@ -167,7 +183,21 @@ export default function Navbar() {
             Panduan Regulasi UT
           </Link>
           <Link
-            href="/pasang-widget"
+            href="/tentang-kami/"
+            onClick={() => setMobileMenuOpen(false)}
+            className="block px-3 py-2 rounded-lg text-[#334155] text-sm font-medium hover:bg-slate-50"
+          >
+            Tentang Kami (About Us)
+          </Link>
+          <Link
+            href="/kontak/"
+            onClick={() => setMobileMenuOpen(false)}
+            className="block px-3 py-2 rounded-lg text-[#334155] text-sm font-medium hover:bg-slate-50"
+          >
+            Kontak (Contact Us)
+          </Link>
+          <Link
+            href="/pasang-widget/"
             onClick={() => setMobileMenuOpen(false)}
             className="block px-3 py-2 rounded-lg text-[#64748B] text-xs hover:bg-slate-50"
           >

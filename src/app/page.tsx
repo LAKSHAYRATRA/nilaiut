@@ -99,6 +99,33 @@ export default function HomePage() {
 
       {/* Main Workspace */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 space-y-12">
+        {/* Featured Snippet & Quick Answer Box (Targeting Position 1 on Google Indonesia) */}
+        <section className="bg-slate-50 rounded-2xl border border-slate-200 p-5 sm:p-6 text-xs sm:text-sm text-[#334155] space-y-3">
+          <div className="flex items-center gap-2">
+            <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
+            <span className="font-bold text-[#0F172A] uppercase tracking-wider text-xs">
+              Ringkasan Rumus Resmi Nilai Akhir UT (Peraturan Rektor No. 16/2017)
+            </span>
+          </div>
+          <p className="leading-relaxed">
+            <strong>Kalkulator Nilai UT</strong> menghitung nilai akhir mata kuliah Universitas Terbuka dengan menggabungkan skor <strong>Ujian Akhir Semester (UAS)</strong> dan nilai bantuan belajar. Nilai bantuan belajar <em>hanya berkontribusi</em> jika nilai UAS murni mencapai <strong>minimal 30 poin</strong>.
+          </p>
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 pt-1">
+            <div className="bg-white p-3 rounded-xl border border-slate-200">
+              <span className="font-bold text-[#0F172A] block text-xs">Tutorial Online (Tuton)</span>
+              <code className="text-xs font-semibold text-slate-800 font-mono mt-0.5 block">NA = (70% × UAS) + (30% × Tuton)</code>
+            </div>
+            <div className="bg-white p-3 rounded-xl border border-slate-200">
+              <span className="font-bold text-[#0F172A] block text-xs">Tugas Mata Kuliah (TMK)</span>
+              <code className="text-xs font-semibold text-slate-800 font-mono mt-0.5 block">NA = (80% × UAS) + (20% × TMK)</code>
+            </div>
+            <div className="bg-white p-3 rounded-xl border border-slate-200">
+              <span className="font-bold text-[#0F172A] block text-xs">Tuweb / TTM</span>
+              <code className="text-xs font-semibold text-slate-800 font-mono mt-0.5 block">NA = (50% × UAS) + (50% × Tuweb)</code>
+            </div>
+          </div>
+        </section>
+
         {/* SECTION 1: CORE CALCULATOR TOOL */}
         <section id="kalkulator-nilai" className="scroll-mt-20">
           <GradeCalculator />
@@ -119,7 +146,7 @@ export default function HomePage() {
               </p>
               <div className="pt-1">
                 <Link
-                  href="/panduan/aturan-syarat-minimal-uas-30"
+                  href="/panduan/aturan-syarat-minimal-uas-30/"
                   className="inline-flex items-center gap-1.5 text-xs font-semibold text-[#0F172A] hover:underline"
                 >
                   <span>Baca rincian aturan batas minimal UAS 30 dan solusinya</span>
@@ -240,7 +267,7 @@ export default function HomePage() {
             <article className="py-5 flex flex-col sm:flex-row sm:items-baseline justify-between gap-3 group">
               <div className="space-y-1 max-w-3xl">
                 <Link
-                  href="/panduan/cara-hitung-nilai-akhir-ut"
+                  href="/panduan/cara-hitung-nilai-akhir-ut/"
                   className="font-bold text-base sm:text-lg text-[#0F172A] group-hover:underline transition-colors"
                 >
                   Cara Menghitung Nilai Akhir UT Berdasarkan Peraturan Rektor No. 16/2017
@@ -250,7 +277,7 @@ export default function HomePage() {
                 </p>
               </div>
               <Link
-                href="/panduan/cara-hitung-nilai-akhir-ut"
+                href="/panduan/cara-hitung-nilai-akhir-ut/"
                 className="text-xs font-semibold text-[#0F172A] shrink-0 flex items-center gap-1 hover:underline"
               >
                 <span>Baca panduan</span>
@@ -262,7 +289,7 @@ export default function HomePage() {
             <article className="py-5 flex flex-col sm:flex-row sm:items-baseline justify-between gap-3 group">
               <div className="space-y-1 max-w-3xl">
                 <Link
-                  href="/panduan/skema-bobot-tuton-tmk-tuweb"
+                  href="/panduan/skema-bobot-tuton-tmk-tuweb/"
                   className="font-bold text-base sm:text-lg text-[#0F172A] group-hover:underline transition-colors"
                 >
                   Perbedaan Bobot Nilai Tuton (70:30), TMK (80:20), dan Tuweb (50:50)
@@ -272,7 +299,7 @@ export default function HomePage() {
                 </p>
               </div>
               <Link
-                href="/panduan/skema-bobot-tuton-tmk-tuweb"
+                href="/panduan/skema-bobot-tuton-tmk-tuweb/"
                 className="text-xs font-semibold text-[#0F172A] shrink-0 flex items-center gap-1 hover:underline"
               >
                 <span>Baca panduan</span>
@@ -284,7 +311,7 @@ export default function HomePage() {
             <article className="py-5 flex flex-col sm:flex-row sm:items-baseline justify-between gap-3 group">
               <div className="space-y-1 max-w-3xl">
                 <Link
-                  href="/panduan/aturan-syarat-minimal-uas-30"
+                  href="/panduan/aturan-syarat-minimal-uas-30/"
                   className="font-bold text-base sm:text-lg text-[#0F172A] group-hover:underline transition-colors"
                 >
                   Klausul Syarat Minimal UAS 30 di UT: Mengapa Ada dan Cara Mengantisipasinya
@@ -294,7 +321,7 @@ export default function HomePage() {
                 </p>
               </div>
               <Link
-                href="/panduan/aturan-syarat-minimal-uas-30"
+                href="/panduan/aturan-syarat-minimal-uas-30/"
                 className="text-xs font-semibold text-[#0F172A] shrink-0 flex items-center gap-1 hover:underline"
               >
                 <span>Baca panduan</span>
@@ -306,7 +333,7 @@ export default function HomePage() {
             <article className="py-5 flex flex-col sm:flex-row sm:items-baseline justify-between gap-3 group">
               <div className="space-y-1 max-w-3xl">
                 <Link
-                  href="/panduan/cara-menghitung-ipk-dan-predikat-kelulusan-ut"
+                  href="/panduan/cara-menghitung-ipk-dan-predikat-kelulusan-ut/"
                   className="font-bold text-base sm:text-lg text-[#0F172A] group-hover:underline transition-colors"
                 >
                   Cara Menghitung Indeks Prestasi Kumulatif (IPK) dan Predikat Kelulusan UT
@@ -316,7 +343,7 @@ export default function HomePage() {
                 </p>
               </div>
               <Link
-                href="/panduan/cara-menghitung-ipk-dan-predikat-kelulusan-ut"
+                href="/panduan/cara-menghitung-ipk-dan-predikat-kelulusan-ut/"
                 className="text-xs font-semibold text-[#0F172A] shrink-0 flex items-center gap-1 hover:underline"
               >
                 <span>Baca panduan</span>
@@ -328,7 +355,7 @@ export default function HomePage() {
             <article className="py-5 flex flex-col sm:flex-row sm:items-baseline justify-between gap-3 group">
               <div className="space-y-1 max-w-3xl">
                 <Link
-                  href="/panduan/kalender-akademik-dan-jadwal-uas-ut"
+                  href="/panduan/kalender-akademik-dan-jadwal-uas-ut/"
                   className="font-bold text-base sm:text-lg text-[#0F172A] group-hover:underline transition-colors"
                 >
                   Kalender Akademik Universitas Terbuka: Jadwal Registrasi, Cetak KTPU &amp; Pengumuman DNP
@@ -338,7 +365,7 @@ export default function HomePage() {
                 </p>
               </div>
               <Link
-                href="/panduan/kalender-akademik-dan-jadwal-uas-ut"
+                href="/panduan/kalender-akademik-dan-jadwal-uas-ut/"
                 className="text-xs font-semibold text-[#0F172A] shrink-0 flex items-center gap-1 hover:underline"
               >
                 <span>Baca panduan</span>
