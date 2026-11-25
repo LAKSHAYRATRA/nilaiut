@@ -137,6 +137,19 @@ export default function RootLayout({
   return (
     <html lang="id" className="scroll-smooth">
       <head>
+        <script
+          async
+          src="https://www.googletagmanager.com/gtm.js?id=GTM-T6FCQGZM"
+        />
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+            `,
+          }}
+        />
         <meta name="google-adsense-account" content="ca-pub-9679566215997198" />
         <script
           async
