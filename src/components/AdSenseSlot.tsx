@@ -21,7 +21,7 @@ export default function AdSenseSlot({ slotId = '1234567890', format = 'auto', cl
           <ins
             className="adsbygoogle block"
             style={{ display: 'block' }}
-            data-ad-client="ca-pub-XXXXXXXXXXXXXXXX"
+            data-ad-client="ca-pub-9679566215997198"
             data-ad-slot={slotId}
             data-ad-format={format}
             data-full-width-responsive="true"
